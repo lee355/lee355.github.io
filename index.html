@@ -9,7 +9,7 @@
     
     <title>
         
-        Keep
+        Keep blog
     </title>
     
 <link rel="stylesheet" href="/hexo-blog/css/style.css">
@@ -21,7 +21,7 @@
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"lee355.github.io","root":"/hexo-blog/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/cache.jpg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/cache.jpg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 5.4.1"></head>
@@ -38,17 +38,71 @@
 <main class="page-container">
 
     
+        <div class="first-screen-container flex-center fade-in-down-animation">
+    <div class="content flex-center">
+        <div class="description">
+            Keep writing and Keep loving.
+        </div>
+        
+            <div class="s-icon-list">
+                
+                    
+                        
+                            <span class="s-icon-item github">
+                                <a target="_blank" href="https://github.com/lee355">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item weixin">
+                                <a target="_blank" href="https://u.wechat.com/MAXiJKlC19b7rEM4cVsLMw4">
+                                    <i class="fab fa-weixin"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item qq">
+                                <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=mu-O4wOBXJU_ei0F-5GGDiwZBJneNcPi&noverify=0">
+                                    <i class="fab fa-qq"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item email">
+                                <a href="mailto:2896924533@qq.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+            </div>
+        
+    </div>
+</div>
+
+    
 
     <div class="page-main-content">
 
         <div class="page-main-content-top">
             <header class="header-wrapper">
 
-    <div class="header-content">
+    <div class="header-content has-first-screen">
         <div class="left">
             
             <a class="logo-title" href="/">
-                Keep
+                Keep blog
             </a>
         </div>
 
@@ -73,9 +127,15 @@
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -120,8 +180,8 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/hexo-blog/2022/03/07/Final/">
-                        
+                    <a href="/hexo-blog/2022/03/08/Final/">
+                        Data visualization
                     </a>
                 </h3>
 
@@ -142,12 +202,12 @@ F...
 
                 <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Mar 07 2022 22:04:56 GMT+0800">2022-03-07</span></span>
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Mar 08 2022 01:22:03 GMT+0800">2022-03-08</span></span>
         
         
     </div>
 
-    <a href="/hexo-blog/2022/03/07/Final/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/hexo-blog/2022/03/08/Final/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -274,6 +334,35 @@ F...
 
 
     
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
 </main>
 
@@ -291,6 +380,10 @@ F...
 
 <script src="/hexo-blog/js/dark-light-toggle.js"></script>
 
+
+
+    
+<script src="/hexo-blog/js/local-search.js"></script>
 
 
 
