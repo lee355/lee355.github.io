@@ -637,7 +637,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="密码学技术分类："><a href="#密码学技术分类：" class="headerlink" title="==密码学技术分类：=="></a>==密码学技术分类：==</h4><p>![image-20211207134634582](Data Security/image-20211207134634582-164682776056262.png)</p>
+<h4 id="密码学技术分类："><a href="#密码学技术分类：" class="headerlink" title="==密码学技术分类：=="></a>==密码学技术分类：==</h4><p>![image-20211207134634582](/2020/03/08/Data Security/image-20211207134634582-164682776056262.png)</p>
 <h4 id="密码学基本概念："><a href="#密码学基本概念：" class="headerlink" title="==密码学基本概念：=="></a>==密码学基本概念：==</h4><ul>
 <li><strong>明文</strong>：需要秘密传送的信息</li>
 <li><strong>密文</strong> ：明文经过密码变换后的消息</li>
@@ -811,26 +811,26 @@
 <li>==定义==：一种使用56位密钥对64位长分组进行加密的密码，是一种迭代算法。DES是第一个公开的分组加密算法。</li>
 <li>==特点==：DES对明文中每个分组的加密过程都包含16轮，且每轮的操作都完全相同。每轮使用不同的子密钥，但是子密钥是从主密钥中推导而来。</li>
 </ul>
-<p>![image-20211207194125722](Data Security/image-20211207194125722-164682776056363.png)</p>
+<p>![image-20211207194125722](/2020/03/08/Data Security/image-20211207194125722-164682776056363.png)</p>
 <ul>
 <li><p>==DES算法加密流程==：初始置换IP、16轮迭代的乘积变换、逆初始置换$IP^{-1}$以及16个子密钥产生器。（不好出计算题，不会出最终的加密的密文，但是需要了解整体的流程，会考虑中间的环节）</p>
-<p>![image-20211207194346373](Data Security/image-20211207194346373-164682776056364.png)</p>
+<p>![image-20211207194346373](/2020/03/08/Data Security/image-20211207194346373-164682776056364.png)</p>
 </li>
 <li><p>初始置换IP：得到了一个乱序的比特明文分组</p>
-<p>![image-20211207194936698](Data Security/image-20211207194936698-164682776056365.png)</p>
+<p>![image-20211207194936698](/2020/03/08/Data Security/image-20211207194936698-164682776056365.png)</p>
 </li>
 <li><p>轮内加密：</p>
-<p>![image-20211207200747905](Data Security/image-20211207200747905-164682776056366.png)</p>
+<p>![image-20211207200747905](/2020/03/08/Data Security/image-20211207200747905-164682776056366.png)</p>
 </li>
 <li><p>==DES的核心–F函数==：实现了混淆和扩散的功能</p>
-<p>![image-20211207203226736](Data Security/image-20211207203226736-164682776056368.png)</p>
+<p>![image-20211207203226736](/2020/03/08/Data Security/image-20211207203226736-164682776056368.png)</p>
 <ul>
 <li><p>扩展置换E盒</p>
-<p>![image-20211207204807351](Data Security/image-20211207204807351-164682776056367.png)</p>
-<p>![image-20211207204748671](Data Security/image-20211207204748671-164682776056369.png)</p>
+<p>![image-20211207204807351](/2020/03/08/Data Security/image-20211207204807351-164682776056367.png)</p>
+<p>![image-20211207204748671](/2020/03/08/Data Security/image-20211207204748671-164682776056369.png)</p>
 </li>
 <li><p>S盒：对于一个六比特的二进制数，使用S盒对其进行缩短。分别以中间的四比特和两边的两个比特作为index查表。</p>
-<p>![image-20211207205730047](Data Security/image-20211207205730047-164682776056370.png)</p>
+<p>![image-20211207205730047](/2020/03/08/Data Security/image-20211207205730047-164682776056370.png)</p>
 </li>
 <li><p>置换P：</p>
 <ul>
@@ -838,12 +838,12 @@
 <li>P盒的各输入块的4个比特都分配到不同的输出块之中</li>
 <li>P盒的第t输出块的4个比特都不来自第t输入块</li>
 </ul>
-<p>![image-20211207210545350](Data Security/image-20211207210545350-164682776056371.png)</p>
+<p>![image-20211207210545350](/2020/03/08/Data Security/image-20211207210545350-164682776056371.png)</p>
 </li>
 </ul>
 </li>
 <li><p>==DES密钥生成==</p>
-<p>![image-20211207212222011](Data Security/image-20211207212222011-164682776056372.png)</p>
+<p>![image-20211207212222011](/2020/03/08/Data Security/image-20211207212222011-164682776056372.png)</p>
 </li>
 <li><p>Feistel每轮中仅加密（解密）输入位的一半，F函数只加密左半部分，不加密右半部分。DES优势之一就是解密的过程和加密过程完全相同，只是解密过程第i轮需要用到第16-i轮到密钥</p>
 </li>
@@ -874,7 +874,7 @@
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155531275.png" alt="image-20211225155531275"></p>
 <p>欧拉定理和费马小定理</p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155654329.png" alt="image-20211225155654329"></p>
-<p>![image-20211225160005389](Data Security/image-20211225160005389-164682776056373.png)</p>
+<p>![image-20211225160005389](/2020/03/08/Data Security/image-20211225160005389-164682776056373.png)</p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160046524.png" alt="image-20211225160046524"></p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160103432.png" alt="image-20211225160103432"></p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160129532.png" alt="image-20211225160129532"></p>
@@ -927,7 +927,7 @@
 <li><p>查表法：使用s盒对其进行替换</p>
 </li>
 <li><p>计算方式：</p>
-<p>![image-20211220120715146](Data Security/image-20211220120715146-164682776056374.png)</p>
+<p>![image-20211220120715146](/2020/03/08/Data Security/image-20211220120715146-164682776056374.png)</p>
 </li>
 </ul>
 <h4 id="行移位（ShiftRows）"><a href="#行移位（ShiftRows）" class="headerlink" title="行移位（ShiftRows）"></a>行移位（ShiftRows）</h4><ul>
@@ -938,7 +938,7 @@
 <li>每列中每个字节被替换成与本列四个字节都相关的结果</li>
 <li>基于伽罗瓦域的运算</li>
 </ul>
-<p>![image-20211220133810712](Data Security/image-20211220133810712-164682776056375.png)</p>
+<p>![image-20211220133810712](/2020/03/08/Data Security/image-20211220133810712-164682776056375.png)</p>
 <p>tips：伽罗瓦域也就是有限域，因此，使用有限域上的运算规则</p>
 <h4 id="轮密钥加（AddRoundKey）"><a href="#轮密钥加（AddRoundKey）" class="headerlink" title="轮密钥加（AddRoundKey）"></a>轮密钥加（AddRoundKey）</h4><p>将16字节的当前状态矩阵和长度为16字节的子钥进行异或</p>
 <h2 id="公钥密码概念（非对称密码）"><a href="#公钥密码概念（非对称密码）" class="headerlink" title="公钥密码概念（非对称密码）"></a>公钥密码概念（非对称密码）</h2><h3 id="对称密钥体制的缺陷"><a href="#对称密钥体制的缺陷" class="headerlink" title="==对称密钥体制的缺陷=="></a>==对称密钥体制的缺陷==</h3><ul>
@@ -975,7 +975,7 @@
 <li>签名：发送方使用私钥对消息”签名“</li>
 <li>密钥交换：通信双方交换会话密钥</li>
 </ul>
-<h3 id="传统密码与公钥密码"><a href="#传统密码与公钥密码" class="headerlink" title="==传统密码与公钥密码=="></a>==传统密码与公钥密码==</h3><p>![image-20211220111739332](Data Security/image-20211220111739332-164682776056376.png)</p>
+<h3 id="传统密码与公钥密码"><a href="#传统密码与公钥密码" class="headerlink" title="==传统密码与公钥密码=="></a>==传统密码与公钥密码==</h3><p>![image-20211220111739332](/2020/03/08/Data Security/image-20211220111739332-164682776056376.png)</p>
 <h3 id="公钥密码分析"><a href="#公钥密码分析" class="headerlink" title="==公钥密码分析=="></a>==公钥密码分析==</h3><ul>
 <li><p><strong>穷举攻击：</strong>长密钥、加/解密速度慢，所以用于密钥管理和签名</p>
 </li>
@@ -1026,7 +1026,7 @@
 <li><p>参数选取：选取一个大素数$p$，在选取$Z/(p)$的一个本原根$g$，并将$p$和$g$公开。</p>
 </li>
 <li><p>密钥协商：</p>
-<img src="/2022/03/08/Data%20Security/image-20211220142636968-164682776056377.png" alt="image-20211220142636968" style="zoom:150%;">
+<img src="/2020/03/08/Data Security/image-20211220142636968-164682776056377.png" alt="image-20211220142636968" style="zoom:150%;">
 
 <p>其中，$a,b∈[1,p-2]$。</p>
 </li>
@@ -1041,7 +1041,7 @@
 <p>缺点：</p>
 <ol>
 <li><p>容易受到中间人攻击</p>
-<img src="/2022/03/08/Data%20Security/image-20211225161923043-164682776056378.png" alt="image-20211225161923043" style="zoom:150%;"></li>
+<img src="/2020/03/08/Data Security/image-20211225161923043-164682776056378.png" alt="image-20211225161923043" style="zoom:150%;"></li>
 </ol>
 <h3 id="ElGamal公钥密码算法-（计算）"><a href="#ElGamal公钥密码算法-（计算）" class="headerlink" title="==ElGamal公钥密码算法==（计算）"></a>==ElGamal公钥密码算法==（计算）</h3><p>明文空间：$M=GF(q)/{0}$</p>
 <p>密文空间：$M×M={(x,y):x,y∈M}$</p>
@@ -1065,22 +1065,22 @@
 <h3 id="椭圆曲线群"><a href="#椭圆曲线群" class="headerlink" title="椭圆曲线群"></a>椭圆曲线群</h3><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151209605.png" alt="image-20211220151209605"></p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151618295.png" alt="image-20211220151618295"></p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151632480.png" alt="image-20211220151632480"></p>
-<p>![image-20211220151642330](Data Security/image-20211220151642330-164682776056379.png)</p>
+<p>![image-20211220151642330](/2020/03/08/Data Security/image-20211220151642330-164682776056379.png)</p>
 <p>椭圆曲线上的加法</p>
-<p>![image-20211220151807488](Data Security/image-20211220151807488-164682776056380.png)</p>
-<p>![image-20211220151903280](Data Security/image-20211220151903280-164682776056381.png)</p>
-<p>![image-20211220151936248](Data Security/image-20211220151936248-164682776056382.png)</p>
-<h3 id="椭圆曲线上的离散对数问题"><a href="#椭圆曲线上的离散对数问题" class="headerlink" title="椭圆曲线上的离散对数问题"></a>椭圆曲线上的离散对数问题</h3><p>![image-20211220151958465](Data Security/image-20211220151958465-164682776056483.png)</p>
-<p>![image-20211220152011515](Data Security/image-20211220152011515-164682776056484.png)</p>
+<p>![image-20211220151807488](/2020/03/08/Data Security/image-20211220151807488-164682776056380.png)</p>
+<p>![image-20211220151903280](/2020/03/08/Data Security/image-20211220151903280-164682776056381.png)</p>
+<p>![image-20211220151936248](/2020/03/08/Data Security/image-20211220151936248-164682776056382.png)</p>
+<h3 id="椭圆曲线上的离散对数问题"><a href="#椭圆曲线上的离散对数问题" class="headerlink" title="椭圆曲线上的离散对数问题"></a>椭圆曲线上的离散对数问题</h3><p>![image-20211220151958465](/2020/03/08/Data Security/image-20211220151958465-164682776056483.png)</p>
+<p>![image-20211220152011515](/2020/03/08/Data Security/image-20211220152011515-164682776056484.png)</p>
 <p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220152209576.png" alt="image-20211220152209576"></p>
 <p>参数设置：</p>
-<p>![image-20211220152551895](Data Security/image-20211220152551895-164682776056485.png)</p>
+<p>![image-20211220152551895](/2020/03/08/Data Security/image-20211220152551895-164682776056485.png)</p>
 <p>公私钥对：</p>
-<p>![image-20211220152535190](Data Security/image-20211220152535190-164682776056486.png)</p>
+<p>![image-20211220152535190](/2020/03/08/Data Security/image-20211220152535190-164682776056486.png)</p>
 <p>加密算法：</p>
-<p>![image-20211220152617361](Data Security/image-20211220152617361-164682776056487.png)</p>
+<p>![image-20211220152617361](/2020/03/08/Data Security/image-20211220152617361-164682776056487.png)</p>
 <p>解密算法：</p>
-<p>![image-20211220152630136](Data Security/image-20211220152630136-164682776056488.png)</p>
+<p>![image-20211220152630136](/2020/03/08/Data Security/image-20211220152630136-164682776056488.png)</p>
 <h2 id="数字签名与消息认证"><a href="#数字签名与消息认证" class="headerlink" title="数字签名与消息认证"></a>数字签名与消息认证</h2><h3 id="数字签名概述"><a href="#数字签名概述" class="headerlink" title="数字签名概述"></a>数字签名概述</h3><p>==数字签名应满足的条件：==</p>
 <ul>
 <li>签名应与文件是一个不可分割的整体。<strong>实现：对消息进行某种变换完成签名；使签名是待签名的文件的函数。</strong></li>
@@ -1109,8 +1109,8 @@
 </ul>
 <p>数字签名：数字签名（又称公钥数字签名）是只有信息的发送者才能产生的别人无法伪造的一段数字串，类似于手写签名，可保证每个用户都可验证信息来源，是对信息的发送者身份真实性的一个有效证明。</p>
 <p>流程图：</p>
-<p>![image-20211220162748498](Data Security/image-20211220162748498-164682776056489.png)</p>
-<h3 id="RSA数字签名算法"><a href="#RSA数字签名算法" class="headerlink" title="RSA数字签名算法"></a>RSA数字签名算法</h3><h4 id="简单的数字签名算法"><a href="#简单的数字签名算法" class="headerlink" title="简单的数字签名算法"></a>简单的数字签名算法</h4><p>![image-20211220162521807](Data Security/image-20211220162521807-164682776056492.png)</p>
+<p>![image-20211220162748498](/2020/03/08/Data Security/image-20211220162748498-164682776056489.png)</p>
+<h3 id="RSA数字签名算法"><a href="#RSA数字签名算法" class="headerlink" title="RSA数字签名算法"></a>RSA数字签名算法</h3><h4 id="简单的数字签名算法"><a href="#简单的数字签名算法" class="headerlink" title="简单的数字签名算法"></a>简单的数字签名算法</h4><p>![image-20211220162521807](/2020/03/08/Data Security/image-20211220162521807-164682776056492.png)</p>
 <p>将 $m$ 和 $c$ 一起发送, 作为签名 $(m, c)$ 。 由于与 $e_{A}$ 相对应的 $d_{A}$ 是A所独有, 因此 $c$ 一定来自<br>$A$, 又因为 $e_{A}$ 是公开的, 则 $m$ 不能保密。</p>
 <h4 id="RSA签名与加密的结合"><a href="#RSA签名与加密的结合" class="headerlink" title="RSA签名与加密的结合"></a>RSA签名与加密的结合</h4><ul>
 <li><p>当 $\mathrm{N}<em>{\mathrm{A}}&lt;\mathrm{N}</em>{\mathrm{B}}$ 时, 先签名, 后加密</p>
@@ -1217,7 +1217,7 @@
 <li><p>数据完整性检验 </p>
 </li>
 <li><p>用于数字签名   </p>
-<p>![image-20211219214020289](Data Security/image-20211219214020289-164682776056490.png)</p>
+<p>![image-20211219214020289](/2020/03/08/Data Security/image-20211219214020289-164682776056490.png)</p>
 </li>
 <li><p>密钥推导</p>
 </li>
@@ -1252,7 +1252,7 @@
 <ul>
 <li><p>==初始化处理==：经过初始化处理后的消息长度是512的整数倍（==可能会出一个计算题==）</p>
 <p>在原始消息的二进制表示之后<strong>先填入一个1</strong>，在<strong>最低位64比特填入原始消息长度</strong>的二进制表示，<strong>中间全部补0</strong>，使填充后的消息长度恰好是512的整数倍。如果消息长度大于$2^{64}$，则在最低的64比特位填入消息长度取模$2^{64}$后的二进制表示。</p>
-<p>![image-20211219221553394](Data Security/image-20211219221553394-164682776056491.png)</p>
+<p>![image-20211219221553394](/2020/03/08/Data Security/image-20211219221553394-164682776056491.png)</p>
 <p>经过初始化处理后的消息$x$被分成$t$个512比特的消息块$x_0,x_1, …,x_{t-1}$。将每个消息块$x_i（i=0,1,2,…,t-1）$划分成16个32比特的子块，记为$x_i={M_{[16i]}、M_{[16i+1]}、…、M_{[16i+15]}}.$</p>
 </li>
 <li><p>使用4个32比特的初始向量，分别为A、B、C、D。又称为链接值</p>
@@ -1271,16 +1271,16 @@
 <p>最后是将A、B、C、D进行拼接，形成MD5最后的结果。128=32*4。</p>
 </li>
 <li><p>MD5主循环：</p>
-<p>![image-20211220094004821](Data Security/image-20211220094004821-164682776056493.png)</p>
+<p>![image-20211220094004821](/2020/03/08/Data Security/image-20211220094004821-164682776056493.png)</p>
 </li>
 <li><p>round结构：</p>
-<p>![image-20211220103532831](Data Security/image-20211220103532831-164682776056494.png)</p>
+<p>![image-20211220103532831](/2020/03/08/Data Security/image-20211220103532831-164682776056494.png)</p>
 <p>其他三个分别使用另外三个基本函数。s是</p>
-<p>![image-20211220104319171](Data Security/image-20211220104319171-164682776056495.png)</p>
+<p>![image-20211220104319171](/2020/03/08/Data Security/image-20211220104319171-164682776056495.png)</p>
 <p>t的计算方法如下：$2^{32}{*} a b s(\sin (\mathrm{i}))$</p>
 </li>
 </ul>
-<h3 id="基于Hash函数的消息认证码"><a href="#基于Hash函数的消息认证码" class="headerlink" title="基于Hash函数的消息认证码"></a>基于Hash函数的消息认证码</h3><p>![image-20211220104642211](Data Security/image-20211220104642211-164682776056496.png)</p>
+<h3 id="基于Hash函数的消息认证码"><a href="#基于Hash函数的消息认证码" class="headerlink" title="基于Hash函数的消息认证码"></a>基于Hash函数的消息认证码</h3><p>![image-20211220104642211](/2020/03/08/Data Security/image-20211220104642211-164682776056496.png)</p>
 <p>安全要求：</p>
 <ul>
 <li>未知密钥时不能构造消息-认证码的一个匹配对;（单向性）</li>
@@ -1288,7 +1288,7 @@
 </ul>
 <p>基于Hash函数的的HMAC消息认证码</p>
 <p>对于密钥k和Hash函数Hash，按如下方式计算消息m的消息认证码MAC：$HMAC(m) = Hash_{k_2}(Hash_{k_1}(m))$</p>
-<p>![image-20211220105018727](Data Security/image-20211220105018727-164682776056497.png)</p>
+<p>![image-20211220105018727](/2020/03/08/Data Security/image-20211220105018727-164682776056497.png)</p>
 <h2 id="人工智能安全"><a href="#人工智能安全" class="headerlink" title="人工智能安全"></a>人工智能安全</h2><ul>
 <li><p>Al应具有的==安全要求==：</p>
 <ul>
