@@ -9,8 +9,6 @@
     
     <title>
         
-            Data visualization |
-        
         Keep blog
     </title>
     
@@ -139,7 +137,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Data visualization</span>
+            <span class="title-hover-animation"></span>
         </div>
 
         
@@ -181,6 +179,35 @@
 
 <div align='right' ><font size='5'>--游乐园人员轨迹探索性分析</font></div>  
 
+<table>
+<thead>
+<tr>
+<th>班级</th>
+<th>学号</th>
+<th>姓名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据班</td>
+<td>201900130140</td>
+<td>李焱</td>
+</tr>
+<tr>
+<td>数据班</td>
+<td>201900130008</td>
+<td>于腾博</td>
+</tr>
+<tr>
+<td>数据班</td>
+<td>201900271077</td>
+<td>钟秋愉</td>
+</tr>
+<tr>
+<td>数据班</td>
+<td>201900140093</td>
+<td>张菊华</td>
+</tr>
+</tbody></table>
 <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><h3 id="Teaser-image"><a href="#Teaser-image" class="headerlink" title="Teaser image"></a>Teaser image</h3><p><img src="C:\Users\86189\hexo-blog\public\images\image-20211221011241440.png" alt="image-20211221011241440"></p>
 <center><p style="font-size:20px">Figure 1:Map-based personal trajectory visualization</p></center>
 
@@ -211,7 +238,7 @@
 <p><img src="C:\Users\86189\hexo-blog\public\images\image-20211221024016036.png" alt="image-20211221024016036"></p>
 <center><p style="font-size:20px">Figure 7:Dynamic trajectory visualization </p></center><a name="Figure 8"> </a>
 
-<p><img src="C:\Users\86189\hexo-blog\public\images\image-20211221024129343-16468105348611.png" alt="image-20211221024129343"></p>
+<p><img src="C:\Users\86189\hexo-blog\public\images\image-20211221024129343.png" alt="image-20211221024129343"></p>
 <center><p style="font-size:20px">Figure 8:Dynamic trajectory visualization </p></center>
 
 <p>​    Then visualize the clustered data. All tourists in the three days are divided into 12 groups according to 14 dimensions of check-in amusement equipment type, average speed and stay time. The radar chart (<a href="#Figure 9">Figure 9</a>) and the parallel coordinate system (<a href="#Figure 10">Figure 10</a>) are used in this interface. The radar chart allows users to use different scales for the axes, and to name the axes with special meanings. And users are allowed to choose different types of groups. It is convenient for users to discover the characteristics of each group. Use the parallel coordinate system for the same visual presentation, but in the parallel coordinate system, you can see the user’s specific value in this dimension. And the operation of brush and axis drag has been added. The brush allows users to select specific groups for correlation analysis. Axis drag allows users to perform correlation analysis on different features. And the two visualization components use the same legend.<a name="Figure 9">  </a></p>
@@ -233,7 +260,7 @@
 <center><p style="font-size:20px">Figure 13:Group visualization combined with map and heat map </p></center>
 
 <p>​    Finally, a three-dimensional scatter plot(<a href="#Figure 14">Figure 14</a>) is used to draw outliers. First, use the PCA method to reduce the dimensionality of the clustered data set to obtain a three-dimensional data set with labels. Then save the data in a folder and use <code>d3.js</code> to access it. Since the data after dimensionality reduction has negative numbers, it is not conducive to visualization. Therefore, subtract the minimum value of each dimension to get a non-negative data set. In the scatter chart, a different color is used for different groups, and zooming and axis rotation operations are implemented for the view, which is convenient for users to find abnormal data. And when the user selects a data point, the corresponding axis will form a line with it, which is convenient for the user to compare and observe the value. <a name="Figure 14"> </a></p>
-<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211221153836223.png" alt="image-20211221153836223"></p>
+<p><img src="C:\Users\86189\hexo-blog\public\images\image-20211221153836223.png" alt="image-20211221153836223"></p>
 <center><p style="font-size:20px">Figure 14:Anomaly detection based on three-dimensional scatter plot </p></center>
 
 <h2 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h2><p>​    First understand the data set, and perform a preliminary data preprocessing operation. Then a visual propsal was proposed for this. In this proposal, the general direction of visualization and the visualization implementation plan are introduced. In the subsequent time, through more complex processing operations on the data, such as k-means clustering, PCA dimensionality reduction, and iterative optimization of anomaly detection, and driven by the data, we constantly improve our visualization scheme. Through further familiarity with d3.js and some visual design templates, and according to the proposed milestone, the visual view is continuously realized. In the initial proposal, we first asked for a group of data to visualize the trajectory, but finally found that using a heat map has a better presentation effect. In the process of visual design, we want to achieve a two-way link between the radar chart and the parallel coordinate system, but referring to websites such as <a class="link"   target="_blank" rel="noopener" href="https://stackoverflow.com/" >Stack Overflow<i class="fas fa-external-link-alt"></i></a>, we only know how to link the same view component, such as two pie charts. Therefore, the visual presentation of two-way links was finally abandoned. If you do this project again, you will process the data earlier and try to use different clustering and dimensionality reduction methods. And try some new view components.</p>
@@ -261,7 +288,7 @@
 <td>可视化系统的实现–雷达图、轨迹图、热力图、三维散点图、文档编写</td>
 </tr>
 </tbody></table>
-
+<h2 id="Thumbnail"><a href="#Thumbnail" class="headerlink" title="Thumbnail"></a>Thumbnail</h2>
         </div>
 
         
@@ -280,7 +307,7 @@
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Data Security</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -404,7 +431,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Teaser-image"><span class="nav-number">1.1.</span> <span class="nav-text">Teaser image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">1.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data"><span class="nav-number">2.</span> <span class="nav-text">Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Goals-and-Tasks"><span class="nav-number">3.</span> <span class="nav-text">Goals and Tasks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Visualization"><span class="nav-number">4.</span> <span class="nav-text">Visualization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reflection"><span class="nav-number">5.</span> <span class="nav-text">Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Team-Assessment"><span class="nav-number">6.</span> <span class="nav-text">Team Assessment</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Teaser-image"><span class="nav-number">1.1.</span> <span class="nav-text">Teaser image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">1.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data"><span class="nav-number">2.</span> <span class="nav-text">Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Goals-and-Tasks"><span class="nav-number">3.</span> <span class="nav-text">Goals and Tasks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Visualization"><span class="nav-number">4.</span> <span class="nav-text">Visualization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reflection"><span class="nav-number">5.</span> <span class="nav-text">Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Team-Assessment"><span class="nav-number">6.</span> <span class="nav-text">Team Assessment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Thumbnail"><span class="nav-number">7.</span> <span class="nav-text">Thumbnail</span></a></li></ol>
     </div>
 </div>
         </aside>
