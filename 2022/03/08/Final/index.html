@@ -215,97 +215,177 @@
         
 
         <div class="article-content markdown-body">
-            <p></p><p>&emsp;</p><p></p>
-<div align="center"><font size="60">数据可视化大作业 Project</font></div>
-
-<div align="right"><font size="5">--游乐园人员轨迹探索性分析</font></div>  
-
-<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><h3 id="Teaser-image"><a href="#Teaser-image" class="headerlink" title="Teaser image"></a>Teaser image</h3><p><img src="/2022/03/08/Final/image-20211221011241440.png" alt="image-20211221011241440"></p>
-<center><p style="font-size:20px">Figure 1:Map-based personal trajectory visualization</p></center>
-
-<p><img src="/2022/03/08/Final/image-20211221011306378.png" alt="image-20211221011306378"></p>
-<center><p style="font-size:20px">Figure 2:Feature representation of groups based on radar chart and PCP</p></center>
-
-<p><img src="/2022/03/08/Final/image-20211221011428434.png" alt="image-20211221011428434"></p>
-<center><p style="font-size:20px">Figure 3:Group visualization combined with map and heat map </p></center>
-
-<p><img src="/2022/03/08/Final/image-20211221011512568.png" alt="image-20211221011512568"></p>
-<center><p style="font-size:20px">Figure 4:Anomaly detection based on three-dimensional scatter plot </p></center>
-
-<p><img src="/2022/03/08/Final/image-20211221011540235.png" alt="image-20211221011540235"></p>
-<center><p style="font-size:20px">Figure 5:Visual link of spatio-temporal data heat map and histogram </p></center>
-
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>​    Through a huge park visitor data set, based on the data clustering, low-dimensional embedding and outlier detection, the effects of tourist trajectory visualization, trajectory clustering, pattern recognition, and outlier analysis are performed. We use <code>d3.js</code> to build a Web visualization system to visualize a large spatiotemporal series data set. In this visualization model, data collation, tourist trajectory feature analysis, attractions network node analysis and interactive visualization are realized, and a specific relationship clustering is performed for tourists. Through this system, users can also understand the outliers in the tour trajectory and capture some criminal information.</p>
-<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><p>​    The <a class="link" target="_blank" rel="noopener" href="http://vacommunity.org/2015+VAST+Challenge%3A+MC1">datasets<i class="fas fa-external-link-alt"></i></a> provided were <code>.csv</code> files for Friday, Saturday, and Sunday,  containing  a  date-time  stamp,  a  visitor  <code>ID</code>,  a  <code>tag</code>  as  to whether the record referred to a <code>movement</code> within the park grid or a <code>check-in</code> to an amusement park ride, and a grid location (x,y coordinates).   And The scale of the data is 25 million.</p>
-<p>​    For this data, the language for data preprocessing is <code>Python</code>, and the tools used are <code>Spyder</code> and <code>Jupyter Notebook</code>. First, the data is processed to eliminate null values and error values, and some points where <code>type</code> should be equal to <code>check-in</code> are restored, and then according to the timing relationship, data is extracted from different <code>id</code> to obtain dynamic data. By increasing the time granularity of the dynamic data, a static data is obtained, and the time unit is min. Calculate the travel time between two nodes for each visitor. Then calculate the information of different dimensions and use the k-means method to cluster. Then use PCA(Principal components analysis) for data dimensionality reduction, which is convenient for visual presentation. And by continuously performing the 3σ principle and clustering on the data nodes, some outliers and a perfect clustering effect are ly iteratively obtained. </p>
-<h2 id="Goals-and-Tasks"><a href="#Goals-and-Tasks" class="headerlink" title="Goals and Tasks"></a>Goals and Tasks</h2><p>​    A map-based interactive visualization interface is implemented for all data. Users can interactively realize static and dynamic queries of all park visitors by <code>day</code> and <code>id</code>. Among them, two colors are used to distinguish the <code>type</code> of different data items. Considering the user’s spatiotemporal data and the user’s visiting points, the groups are clustered using hierarchical clustering. The groups are divided into 12 groups, so as to obtain a visualized optimization interface, which can query the trajectory of tourists by group. Make a static heat map to visualize the number of people corresponding to each rides every day, understand the distribution of popular attractions, and further explore the reasons for the popularity. Color distinguishes different types of scenic spots, and uses a time series axis as an attribute for visualization. And can allow users to choose the date. The granularity can even be reduced to make the distinction more detailed. Use the parallel coordinate system to analyze the mutual influence of various relationships in a group. Use different colors to make a group first. Use different axes to represent the attributes of these groups. Through the analysis of the parallel coordinate axis, understand the attribute relationship between each group. And you can drag and move between axes to analyze the relationship between different attributes. Perform low-dimensional embedding on the data and then visualize interactive presentation. For one or one type of data, click on another data to draw the trajectory.</p>
-<h2 id="Visualization"><a href="#Visualization" class="headerlink" title="Visualization"></a>Visualization</h2><p>​    First, use the HTML front-end language to write the navigation bar, and the user clicks on the item in the navigation bar to jump to the page. The code is implemented as follows:</p>
+            <p>
+ 
+</p>
+<div data-align="center">
+<font size="60">数据可视化大作业 Project</font>
+</div>
+<div data-align="right">
+<font size="5">--游乐园人员轨迹探索性分析</font>
+</div>
+<h2 id="overview">Overview</h2>
+<h3 id="teaser-image">Teaser image</h3>
+<figure>
+<img src="/2022/03/08/Final/image-20211221011241440.png" alt="image-20211221011241440"><figcaption>image-20211221011241440</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 1:Map-based personal trajectory visualization
+</p>
+</center>
+<figure>
+<img src="/2022/03/08/Final/image-20211221011306378.png" alt="image-20211221011306378"><figcaption>image-20211221011306378</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 2:Feature representation of groups based on radar chart and PCP
+</p>
+</center>
+<figure>
+<img src="/2022/03/08/Final/image-20211221011428434.png" alt="image-20211221011428434"><figcaption>image-20211221011428434</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 3:Group visualization combined with map and heat map
+</p>
+</center>
+<figure>
+<img src="/2022/03/08/Final/image-20211221011512568.png" alt="image-20211221011512568"><figcaption>image-20211221011512568</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 4:Anomaly detection based on three-dimensional scatter plot
+</p>
+</center>
+<figure>
+<img src="/2022/03/08/Final/image-20211221011540235.png" alt="image-20211221011540235"><figcaption>image-20211221011540235</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 5:Visual link of spatio-temporal data heat map and histogram
+</p>
+</center>
+<h3 id="summary">Summary</h3>
+<p>​ Through a huge park visitor data set, based on the data clustering, low-dimensional embedding and outlier detection, the effects of tourist trajectory visualization, trajectory clustering, pattern recognition, and outlier analysis are performed. We use <code>d3.js</code> to build a Web visualization system to visualize a large spatiotemporal series data set. In this visualization model, data collation, tourist trajectory feature analysis, attractions network node analysis and interactive visualization are realized, and a specific relationship clustering is performed for tourists. Through this system, users can also understand the outliers in the tour trajectory and capture some criminal information.</p>
+<h2 id="data">Data</h2>
+<p>​ The <a class="link" target="_blank" rel="noopener" href="http://vacommunity.org/2015+VAST+Challenge%3A+MC1">datasets<i class="fas fa-external-link-alt"></i></a> provided were <code>.csv</code> files for Friday, Saturday, and Sunday, containing a date-time stamp, a visitor <code>ID</code>, a <code>tag</code> as to whether the record referred to a <code>movement</code> within the park grid or a <code>check-in</code> to an amusement park ride, and a grid location (x,y coordinates). And The scale of the data is 25 million.</p>
+<p>​ For this data, the language for data preprocessing is <code>Python</code>, and the tools used are <code>Spyder</code> and <code>Jupyter Notebook</code>. First, the data is processed to eliminate null values and error values, and some points where <code>type</code> should be equal to <code>check-in</code> are restored, and then according to the timing relationship, data is extracted from different <code>id</code> to obtain dynamic data. By increasing the time granularity of the dynamic data, a static data is obtained, and the time unit is min. Calculate the travel time between two nodes for each visitor. Then calculate the information of different dimensions and use the k-means method to cluster. Then use PCA(Principal components analysis) for data dimensionality reduction, which is convenient for visual presentation. And by continuously performing the 3σ principle and clustering on the data nodes, some outliers and a perfect clustering effect are ly iteratively obtained.</p>
+<h2 id="goals-and-tasks">Goals and Tasks</h2>
+<p>​ A map-based interactive visualization interface is implemented for all data. Users can interactively realize static and dynamic queries of all park visitors by <code>day</code> and <code>id</code>. Among them, two colors are used to distinguish the <code>type</code> of different data items. Considering the user's spatiotemporal data and the user's visiting points, the groups are clustered using hierarchical clustering. The groups are divided into 12 groups, so as to obtain a visualized optimization interface, which can query the trajectory of tourists by group. Make a static heat map to visualize the number of people corresponding to each rides every day, understand the distribution of popular attractions, and further explore the reasons for the popularity. Color distinguishes different types of scenic spots, and uses a time series axis as an attribute for visualization. And can allow users to choose the date. The granularity can even be reduced to make the distinction more detailed. Use the parallel coordinate system to analyze the mutual influence of various relationships in a group. Use different colors to make a group first. Use different axes to represent the attributes of these groups. Through the analysis of the parallel coordinate axis, understand the attribute relationship between each group. And you can drag and move between axes to analyze the relationship between different attributes. Perform low-dimensional embedding on the data and then visualize interactive presentation. For one or one type of data, click on another data to draw the trajectory.</p>
+<h2 id="visualization">Visualization</h2>
+<p>​ First, use the HTML front-end language to write the navigation bar, and the user clicks on the item in the navigation bar to jump to the page. The code is implemented as follows:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;top&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;index.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Trace<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;group.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Group<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;heat-map.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Heat-Map<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;3D_scatter.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>3D_Scatter<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;matrix.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>Matrix<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>​    The first view is a map-based trajectory visualization. It allows the user to manually enter the visitor id in the input box or select the visitor id from the drop-down list on the corresponding day to query the user trajectory. First, perform gray-scale conversion processing on the provided pictures by calling the <code>PIL</code> library of the programming language <code>Python</code>, which is convenient for visual effects. Then cut this picture into a grid and divide it into a 100*100 grid. The visual presentation effect is to divide the points of visitors at any moment into grids. The user enters the id of the visitor, and the visualization system detects the id by traversing the existing <code>.csv</code> file to determine whether the id exists on this day, and then select the corresponding <code>.csv</code> file from the folder through the id. If it is a static trajectory query, directly visualize all the data, the color of the dot indicates the type of the point, and the size indicates the dwell time. In order to study which scenic spots the tourists have stayed at and the stay time of each grid point, as shown in <a href="#Figure 6">Figure 6</a>. <a name="Figure 6"> </a></p>
-<p><img src="/2022/03/08/Final/image-20211221023759801.png" alt="image-20211221023759801"></p>
-<center><p style="font-size:20px"> Figure 6:Static trajectory visualization</p></center>
-
-<p>​    If it is a dynamic trajectory presentation, the visual view will visualize the data in chronological order and allow the user to pause the operation. In addition, the interface will also present corresponding dynamic time changes, as shown in <a href="#Figure 7">Figure 7 </a> and  <a href="#Figure 8">Figure 8</a>. <a name="Figure 7"> </a></p>
-<p><img src="/2022/03/08/Final/image-20211221024016036.png" alt="image-20211221024016036"></p>
-<center><p style="font-size:20px">Figure 7:Dynamic trajectory visualization </p></center><a name="Figure 8"> </a>
-
-![image-20211221024129343](Final/image-20211221024129343.png)
-
-<center><p style="font-size:20px">Figure 8:Dynamic trajectory visualization </p></center>
-
-<p>​    Then visualize the clustered data. All tourists in the three days are divided into 12 groups according to 14 dimensions of check-in amusement equipment type, average speed and stay time. The radar chart (<a href="#Figure 9">Figure 9</a>) and the parallel coordinate system (<a href="#Figure 10">Figure 10</a>) are used in this interface. The radar chart allows users to use different scales for the axes, and to name the axes with special meanings. And users are allowed to choose different types of groups. It is convenient for users to discover the characteristics of each group. Use the parallel coordinate system for the same visual presentation, but in the parallel coordinate system, you can see the user’s specific value in this dimension. And the operation of brush and axis drag has been added. The brush allows users to select specific groups for correlation analysis. Axis drag allows users to perform correlation analysis on different features. And the two visualization components use the same legend.<a name="Figure 9">  </a></p>
-<p><img src="/2022/03/08/Final/image-20211221143737680.png" alt="image-20211221143737680"></p>
-<center><p style="font-size:20px">Figure 9:Cluster visualization based on radar chart </p></center><a name="Figure 10">  </a>
-
-![image-20211221144127723](Final/image-20211221144127723.png)
-
-<center><p style="font-size:20px">Figure 10:Cluster visualization based on parallel coordinate system </p></center>
-
-<p>​    In the next view, a heat map(<a href="#Figure 11">Figure 11</a>) is used to visualize the number of people at the corresponding time and scenic spot. First, different types of scenic spots are marked with different colors and presented in order. Then, the time period from 8:00 to 23:00 will be equally divided into 30 segments, each of which is 30 minutes. The user can clearly see the distribution of the number of people at the corresponding time and place. The visual code of color is used to indicate the number of people. The darker the color, the more the number of people. And realize the one-way link between the views. When you click on a small block in the heat map, a bar chart(<a href="#Figure 12">Figure 12</a>) will appear on the right, which represents the number of people corresponding to different groups in this place during this period of time. <a name="Figure 11"> </a></p>
-<p><img src="/2022/03/08/Final/image-20211221150207457.png" alt="image-20211221150207457"></p>
-<center><p style="font-size:20px">Figure 11:spatiotemporal distribution of the number of people based on the heat map </p></center> <a name="Figure 12"> </a>
-
-![image-20211221150637593](Final/image-20211221150637593.png)
-
-<center><p style="font-size:20px">Figure 12:Visual link of spatio-temporal data heat map and bar chart </p></center>
-
-<p>​    Next, explore and analyze the movement patterns of different groups. An innovative view method is used here to visualize the heat map and the map(<a href="#Figure 13">Figure 13</a>). However, the distribution of the grid in the heat map becomes the actual movement trajectory. As described above, the visual code of color is used in the heat map to indicate the number of people, and the darker the color, the greater the number of people. The user can select the day by selecting the button, and then enter the <code>group id</code> in the input box, the user can view the next time period through enter, and return to the previous time period using esc. Among them, the movement of each person in each time period has been calculated through <code>Python</code>, and a variable is used to represent the time in d3.js. Every time draw is called, the image will be redrawn.<a name="Figure 13"> </a></p>
-<p><img src="/2022/03/08/Final/image-20211221152748831.png" alt="image-20211221152748831"></p>
-<center><p style="font-size:20px">Figure 13:Group visualization combined with map and heat map </p></center>
-
-<p>​    ly, a three-dimensional scatter plot(<a href="#Figure 14">Figure 14</a>) is used to draw outliers. First, use the PCA method to reduce the dimensionality of the clustered data set to obtain a three-dimensional data set with labels. Then save the data in a folder and use <code>d3.js</code> to access it. Since the data after dimensionality reduction has negative numbers, it is not conducive to visualization. Therefore, subtract the minimum value of each dimension to get a non-negative data set. In the scatter chart, a different color is used for different groups, and zooming and axis rotation operations are implemented for the view, which is convenient for users to find abnormal data. And when the user selects a data point, the corresponding axis will form a line with it, which is convenient for the user to compare and observe the value. <a name="Figure 14"> </a></p>
-<p><img src="/2022/03/08/Final/image-20211221153836223.png" alt="image-20211221153836223"></p>
-<center><p style="font-size:20px">Figure 14:Anomaly detection based on three-dimensional scatter plot </p></center>
-
-<h2 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h2><p>​    First understand the data set, and perform a preliminary data preprocessing operation. Then a visual propsal was proposed for this. In this proposal, the general direction of visualization and the visualization implementation plan are introduced. In the subsequent time, through more complex processing operations on the data, such as k-means clustering, PCA dimensionality reduction, and iterative optimization of anomaly detection, and driven by the data, we constantly improve our visualization scheme. Through further familiarity with d3.js and some visual design templates, and according to the proposed milestone, the visual view is continuously realized. In the initial proposal, we first asked for a group of data to visualize the trajectory, but ly found that using a heat map has a better presentation effect. In the process of visual design, we want to achieve a two-way link between the radar chart and the parallel coordinate system, but referring to websites such as <a class="link" target="_blank" rel="noopener" href="https://stackoverflow.com/">Stack Overflow<i class="fas fa-external-link-alt"></i></a>, we only know how to link the same view component, such as two pie charts. Therefore, the visual presentation of two-way links was ly abandoned. If you do this project again, you will process the data earlier and try to use different clustering and dimensionality reduction methods. And try some new view components.</p>
-<h2 id="Team-Assessment"><a href="#Team-Assessment" class="headerlink" title="Team Assessment"></a>Team Assessment</h2><div class="table-container">
+<p>​ The first view is a map-based trajectory visualization. It allows the user to manually enter the visitor id in the input box or select the visitor id from the drop-down list on the corresponding day to query the user trajectory. First, perform gray-scale conversion processing on the provided pictures by calling the <code>PIL</code> library of the programming language <code>Python</code>, which is convenient for visual effects. Then cut this picture into a grid and divide it into a 100*100 grid. The visual presentation effect is to divide the points of visitors at any moment into grids. The user enters the id of the visitor, and the visualization system detects the id by traversing the existing <code>.csv</code> file to determine whether the id exists on this day, and then select the corresponding <code>.csv</code> file from the folder through the id. If it is a static trajectory query, directly visualize all the data, the color of the dot indicates the type of the point, and the size indicates the dwell time. In order to study which scenic spots the tourists have stayed at and the stay time of each grid point, as shown in <a href="#Figure 6">Figure 6</a>. <a name="Figure 6"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221023759801.png" alt="image-20211221023759801"><figcaption>image-20211221023759801</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 6:Static trajectory visualization
+</p>
+</center>
+<p>​ If it is a dynamic trajectory presentation, the visual view will visualize the data in chronological order and allow the user to pause the operation. In addition, the interface will also present corresponding dynamic time changes, as shown in <a href="#Figure 7">Figure 7 </a> and <a href="#Figure 8">Figure 8</a>. <a name="Figure 7"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221024016036.png" alt="image-20211221024016036"><figcaption>image-20211221024016036</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 7:Dynamic trajectory visualization
+</p>
+</center>
+<p><a name="Figure 8"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221024129343.png" alt="image-20211221024129343"><figcaption>image-20211221024129343</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 8:Dynamic trajectory visualization
+</p>
+</center>
+<p>​ Then visualize the clustered data. All tourists in the three days are divided into 12 groups according to 14 dimensions of check-in amusement equipment type, average speed and stay time. The radar chart (<a href="#Figure 9">Figure 9</a>) and the parallel coordinate system (<a href="#Figure 10">Figure 10</a>) are used in this interface. The radar chart allows users to use different scales for the axes, and to name the axes with special meanings. And users are allowed to choose different types of groups. It is convenient for users to discover the characteristics of each group. Use the parallel coordinate system for the same visual presentation, but in the parallel coordinate system, you can see the user's specific value in this dimension. And the operation of brush and axis drag has been added. The brush allows users to select specific groups for correlation analysis. Axis drag allows users to perform correlation analysis on different features. And the two visualization components use the same legend.<a name="Figure 9"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221143737680.png" alt="image-20211221143737680"><figcaption>image-20211221143737680</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 9:Cluster visualization based on radar chart
+</p>
+</center>
+<p><a name="Figure 10"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221144127723.png" alt="image-20211221144127723"><figcaption>image-20211221144127723</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 10:Cluster visualization based on parallel coordinate system
+</p>
+</center>
+<p>​ In the next view, a heat map(<a href="#Figure 11">Figure 11</a>) is used to visualize the number of people at the corresponding time and scenic spot. First, different types of scenic spots are marked with different colors and presented in order. Then, the time period from 8:00 to 23:00 will be equally divided into 30 segments, each of which is 30 minutes. The user can clearly see the distribution of the number of people at the corresponding time and place. The visual code of color is used to indicate the number of people. The darker the color, the more the number of people. And realize the one-way link between the views. When you click on a small block in the heat map, a bar chart(<a href="#Figure 12">Figure 12</a>) will appear on the right, which represents the number of people corresponding to different groups in this place during this period of time. <a name="Figure 11"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221150207457.png" alt="image-20211221150207457"><figcaption>image-20211221150207457</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 11:spatiotemporal distribution of the number of people based on the heat map
+</p>
+</center>
+<p><a name="Figure 12"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221150637593.png" alt="image-20211221150637593"><figcaption>image-20211221150637593</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 12:Visual link of spatio-temporal data heat map and bar chart
+</p>
+</center>
+<p>​ Next, explore and analyze the movement patterns of different groups. An innovative view method is used here to visualize the heat map and the map(<a href="#Figure 13">Figure 13</a>). However, the distribution of the grid in the heat map becomes the actual movement trajectory. As described above, the visual code of color is used in the heat map to indicate the number of people, and the darker the color, the greater the number of people. The user can select the day by selecting the button, and then enter the <code>group id</code> in the input box, the user can view the next time period through enter, and return to the previous time period using esc. Among them, the movement of each person in each time period has been calculated through <code>Python</code>, and a variable is used to represent the time in d3.js. Every time draw is called, the image will be redrawn.<a name="Figure 13"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221152748831.png" alt="image-20211221152748831"><figcaption>image-20211221152748831</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 13:Group visualization combined with map and heat map
+</p>
+</center>
+<p>​ ly, a three-dimensional scatter plot(<a href="#Figure 14">Figure 14</a>) is used to draw outliers. First, use the PCA method to reduce the dimensionality of the clustered data set to obtain a three-dimensional data set with labels. Then save the data in a folder and use <code>d3.js</code> to access it. Since the data after dimensionality reduction has negative numbers, it is not conducive to visualization. Therefore, subtract the minimum value of each dimension to get a non-negative data set. In the scatter chart, a different color is used for different groups, and zooming and axis rotation operations are implemented for the view, which is convenient for users to find abnormal data. And when the user selects a data point, the corresponding axis will form a line with it, which is convenient for the user to compare and observe the value. <a name="Figure 14"> </a></p>
+<figure>
+<img src="/2022/03/08/Final/image-20211221153836223.png" alt="image-20211221153836223"><figcaption>image-20211221153836223</figcaption>
+</figure>
+<center>
+<p style="font-size:20px">
+Figure 14:Anomaly detection based on three-dimensional scatter plot
+</p>
+</center>
+<h2 id="reflection">Reflection</h2>
+<p>​ First understand the data set, and perform a preliminary data preprocessing operation. Then a visual propsal was proposed for this. In this proposal, the general direction of visualization and the visualization implementation plan are introduced. In the subsequent time, through more complex processing operations on the data, such as k-means clustering, PCA dimensionality reduction, and iterative optimization of anomaly detection, and driven by the data, we constantly improve our visualization scheme. Through further familiarity with d3.js and some visual design templates, and according to the proposed milestone, the visual view is continuously realized. In the initial proposal, we first asked for a group of data to visualize the trajectory, but ly found that using a heat map has a better presentation effect. In the process of visual design, we want to achieve a two-way link between the radar chart and the parallel coordinate system, but referring to websites such as <a class="link" target="_blank" rel="noopener" href="https://stackoverflow.com/">Stack Overflow<i class="fas fa-external-link-alt"></i></a>, we only know how to link the same view component, such as two pie charts. Therefore, the visual presentation of two-way links was ly abandoned. If you do this project again, you will process the data earlier and try to use different clustering and dimensionality reduction methods. And try some new view components.</p>
+<h2 id="team-assessment">Team Assessment</h2>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>成员</th>
 <th>工作</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>李焱</td>
-<td>数据预处理、可视化界面初步设计、文档编写、可视化系统的实现—三维散点图、系统的优化</td>
+<td>数据预处理、可视化界面初步设计、文档编写、可视化系统的实现--三维散点图、系统的优化</td>
 </tr>
-<tr>
+<tr class="even">
 <td>于腾博</td>
-<td>数据预处理、文档编写、可视化系统的实现—视图之间的链接、系统的优化</td>
+<td>数据预处理、文档编写、可视化系统的实现--视图之间的链接、系统的优化</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>钟秋愉</td>
-<td>可视化系统的实现—平行坐标系、热力图、柱状图、单向链接、文档编写</td>
+<td>可视化系统的实现--平行坐标系、热力图、柱状图、单向链接、文档编写</td>
 </tr>
-<tr>
+<tr class="even">
 <td>张菊华</td>
-<td>可视化系统的实现—雷达图、轨迹图、热力图、三维散点图、文档编写</td>
+<td>可视化系统的实现--雷达图、轨迹图、热力图、三维散点图、文档编写</td>
 </tr>
 </tbody>
 </table>
-</div>
 
         </div>
 
@@ -449,7 +529,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Teaser-image"><span class="nav-number">1.1.</span> <span class="nav-text">Teaser image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">1.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data"><span class="nav-number">2.</span> <span class="nav-text">Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Goals-and-Tasks"><span class="nav-number">3.</span> <span class="nav-text">Goals and Tasks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Visualization"><span class="nav-number">4.</span> <span class="nav-text">Visualization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reflection"><span class="nav-number">5.</span> <span class="nav-text">Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Team-Assessment"><span class="nav-number">6.</span> <span class="nav-text">Team Assessment</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#teaser-image"><span class="nav-number">1.1.</span> <span class="nav-text">Teaser image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data"><span class="nav-number">2.</span> <span class="nav-text">Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#goals-and-tasks"><span class="nav-number">3.</span> <span class="nav-text">Goals and Tasks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#visualization"><span class="nav-number">4.</span> <span class="nav-text">Visualization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reflection"><span class="nav-number">5.</span> <span class="nav-text">Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#team-assessment"><span class="nav-number">6.</span> <span class="nav-text">Team Assessment</span></a></li></ol>
     </div>
 </div>
         </aside>
@@ -531,5 +611,5 @@
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
