@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive |
+            Navicat生成指定sql文件版本 |
         
         Keep blog
     </title>
@@ -69,7 +69,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 ARCHIVES
@@ -111,7 +111,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">ARCHIVES</a>
                 </li>
             
@@ -136,76 +136,142 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Navicat生成指定sql文件版本</span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/cache.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Lee YH</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2020-10-16 00:00:00</span>
+        <span class="mobile">2020-10-16 00:00</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/09/Data_Security/"
-                        >Data Security</a>
-                        <span class="article-date">03-09</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/08/Final/"
-                        >Data visualization</a>
-                        <span class="article-date">03-08</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/07/hello-world/"
-                        >Hello World</a>
-                        <span class="article-date">03-07</span>
+                    <li>
+                        <a href="/categories/mysql/">mysql</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2020</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2020/10/16/Navicat%E7%94%9F%E6%88%90%E6%8C%87%E5%AE%9Asql%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/"
-                        >Navicat生成指定sql文件版本</a>
-                        <span class="article-date">10-16</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2020/09/15/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"
-                        >vue常用指令</a>
-                        <span class="article-date">09-15</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2020/04/15/mongDB/"
-                        >MongDB非关系型数据库</a>
-                        <span class="article-date">04-15</span>
+                    <li>
+                        <a href="/tags/mysql/">mysql</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+
+    
+    
+    
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p><em>mysql在数据备份时因为mysql版本不同，导致于高版本数据库生成的sql文件，放到低版本数据库中不能执行，在Navicat中生成sql文件时是可以指定版本的，那么就可以解决这个问题</em></p>
+<span id="more"></span>
+
+<h3 id="1-查看要导入数据的mysql版本号"><a href="#1-查看要导入数据的mysql版本号" class="headerlink" title="1.查看要导入数据的mysql版本号"></a>1.查看要导入数据的mysql版本号</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -V #执行该命令可以在不登录的情况下查看mysql版本，注意V一定要大写</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-生成对应版本的sql文件"><a href="#2-生成对应版本的sql文件" class="headerlink" title="2.生成对应版本的sql文件"></a>2.生成对应版本的sql文件</h3><ul>
+<li>选择数据库后找到Navicat的数据传输</li>
+</ul>
+<img src="https://img-blog.csdnimg.cn/20210107103536445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom: 33%;">
+
+<ul>
+<li>指定相应的sql文件版本</li>
+</ul>
+<img src="https://img-blog.csdnimg.cn/20210107103921191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom:33%;">
+
+<blockquote>
+<p>完成以上步骤就大工告成了，不过在不同的Navicat版本中会有些不同，我的是12.0的版本</p>
+</blockquote>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/mysql/">#mysql</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/03/07/hello-world/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2020/09/15/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">vue常用指令</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
+
 
                 
             </div>
@@ -235,6 +301,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -280,6 +363,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9F%A5%E7%9C%8B%E8%A6%81%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E7%9A%84mysql%E7%89%88%E6%9C%AC%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">1.查看要导入数据的mysql版本号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%9F%E6%88%90%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84sql%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">2.生成对应版本的sql文件</span></a></li></ol>
+    </div>
+</div>
+        </aside>
     
 
     <div class="image-viewer-container">
@@ -345,6 +436,14 @@
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
