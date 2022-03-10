@@ -28,14 +28,80 @@
 
 
 <body>
-<div class="progress-bar-container">
-    
-        <span class="scroll-progress-bar"></span>
-    
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-index-9;
 
-    
-</div>
+  if (hexo-config('pjax.enable') == true) {
 
+    .pjax-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: var(--pjax-progress-bar-color);
+      visibility: hidden;
+      opacity: 0;
+      z-index: $z-index-8;
+      transition-t("width", "0", "0.1", "linear");
+
+
+      &.show {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+
+    .pjax-progress-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: $z-index-8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 6px 0 0;
+      visibility: hidden;
+      font-size: 1.1rem;
+      color: var(--default-text-color);
+
+      +keep-tablet() {
+        padding: 6px 5px 0 0;
+        font-size: 1rem;
+      }
+
+      &.show {
+        visibility: visible;
+      }
+    }
+
+  }
+
+  if (hexo-config('style.scroll.progress_bar.enable') == true) {
+
+    .scroll-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: $scroll-progress-bar-height;
+      visibility: hidden;
+      z-index: $z-index-7;
+      background: var(--primary-color);
+      transition-t("width", "0", "0.1", "linear");
+
+      &.hide {
+        display: none !important;
+      }
+    }
+
+  }
+}
 
 <main class="page-container">
 
@@ -241,16 +307,14 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        
- 
-
-
+                        &emsp;
 大数据安全总结Project
 
+--YH的学习笔记  
 
---YH的学习笔记
 
-\(m=d\)
+
+$m=d$
 大数据绪论
 
 大数据基础概念
@@ -258,7 +322,9 @@
 ==大数据安全威胁==
 传统数据安全的不足
 ==保障大数据安全==
-大数据用于安...
+大数据用于安全
+==隐私及其保护==
+大...
                     
                 </div>
 
@@ -286,23 +352,16 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        
- 
-
-
+                        &emsp;
 数据可视化大作业 Project
 
+--游乐园人员轨迹探索性分析  
 
---游乐园人员轨迹探索性分析
-
-Overview
-Teaser image
-
-image-20211221011241440
+OverviewTeaser image
+Figure 1:Map-based personal trajectory visualization
 
 
-
-Figure 1:Map-based ...
+Figure...
                     
                 </div>
 
@@ -386,8 +445,7 @@ Figure 1:Map-based ...
 
                 <div class="home-article-content markdown-body">
                     
-                        <h4 id="v-bind有简写方式"><font color="#F39C12">v-bind（有简写方式）</font></h4>
-<blockquote>
+                        <h4 id="v-bind（有简写方式）"><a href="#v-bind（有简写方式）" class="headerlink" title="v-bind（有简写方式）"></a><font color="#F39C12">v-bind（有简写方式）</font></h4><blockquote>
 <p>该指令用来动态修改标签中的属性信息</p>
 </blockquote>
 <p>动态绑定class有两种语法实现</p>
@@ -424,7 +482,7 @@ Figure 1:Map-based ...
 
                 <div class="home-article-content markdown-body">
                     
-                        <p><em>MongDB做为一款由 C++编写的非关系型数据库（NoSql）,却有着最接近 SQL型数据库的功能，使用成本比 SQL型数据库低，做为评论系统来使用非常不错</em></p>
+                        <p> <em>MongDB做为一款由 C++编写的非关系型数据库（NoSql）,却有着最接近 SQL型数据库的功能，使用成本比 SQL型数据库低，做为评论系统来使用非常不错</em></p>
                     
                 </div>
 
@@ -597,5 +655,5 @@ Figure 1:Map-based ...
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanka"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
