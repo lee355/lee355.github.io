@@ -237,16 +237,14 @@
         
 
         <div class="article-content markdown-body">
-            <p>
- 
-</p>
-<div data-align="center">
-<font size="60">大数据安全总结Project</font>
-</div>
-<div data-align="right">
-<font size="5">--YH的学习笔记</font>
-</div>
-<p><span class="math inline">\(m=d\)</span></p>
+            <p></p><p>&emsp;</p><p></p>
+<div align="center"><font size="60">大数据安全总结Project</font></div>
+
+<div align="right"><font size="5">--YH的学习笔记</font></div>  
+
+
+
+<p>$m=d$</p>
 <p><a href="#大数据绪论">大数据绪论</a></p>
 <ul>
 <li><a href="#==大数据的基础概念==">大数据基础概念</a></li>
@@ -275,13 +273,13 @@
 <li><a href="#密码学发展及基本概念">密码学发展及基本概念</a></li>
 <li>==<a href="#古典密码学">古典密码学</a>==</li>
 </ul>
-<p><a href="#对称密码--DES">对称密码--DES</a></p>
+<p><a href="#对称密码--DES">对称密码—DES</a></p>
 <ul>
 <li><a href="#现代密码学重要思想">现代密码学重要思想</a></li>
 <li>==<a href="#私钥密码">私钥密码</a>==</li>
 </ul>
 <p><a href="#数论基础">数论基础</a></p>
-<p><a href="#对称密码--AES">对称密码--AES</a></p>
+<p><a href="#对称密码--AES">对称密码—AES</a></p>
 <ul>
 <li><a href="#AES基础知识">AES基础知识</a></li>
 <li><a href="#密钥拓展">密钥拓展</a></li>
@@ -317,7 +315,7 @@
 <li><a href="#Hash函数的性质与应用">Hash函数的性质与应用</a></li>
 <li><a href="#对Hash函数的碰撞攻击方法">对Hash函数的碰撞攻击方法</a></li>
 <li><a href="#基于分组密码算法的Hash函数">基于分组密码算法的Hash函数</a></li>
-<li><a href="#MD5%20Hash函数">MD5 Hash函数</a></li>
+<li><a href="#MD5 Hash函数">MD5 Hash函数</a></li>
 <li><a href="#基于Hash函数的消息认证码">基于Hash函数的消息认证码</a></li>
 </ul>
 <p><a href="#D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法">D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法</a></p>
@@ -327,110 +325,100 @@
 <li><a href="#ElGamal公钥密码算法">ElGamal公钥密码算法</a></li>
 </ul>
 <p><a href="#人工智能安全">人工智能安全</a></p>
-<h2 id="大数据绪论">大数据绪论</h2>
-<h3 id="大数据的基础概念">==大数据的基础概念==</h3>
-<ul>
+<h2 id="大数据绪论"><a href="#大数据绪论" class="headerlink" title="大数据绪论"></a>大数据绪论</h2><h3 id="大数据的基础概念"><a href="#大数据的基础概念" class="headerlink" title="==大数据的基础概念=="></a>==大数据的基础概念==</h3><ul>
 <li>大数据的定义：<strong>大数据</strong>是指无法在一定时间范围内用常规软件工具进行<strong>捕捉</strong>、<strong>管理</strong>和<strong>处理</strong>的<strong>数据集合</strong>，是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的<strong>信息资产</strong>。</li>
 <li>特点：Volume规模大、Velocity变化快、Variety种类多、Value价值密度低 ，4V特性。</li>
 </ul>
-<h3 id="大数据安全内涵">==大数据安全内涵==</h3>
-<ul>
+<h3 id="大数据安全内涵"><a href="#大数据安全内涵" class="headerlink" title="==大数据安全内涵=="></a>==大数据安全内涵==</h3><ul>
 <li><strong>保障大数据安全</strong>：保障大数据采集过程、计算过程、数据形态、应用价值的处理技术。</li>
 <li><strong>大数据用于安全</strong>：利用大数据技术提升信息系统安全效能和能力的方法，涉及<strong>如何解决</strong>信息系统安全问题。</li>
 </ul>
-<h3 id="大数据安全威胁">==大数据安全威胁==</h3>
-<ol type="1">
+<h3 id="大数据安全威胁"><a href="#大数据安全威胁" class="headerlink" title="==大数据安全威胁=="></a>==大数据安全威胁==</h3><ol>
 <li>大数据基础设施具有<strong>虚拟化</strong>和<strong>分布式</strong>特点，容易受到非授权访问、信息泄露或丢失、破坏数据完整性、拒绝服务攻击、网络病毒传播；</li>
 <li>大数据应用的<strong>生命周期</strong>中，<strong>数据存储</strong>是一个关键环节，尤其是非关系数据库带来如下安全挑战：模式成熟度不够、系统成熟度不够、服务器软件没有内置的足够的安全机制、数据冗余和分散性问题。</li>
 <li><strong>网络安全</strong>是大数据安全防护的重要内容，安全问题随着网络节点数量的增加呈指数级上升；安全数据规模巨大，安全事件难以发现；安全的整体状况无法描述；安全态势难以感知等。</li>
 <li><strong>网络化社会</strong>使大数据易成为攻击目标：在网络化社会中，信息的价值要超过基础设施的价值；一次攻击，效益大。</li>
-<li>大数据<strong>滥用的风险</strong>：
-<ul>
+<li>大数据<strong>滥用的风险</strong>：<ul>
 <li>大数据本身的安全防护存在漏洞，安全控制力度不够。</li>
 <li>攻击者利用大数据技术进行攻击，最大限度地收集更多用户敏感信息。</li>
-</ul></li>
+</ul>
+</li>
 <li>大数据<strong>误用风险</strong>：大数据的准确性和数据质量不高，对其进行分析和使用可能产生无效的结果，从而导致错误的决策。</li>
 </ol>
-<h3 id="传统数据安全的不足">传统数据安全的不足</h3>
-<ul>
+<h3 id="传统数据安全的不足"><a href="#传统数据安全的不足" class="headerlink" title="传统数据安全的不足"></a>传统数据安全的不足</h3><ul>
 <li>传统数据安全往往是围绕数据生命周期来部署，即数据的<strong>产生、存储、使用和销毁</strong>。由于大数据的规模没有上限，且许多数据的生命周期极为短暂，因此，常规安全产品想要继续发挥作用，则需要解决如何根据数据存储和处理的动态化、并行化特征，动态跟踪数据边界，管理对数据的操作行为等。</li>
 <li>随着大数据应用越来越多，数据的拥有者和管理者相分离，原来的数据生命周期逐渐转变成数据的产生、传输、存储和使用。数据以外包形式存储在云端。</li>
 </ul>
-<h3 id="保障大数据安全">==保障大数据安全==</h3>
-<ul>
+<h3 id="保障大数据安全"><a href="#保障大数据安全" class="headerlink" title="==保障大数据安全=="></a>==保障大数据安全==</h3><ul>
 <li>围绕大数据全生命周期，即数据的产生、采集、传输、存储、处理、分析、发布、展示和应用、产生新数据等阶段进行安全防护。</li>
 <li>大数据保障技术可以从物理安全、系统安全、网络安全、存储安全、访问安全、审计安全、运营安全等角度进行考虑。</li>
 <li>保障大数据安全的<strong>目标</strong>：最大程度地保护具有流动性和开放性特征的大数据自身安全，防止数据泄露、越权访问、数据篡改、数据丢失、密钥泄露、侵犯用户隐私等问题的发生。</li>
-<li>对大数据全生命周期阶段合并与精简，大数据应用过程可划分为4个环节：<strong>采集</strong>、<strong>存储</strong>、<strong>挖掘</strong>和<strong>发布</strong>。
-<ul>
-<li>==采集环节安全技术==
-<ul>
+<li>对大数据全生命周期阶段合并与精简，大数据应用过程可划分为4个环节：<strong>采集</strong>、<strong>存储</strong>、<strong>挖掘</strong>和<strong>发布</strong>。<ul>
+<li>==采集环节安全技术==<ul>
 <li>安全威胁：数据损坏、丢失、泄露、窃取。</li>
-<li>安全机制：
-<ul>
+<li>安全机制：<ul>
 <li>身份认证</li>
 <li>数据加密</li>
 <li>完整性保护</li>
 <li>抗重放攻击</li>
 <li>端到端的数据安全传输：采用SSL VPN（安全套接层，虚拟专用网），有Web浏览器模式、客户端模式、Lan到Lan模式。</li>
-</ul></li>
-</ul></li>
-<li>==存储环节安全技术==
-<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>==存储环节安全技术==<ul>
 <li>安全威胁：数据被窃取、丢失、破坏、机密数据泄露、隐私数据泄露。</li>
-<li>安全机制：
-<ul>
+<li>安全机制：<ul>
 <li>隐私保护：数据变换、匿名化。</li>
 <li>数据加密：静态数据是指文档、报表、资料等不参与计算的数据—先加密再存储；动态数据是指需要检索或参与计算的数据—同态加密。</li>
 <li>备份与恢复：异地备份、RAID（独立磁盘冗余阵）、数据镜像、快照（数据副本、复制品）</li>
-</ul></li>
-</ul></li>
-<li>==挖掘环节安全技术==
-<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>==挖掘环节安全技术==<ul>
 <li>数据挖掘是大数据应用的核心部分，是发掘大数据价值的过程，即从海量的数据中自动抽取隐藏在数据中有用信息的过程，有用信息可能包括规则、概念、规律和模式等。</li>
 <li>安全威胁：第三方在进行数据挖掘的过程中植入恶意程序、窃取系统数据。</li>
-<li>安全机制：
-<ul>
+<li>安全机制：<ul>
 <li>身份认证：基于秘密信息、基于信物、基于生物特征</li>
 <li>访问控制：自主访问控制DAC，可将拥有的权限自主地授予其他主体，并在随后的任何时刻将这些权限回收，控制是自主的；强制访问控制MAC—系统根据使用系统的机构事先确定的安全策略，对用户的访问权限进行强制性的控制，用户不能改变他们的安全级别或对象的安全属性；基于角色的访问控制RBAC—在用户和访问权限之间引入角色的概念，将用户和角色联系起来，通过对角色的授权来控制用户对系统资源的访问。</li>
-</ul></li>
-</ul></li>
-<li>==发布环节安全技术==
-<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>==发布环节安全技术==<ul>
 <li>发布是指大数据在经过挖据分析后，向数据应用实体输出挖掘结果数据的环节，即数据“出门”环节，必须对即将输出的数据进行全面的审查，确保输出的数据符合“不泄密、无隐私、不超限、合规约”等要求。</li>
 <li>安全威胁：泄密、泄露隐私、不合规范。</li>
-<li>安全机制：
-<ul>
+<li>安全机制：<ul>
 <li>安全审计：基于日志的、基于网络监听的、基于网关的、基于代理的</li>
 <li>数据溯源：就是对大数据应用周期的各个环节的操作进行标记和定位，在发生数据安全问题时，可以及时准确地定位到出现问题的环节和责任者，以便于对数据安全问题的解决。溯源方法：标注法、反向查询法、<strong>数字水印</strong>。</li>
-</ul></li>
-</ul></li>
-</ul></li>
 </ul>
-<h3 id="大数据用于安全">大数据用于安全</h3>
-<ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="大数据用于安全"><a href="#大数据用于安全" class="headerlink" title="大数据用于安全"></a>大数据用于安全</h3><ul>
 <li>安全监测与大数据的融合技术，利用大数据技术实时监控海量、多样、快速和复杂的数据，有效提高安全监测的效果和能力。</li>
 <li>大数据技术将极大扩展安全分析的深度和广度，把传统的数据安全分析的被动的事后分析变成主动地事前防御，能够更好地感知网络安全态势。</li>
 <li>在信息安全领域借助大数据处理技术，可以针对APT (Advanced Persistent Threat,高级持续性威胁，恶意商业间谍威胁)攻击隐蔽能力强、长期潜伏、攻击路径和渠道不确定等特征，设计具备实时检测能力与事后回溯能力的全流量审计方案。</li>
 </ul>
-<h3 id="隐私及其保护">==隐私及其保护==</h3>
-<h4 id="隐私的基本概念">隐私的基本概念</h4>
-<p>​ 隐私是与个人相关的、具有不被他人搜集、保留和处分的权利的信息资料集合，并且它能够按照所有者的意愿在特定时间、以特定方式、在特定程度上被公开。</p>
-<p>​ 隐私的基本属性：保密性、个人相关、能够被所有者处分。</p>
-<p>​ 隐私分类</p>
+<h3 id="隐私及其保护"><a href="#隐私及其保护" class="headerlink" title="==隐私及其保护=="></a>==隐私及其保护==</h3><h4 id="隐私的基本概念"><a href="#隐私的基本概念" class="headerlink" title="隐私的基本概念"></a>隐私的基本概念</h4><p>​    隐私是与个人相关的、具有不被他人搜集、保留和处分的权利的信息资料集合，并且它能够按照所有者的意愿在特定时间、以特定方式、在特定程度上被公开。</p>
+<p>​    隐私的基本属性：保密性、个人相关、能够被所有者处分。</p>
+<p>​    隐私分类</p>
 <ul>
 <li>个人隐私：任何可以确定特定个人或与可确定的个人相关，但个人不愿意暴露的信息，譬如：就诊记录。</li>
 <li>共同隐私：不仅包含个人隐私，还包含所有个人共同表现出但不愿意被暴露的信息，譬如：平均薪资。</li>
 </ul>
-<p>​ 信息时代的隐私权保护要比传统的隐私权保护重要得多。信息隐私权保护的客体可分为以下4个方面：</p>
+<p>​    信息时代的隐私权保护要比传统的隐私权保护重要得多。信息隐私权保护的客体可分为以下4个方面：</p>
 <ul>
 <li>个人属性的隐私权</li>
 <li>个人资料的隐私权</li>
 <li>通信内容的隐私权</li>
 <li>匿名的隐私权</li>
 </ul>
-<h4 id="隐私的保护">隐私的保护</h4>
-<p>​ 隐私保护（Privacy Preserving）是对个人隐私采取一系列的安全手段防止其泄露和被滥用的行为。</p>
+<h4 id="隐私的保护"><a href="#隐私的保护" class="headerlink" title="隐私的保护"></a>隐私的保护</h4><p>​    隐私保护（Privacy Preserving）是对个人隐私采取一系列的安全手段防止其泄露和被滥用的行为。</p>
 <p>==隐私保护面临的威胁：==</p>
 <ul>
 <li>数据搜集：Internet服务提供商在搜集、下载、集中、整理和利用用户个人隐私资料极为方便。</li>
@@ -447,258 +435,232 @@
 <li>数据传输过程：大数据环境下，数据传输将更为开放和多元化，传统物理区域隔离的方法无法有效保证远距离传输的安全性，<strong>电磁泄漏</strong>和<strong>窃听</strong>将成为更加突出的安全威胁。</li>
 <li>数据处理过程：大数据环境下，部署大量的虚拟技术，资源动态共享增加了访问控制和身份认证的管理难度，基础设施的脆弱性和加密措施的失效可能产生新的安全风险。</li>
 </ul>
-<h3 id="大数据与物联网的关系">大数据与物联网的关系</h3>
-<p><strong>物联网成为大数据的重要来源之一</strong></p>
+<h3 id="大数据与物联网的关系"><a href="#大数据与物联网的关系" class="headerlink" title="大数据与物联网的关系"></a>大数据与物联网的关系</h3><p><strong>物联网成为大数据的重要来源之一</strong></p>
 <p><strong>大数据为物联网的智能化发展提供有力保障</strong></p>
 <ul>
 <li>建立与应用相关的<strong>数学模型</strong></li>
 <li><strong>运算系统</strong>的处理和计算</li>
 <li><strong>多维度信息</strong>的整合和分析</li>
 </ul>
-<h2 id="物联网概述">物联网概述</h2>
-<h3 id="物联网的发展历史">物联网的发展历史</h3>
-<p>发展阶段：</p>
-<ol type="1">
+<h2 id="物联网概述"><a href="#物联网概述" class="headerlink" title="物联网概述"></a>物联网概述</h2><h3 id="物联网的发展历史"><a href="#物联网的发展历史" class="headerlink" title="物联网的发展历史"></a>物联网的发展历史</h3><p>发展阶段：</p>
+<ol>
 <li>概念模糊阶段</li>
 <li>RFID被广泛引用于物流、零售和制药领域、处于闭环的行业应用阶段</li>
 <li>万物互联</li>
 </ol>
-<h3 id="物联网的定义">==物联网的定义==</h3>
-<ul>
+<h3 id="物联网的定义"><a href="#物联网的定义" class="headerlink" title="==物联网的定义=="></a>==物联网的定义==</h3><ul>
 <li><p>==课程使用定义：==</p>
-<p>物联网是基于互联网、传统电信网等信息承载体，让所有<strong>能够寻址</strong>的物理实体实现<strong>互联互通</strong>，从而实现某种特定的<strong>功能业务</strong>的网络。</p></li>
+<p>物联网是基于互联网、传统电信网等信息承载体，让所有<strong>能够寻址</strong>的物理实体实现<strong>互联互通</strong>，从而实现某种特定的<strong>功能业务</strong>的网络。</p>
+</li>
 </ul>
-<h3 id="物联网的主要特点">==物联网的主要特点==</h3>
-<ul>
+<h3 id="物联网的主要特点"><a href="#物联网的主要特点" class="headerlink" title="==物联网的主要特点=="></a>==物联网的主要特点==</h3><ul>
 <li><p>联网终端规模化</p>
-<p>物联网时代每一件物品均具通信功能成为网络终端，5-10年内联网终端规模有望突破百亿。</p></li>
+<p>物联网时代每一件物品均具通信功能成为网络终端，5-10年内联网终端规模有望突破百亿。</p>
+</li>
 <li><p>异构设备互联化</p>
-<p>各种<strong>异构设备</strong>利用无线通信模块和协议组网，<strong>异构网络</strong>通过“网关”互通互联。</p></li>
+<p>各种<strong>异构设备</strong>利用无线通信模块和协议组网，<strong>异构网络</strong>通过“网关”互通互联。</p>
+</li>
 <li><p>感知控制普适化</p>
-<p>无所不在的<strong>感知识别</strong>和<strong>决策控制</strong>将传统上分离的物理世界和信息世界高度融合。</p></li>
+<p>无所不在的<strong>感知识别</strong>和<strong>决策控制</strong>将传统上分离的物理世界和信息世界高度融合。</p>
+</li>
 <li><p>管理调度智能化</p>
-<p>在<strong>AI和大数据驱动（AIOT）</strong>和运筹学、数据挖掘专家系统等决策手段的帮助下，物联网将广泛应用于各行各业。</p></li>
+<p>在<strong>AI和大数据驱动（AIOT）</strong>和运筹学、数据挖掘专家系统等决策手段的帮助下，物联网将广泛应用于各行各业。</p>
+</li>
 <li><p>应用服务链条化</p>
-<p>以工业生产为例，物联网技术覆盖从原材了引进、生产调度、节能减排、仓储物流到产品销售、售后服务等各个环节。</p></li>
+<p>以工业生产为例，物联网技术覆盖从原材了引进、生产调度、节能减排、仓储物流到产品销售、售后服务等各个环节。</p>
+</li>
 <li><p>经济发展跨越化</p>
-<p>物联网技术有望成为从劳动密集型向知识密集型，从资源浪费型向环境友好型国民经济发展过程中的重要动力。</p></li>
+<p>物联网技术有望成为从劳动密集型向知识密集型，从资源浪费型向环境友好型国民经济发展过程中的重要动力。</p>
+</li>
 </ul>
-<h3 id="物联网与互联网的异同">物联网与互联网的异同</h3>
-&lt;!DOCTYPE html&gt;
+<h3 id="物联网与互联网的异同"><a href="#物联网与互联网的异同" class="headerlink" title="物联网与互联网的异同"></a>物联网与互联网的异同</h3><p>&lt;!DOCTYPE html&gt;</p>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>
-Document
-</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
-<table height="300" width="300" border="1">
-<caption fontsize="50">
-物联网与互联网的异同
-</caption>
-<thead>
-<tr>
-<th colspan="2">
-</th>
-<th align="center">
-物联网
-</th>
-<th align="center">
-互联网
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-相同点
+    <table height="300" width="300" border="1">
+        <caption fontsize="50">物联网与互联网的异同</caption>
+        <thead>
+            <tr>
+                <th colspan="2">     </th>
+                <th align="center">物联网</th>
+                <th align="center">互联网</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>相同点</td>
+                <td>技术基础相同</td>
+                <td colspan="2">物联网和互联网都是建立在分组数据技术的基础之上的，它们都采用分组交换网（packet switching network）作为它们的承载网.物联网技术的重要基础和核心仍是互联网，通过有线和无线网络与互联网融合，实现人和物体、物体与物体之间的沟通和对话。
 </td>
-<td>
-技术基础相同
-</td>
-<td colspan="2">
-物联网和互联网都是建立在分组数据技术的基础之上的，它们都采用分组交换网（packet switching network）作为它们的承载网.物联网技术的重要基础和核心仍是互联网，通过有线和无线网络与互联网融合，实现人和物体、物体与物体之间的沟通和对话。
-</td>
-</tr>
-<tr>
-<td rowspan="3">
-不同点
-</td>
-<td>
-涵盖范围
-</td>
-<td>
-物联网是让物自由地交换信息，主要是为了管理物，间接为人服务。
-</td>
-<td>
-互联网是让人通过网络交换信息，服务的对象是人。
-</td>
-</tr>
-<tr>
-<td>
-终端接入方式
-</td>
-<td>
-物联网中的物联网节点需要通过末端网络接入到网络汇聚点，然后连接至互联网，如无线传感器网络，物联网的接入网络和互联网有很多重合
-</td>
-<td>
-互联网用户通过接入网络将终端（end host）接入互联网，访问互联网资源
-</td>
-</tr>
-<tr>
-<td>
-技术范围
-</td>
-<td>
-物联网运用的技术主要包括无线技术、互联网、智能芯片技术、软件技术，几乎涵盖了信息通信技术的所有领域
-</td>
-<td>
-互联网只是物联网的一个技术方向。互联网只能是一种虚拟的交流，而物联网实现的就是实物之间的交流
-</td>
-</tr>
-</tbody>
-</table>
+            </tr>
+            <tr>
+                <td rowspan="3">不同点</td>
+                <td>涵盖范围</td>
+                <td>物联网是让物自由地交换信息，主要是为了管理物，间接为人服务。</td>
+                <td>互联网是让人通过网络交换信息，服务的对象是人。</td>
+            </tr>
+            <tr>
+                <td>终端接入方式</td>
+                <td>物联网中的物联网节点需要通过末端网络接入到网络汇聚点，然后连接至互联网，如无线传感器网络，物联网的接入网络和互联网有很多重合</td>
+                <td>互联网用户通过接入网络将终端（end host）接入互联网，访问互联网资源</td>
+            </tr>
+            <tr>
+                <td>技术范围</td>
+                <td>物联网运用的技术主要包括无线技术、互联网、智能芯片技术、软件技术，几乎涵盖了信息通信技术的所有领域</td>
+                <td>互联网只是物联网的一个技术方向。互联网只能是一种虚拟的交流，而物联网实现的就是实物之间的交流</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
-<h3 id="物联网的架构">物联网的架构</h3>
-<h4 id="物联网体系架构概述">物联网体系架构概述</h4>
-<ul>
+
+
+
+
+<h3 id="物联网的架构"><a href="#物联网的架构" class="headerlink" title="物联网的架构"></a>物联网的架构</h3><h4 id="物联网体系架构概述"><a href="#物联网体系架构概述" class="headerlink" title="物联网体系架构概述"></a>物联网体系架构概述</h4><ul>
 <li>定义：具体系统在实际设计过程中的指导性架构</li>
 <li>问题：应用范围广、行业涉及多、设计诉求不同</li>
 <li>需求：跨平台、跨应用的通用物联网体系架构</li>
 </ul>
-<h4 id="应用层-网络层-感知层架构">==应用层-网络层-感知层架构==</h4>
-<ul>
+<h4 id="应用层-网络层-感知层架构"><a href="#应用层-网络层-感知层架构" class="headerlink" title="==应用层-网络层-感知层架构=="></a>==应用层-网络层-感知层架构==</h4><ul>
 <li><strong>应用层</strong>：包括应用基础设施/中间件和各种物联网应用。</li>
 <li><strong>网络层</strong>：主要实现信息的传递、路由和控制，包括延伸网、接入网和核心网，网络层可依托公众电信网和互联网，也可以依托行业专用通信网络。</li>
 <li><strong>感知层</strong>：实现对物理世界的智能感知识别、信息采集处理和自动控制，并通过通信模块将物理实体连接到网络层和应用层。</li>
 </ul>
-<h4 id="云-管-边-端的物联网体系架构">==“云-管-边-端”的物联网体系架构==</h4>
-<p>物联网结构从上至下可被分为“云-管-边-端”四个层次</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211206133058415-164683642745726.png" alt="image-20211206133058415"><figcaption>image-20211206133058415</figcaption>
-</figure>
+<h4 id="“云-管-边-端”的物联网体系架构"><a href="#“云-管-边-端”的物联网体系架构" class="headerlink" title="==“云-管-边-端”的物联网体系架构=="></a>==“云-管-边-端”的物联网体系架构==</h4><p>物联网结构从上至下可被分为“云-管-边-端”四个层次</p>
+<p><img src="/2022/03/09/Data_Security/image-20211206133058415-164683642745726.png" alt="image-20211206133058415"></p>
 <p><strong>“云”：</strong>物联网业务的载体，面向物联网感知和决策的各种数据，基于人工智能和大数据技术，通过数据分析和处理实现某种<strong>特定功能业务</strong>的资源池。可以被看作一个提供资源的网络，用户可以根据业务按需使用。</p>
 <p><strong>“管”</strong>：指<strong>接入网络和数据传输协议</strong>，负责终端节点间、终端节点与边缘节点、边缘节点与云之间数据的传输和控制指令的下发。如基础设施网络协议、工控网络协议、未知协议和私有协议的使用。物联网的“管”侧趋于<strong>多元化</strong>。</p>
 <p><strong>“边”：</strong>部署在靠近终端设备的<strong>边缘节点</strong>，终端设备的部分数据直接在边缘节点进行处理，无需上传到云端。特点：分布式和低延时、高效率、智能化、节能、缓解带宽压力等</p>
 <p><strong>“端”：</strong>物联网感知物理世界的接口，由种类繁多的海量智能设备构成，呈现出<strong>异构化</strong>的特点，是执行感控的主体。</p>
-<h3 id="物联网的关键技术">物联网的关键技术</h3>
-<p>物联网基本功能的实现依托于<strong>对物理环境的感知</strong>、<strong>数据的传输</strong>以及<strong>数据的处理</strong>，基于此，现阶段物联网的关键技术主要包括：<strong>传感器技术</strong>、<strong>通信技术、无线接入技术</strong>、<strong>云计算</strong>、<strong>边缘计算</strong>、<strong>人工智能</strong>等。</p>
+<h3 id="物联网的关键技术"><a href="#物联网的关键技术" class="headerlink" title="物联网的关键技术"></a>物联网的关键技术</h3><p>物联网基本功能的实现依托于<strong>对物理环境的感知</strong>、<strong>数据的传输</strong>以及<strong>数据的处理</strong>，基于此，现阶段物联网的关键技术主要包括：<strong>传感器技术</strong>、<strong>通信技术、无线接入技术</strong>、<strong>云计算</strong>、<strong>边缘计算</strong>、<strong>人工智能</strong>等。</p>
 <ul>
-<li>==<strong>通信及组网技术</strong>==
+<li><p>==<strong>通信及组网技术</strong>==</p>
 <ul>
-<li><p><strong>通信技术</strong>可分为<strong>有线通信</strong>和<strong>无线通信</strong>，用于实现“物与物”之间数据和指令的传输。</p></li>
-<li><p>有线通信的<strong>可靠性更高</strong>，但对系统的<strong>部署条件有所约束</strong>；无线通信的方式<strong>提高了系统部署的灵活性</strong>，但存在<strong>更高的数据传输误码</strong>、<strong>丢包概率</strong>。</p></li>
-</ul></li>
+<li><p><strong>通信技术</strong>可分为<strong>有线通信</strong>和<strong>无线通信</strong>，用于实现“物与物”之间数据和指令的传输。</p>
+</li>
+<li><p>有线通信的<strong>可靠性更高</strong>，但对系统的<strong>部署条件有所约束</strong>；无线通信的方式<strong>提高了系统部署的灵活性</strong>，但存在<strong>更高的数据传输误码</strong>、<strong>丢包概率</strong>。</p>
+</li>
+</ul>
+</li>
 <li><p><strong>无线接入技术</strong></p>
 <ul>
 <li><strong>无线接入技术</strong>（radio interface technologies，简称RIT ） ，也称空中接口，是无线通信的关键问题。它是指通过<strong>无线介质</strong>将<strong>用户终端</strong>与<strong>网络节点</strong>连接起来，以实现用户与网络间的信息传递。</li>
 <li>无线接入技术可以分为<strong>固定接入技术</strong>和<strong>移动接入技术</strong>，典型的无线接入系统主要由<strong>无线网络用户</strong>、<strong>基站</strong>、<strong>无线连接</strong>和<strong>自组网</strong>等几个部分组成。</li>
 <li>常用的无线接入技术主要包括<code>WiFi、ZigBee、WiMAX</code>、<code>3G/4G/5G</code>等。</li>
-</ul></li>
-<li><strong>云计算</strong>
+</ul>
+</li>
+<li><p><strong>云计算</strong></p>
 <ul>
 <li><strong>云计算</strong>是随着虚拟化技术、处理器技术、分布式计算技术、宽带互联网技术和自动化管理技术的发展而产生的。</li>
 <li>物联网大量的终端设备采集到了<strong>海量的数据</strong>，往往超出了终端设备的处理能力。为解决这一问题，<strong>物联网考虑将数据上传到云端</strong>，借助云端丰富的计算和存储资源满足物联网大量终端设备的数据、控制指令的处理需求。</li>
 <li>云计算的<strong>数据传输成本较高</strong>，<strong>难以满足边缘业务的实时性需求</strong>，一些敏感业务的隐私数据上传也存在着<strong>安全隐私风险，</strong>如病患隐私数据</li>
-</ul></li>
-<li><strong>边缘计算</strong>
+</ul>
+</li>
+<li><p><strong>边缘计算</strong></p>
 <ul>
 <li>边缘计算/雾计算，是指在靠近物或数据源头的一侧，采用网络、计算、存储、应用核心能力为一体的开放平台，就近提供最近端服务</li>
 <li>作为云计算的补充和优化，边缘计算在靠近终端节点的边缘部署计算节点，利用分布式计算思想，提供低延迟、智能化的高效计算，以满足诸如车联网一类实时性要求较高的业务的需求</li>
-</ul></li>
-<li><strong>人工智能</strong>
-<ul>
+</ul>
+</li>
+<li><strong>人工智能</strong><ul>
 <li>物联网的大量终端设备所采集的数据为人工智能在物联网的应用提供了数据基础，同时人工智能的融入推动了物联网实现智能化</li>
 <li>智慧物联网(AIoT) 是结合人工智能以及物联网的技术所形成的</li>
 <li>同时，AIoT中的AI算法具有脆弱性，如逃逸攻击等带来的安全隐私问题</li>
-</ul></li>
 </ul>
-<h3 id="物联网的技术形态">物联网的技术形态</h3>
-<h4 id="自动识别技术与rfid">自动识别技术与RFID</h4>
-<ul>
-<li>自动识别技术
-<ul>
+</li>
+</ul>
+<h3 id="物联网的技术形态"><a href="#物联网的技术形态" class="headerlink" title="物联网的技术形态"></a>物联网的技术形态</h3><h4 id="自动识别技术与RFID"><a href="#自动识别技术与RFID" class="headerlink" title="自动识别技术与RFID"></a>自动识别技术与RFID</h4><ul>
+<li>自动识别技术<ul>
 <li>光学字符识别</li>
 <li>语音识别</li>
 <li>虹膜识别</li>
 <li>IC卡识别</li>
-<li>条形码识别
-<ul>
+<li>条形码识别<ul>
 <li>一维条形码</li>
 <li>二维条形码</li>
-</ul></li>
-</ul></li>
 </ul>
-<h4 id="无线定位系统">无线定位系统</h4>
-<ul>
-<li><p>基于位置的服务</p></li>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="无线定位系统"><a href="#无线定位系统" class="headerlink" title="无线定位系统"></a>无线定位系统</h4><ul>
+<li><p>基于位置的服务</p>
+</li>
 <li><p>==定位系统==</p>
 <ul>
-<li>卫星定位系统：汽车导航
-<ul>
-<li>优点：
-<ol type="1">
+<li>卫星定位系统：汽车导航<ul>
+<li>优点：<ol>
 <li>精度高</li>
 <li>全球覆盖，可用于险恶环境</li>
-</ol></li>
-<li>缺点：
-<ol type="1">
+</ol>
+</li>
+<li>缺点：<ol>
 <li>启动时间长：若干分钟搜星</li>
 <li>室内信号差</li>
 <li>需要GPS接收机</li>
-</ol></li>
-</ul></li>
-<li>蜂窝基站定位：紧急电话定位
-<ul>
-<li>优点：
-<ol type="1">
+</ol>
+</li>
+</ul>
+</li>
+<li>蜂窝基站定位：紧急电话定位<ul>
+<li>优点：<ol>
 <li>不需要GPS接收机，可通讯即可定位</li>
 <li>启动速度快</li>
 <li>信号穿透能力强，室内亦可接收到</li>
-</ol></li>
-<li>缺点
-<ol type="1">
+</ol>
+</li>
+<li>缺点<ol>
 <li>定位精度相对较低</li>
 <li>基站需要有专门硬件，造价昂贵</li>
-</ol></li>
-</ul></li>
-<li>A-GPS：
-<ul>
+</ol>
+</li>
+</ul>
+</li>
+<li>A-GPS：<ul>
 <li>利用基站定位确定大致范围</li>
 <li>连接网络查询当前位置可见卫星</li>
 <li>大大缩短搜索卫星的时间</li>
-</ul></li>
-<li>室内精确定位：
-<ul>
+</ul>
+</li>
+<li>室内精确定位：<ul>
 <li>优点：结构简单、易于安装、成本低</li>
 <li>缺点：距离短、室内环境复杂</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>==常用定位定位方法==</p>
 <ul>
 <li><p>基于距离（时间）的定位</p>
-<p>根据声波的传播时间来测量节点间的距离。缺点：传播速度容易受到大气条件的影响，节点之间要求保持精确的时间同步。</p></li>
+<p>根据声波的传播时间来测量节点间的距离。缺点：传播速度容易受到大气条件的影响，节点之间要求保持精确的时间同步。</p>
+</li>
 <li><p>基于距离（时间）差的定位</p>
-<p>发射节点和接收节点同时发射两种不同传播速度的无线信号，接收节点根据两种信号到达的时间差及已知这两种信号的传播速度，计算两节点之间的距离。缺点：对硬件要求高。</p></li>
+<p>发射节点和接收节点同时发射两种不同传播速度的无线信号，接收节点根据两种信号到达的时间差及已知这两种信号的传播速度，计算两节点之间的距离。缺点：对硬件要求高。</p>
+</li>
 <li><p>基于信号特征的定位</p>
-<p>这是指发射信号强度已知，用户节点定期发射信号分组，各基站根据接收到的信号强度计算传播损耗。</p></li>
-</ul></li>
+<p>这是指发射信号强度已知，用户节点定期发射信号分组，各基站根据接收到的信号强度计算传播损耗。</p>
+</li>
 </ul>
-<h3 id="物联网的具体应用场景">物联网的具体应用场景</h3>
-<ul>
+</li>
+</ul>
+<h3 id="物联网的具体应用场景"><a href="#物联网的具体应用场景" class="headerlink" title="物联网的具体应用场景"></a>物联网的具体应用场景</h3><ul>
 <li><p>==应用场景分类==：<strong>基础设施</strong>、<strong>产业应用</strong>、<strong>商业服务</strong>和<strong>消费电子</strong></p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211206173535303.png" alt="image-20211206173535303"><figcaption>image-20211206173535303</figcaption>
-</figure></li>
-<li><p>工业物联网</p></li>
-<li><p>车联网</p></li>
-<li><p>电力物联网</p></li>
-<li><p>智能家居</p></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211206173535303.png" alt="image-20211206173535303"></p>
+</li>
+<li><p>工业物联网</p>
+</li>
+<li><p>车联网</p>
+</li>
+<li><p>电力物联网</p>
+</li>
+<li><p>智能家居</p>
+</li>
 </ul>
-<h3 id="物联网中的信息安全与隐私保护">物联网中的信息安全与隐私保护</h3>
-<ul>
+<h3 id="物联网中的信息安全与隐私保护"><a href="#物联网中的信息安全与隐私保护" class="headerlink" title="物联网中的信息安全与隐私保护"></a>物联网中的信息安全与隐私保护</h3><ul>
 <li><p>==物联网安全与隐私问题的一般性指标==</p>
 <ul>
 <li>可靠性：三种测度标准（抗毁、生存、有效）</li>
@@ -708,51 +670,42 @@ Document
 <li>不可抵赖性</li>
 <li>可控性：对信息传播和内容的控制特性</li>
 </ul>
-<p><strong>Tips:</strong>保密性要求信息不被泄露给未授权的人，完整性要求信息不受各种原因破坏。</p></li>
+<p><strong>Tips:</strong>保密性要求信息不被泄露给未授权的人，完整性要求信息不受各种原因破坏。</p>
+</li>
 </ul>
-<h2 id="古典密码学">古典密码学</h2>
-<h3 id="密码学发展及基本概念">密码学发展及基本概念</h3>
-<h4 id="古典密码阶段">==古典密码阶段：==</h4>
-<ul>
+<h2 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h2><h3 id="密码学发展及基本概念"><a href="#密码学发展及基本概念" class="headerlink" title="密码学发展及基本概念"></a>密码学发展及基本概念</h3><h4 id="古典密码阶段："><a href="#古典密码阶段：" class="headerlink" title="==古典密码阶段：=="></a>==古典密码阶段：==</h4><ul>
 <li>特点：出现密码算法设计的基本手段（代替法、置换法）</li>
 <li>保密性：数据的保密基于加密算法的保密</li>
 </ul>
-<h4 id="现代密码阶段">==现代密码Ⅰ阶段：==</h4>
-<ul>
+<h4 id="现代密码Ⅰ阶段："><a href="#现代密码Ⅰ阶段：" class="headerlink" title="==现代密码Ⅰ阶段：=="></a>==现代密码Ⅰ阶段：==</h4><ul>
 <li>新特点：数据的安全基于密钥而不是算法的保密</li>
 <li>扩散：将每一位明文尽可能散布到多个输出密文中，以更隐蔽明文数字的统计特性</li>
 <li>混淆：使密文的统计特性与明文之间的关系尽量复杂</li>
 </ul>
-<h4 id="现代密码阶段-1">==现代密码Ⅱ阶段：==</h4>
-<ul>
+<h4 id="现代密码Ⅱ阶段："><a href="#现代密码Ⅱ阶段：" class="headerlink" title="==现代密码Ⅱ阶段：=="></a>==现代密码Ⅱ阶段：==</h4><ul>
 <li>公钥密码出现</li>
 </ul>
-<h4 id="信息安全的目标">==信息安全的目标：==</h4>
-<ul>
-<li>机密性：保证信息/数据不会被泄露给未经授权的个体
-<ul>
+<h4 id="信息安全的目标："><a href="#信息安全的目标：" class="headerlink" title="==信息安全的目标：=="></a>==信息安全的目标：==</h4><ul>
+<li>机密性：保证信息/数据不会被泄露给未经授权的个体<ul>
 <li>防御方法：加密解密算法</li>
-</ul></li>
-<li>完整性：保证信息/数据不会被未经授权的个体修改
-<ul>
-<li>防御方法：Hash函数、纠错码、消息认证码</li>
-</ul></li>
-<li>可用性：保证信息/数据能被授权的个体访问</li>
-<li>真实性：保证信息/数据确实来自其所声称的消息源
-<ul>
-<li>防御方法：密码方案、数字签名、Hash函数、消息认证码、质询-响应协议</li>
-</ul></li>
-<li>不可抵赖性：保证信息/数据交互的所有参与者均不能否认曾经发送过的消息和数据
-<ul>
-<li>防御方法：数字签名</li>
-</ul></li>
 </ul>
-<h4 id="密码学技术分类">==密码学技术分类：==</h4>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207134634582-164683642745827.png" alt="image-20211207134634582"><figcaption>image-20211207134634582</figcaption>
-</figure>
-<h4 id="密码学基本概念">==密码学基本概念：==</h4>
-<ul>
+</li>
+<li>完整性：保证信息/数据不会被未经授权的个体修改<ul>
+<li>防御方法：Hash函数、纠错码、消息认证码</li>
+</ul>
+</li>
+<li>可用性：保证信息/数据能被授权的个体访问</li>
+<li>真实性：保证信息/数据确实来自其所声称的消息源<ul>
+<li>防御方法：密码方案、数字签名、Hash函数、消息认证码、质询-响应协议</li>
+</ul>
+</li>
+<li>不可抵赖性：保证信息/数据交互的所有参与者均不能否认曾经发送过的消息和数据<ul>
+<li>防御方法：数字签名</li>
+</ul>
+</li>
+</ul>
+<h4 id="密码学技术分类："><a href="#密码学技术分类：" class="headerlink" title="==密码学技术分类：=="></a>==密码学技术分类：==</h4><p><img src="/2022/03/09/Data_Security/image-20211207134634582-164683642745827.png" alt="image-20211207134634582"></p>
+<h4 id="密码学基本概念："><a href="#密码学基本概念：" class="headerlink" title="==密码学基本概念：=="></a>==密码学基本概念：==</h4><ul>
 <li><strong>明文</strong>：需要秘密传送的信息</li>
 <li><strong>密文</strong> ：明文经过密码变换后的消息</li>
 <li><strong>加密</strong>：由明文到密文的变换</li>
@@ -761,107 +714,103 @@ Document
 <li><strong>密钥</strong>：加密和解密时使用的一组秘密信息</li>
 <li><strong>加密/解密算法</strong>：对明/密文进行加/解密时的规则</li>
 </ul>
-<h4 id="柯克霍夫假设">==柯克霍夫假设：==</h4>
-<p>密码分析者知道双方使用的<strong>密码系统</strong>，包括明文的<strong>统计特性、加密解密体质</strong>等，唯一不知道的是密钥。</p>
-<h4 id="密码分析学">==密码分析学==</h4>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225153050921.png" alt="image-20211225153050921"><figcaption>image-20211225153050921</figcaption>
-</figure>
-<h4 id="攻击的分类">==攻击的分类：==</h4>
-<ul>
+<h4 id="柯克霍夫假设："><a href="#柯克霍夫假设：" class="headerlink" title="==柯克霍夫假设：=="></a>==柯克霍夫假设：==</h4><p>密码分析者知道双方使用的<strong>密码系统</strong>，包括明文的<strong>统计特性、加密解密体质</strong>等，唯一不知道的是密钥。</p>
+<h4 id="密码分析学"><a href="#密码分析学" class="headerlink" title="==密码分析学=="></a>==密码分析学==</h4><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225153050921.png" alt="image-20211225153050921"></p>
+<h4 id="攻击的分类："><a href="#攻击的分类：" class="headerlink" title="==攻击的分类：=="></a>==攻击的分类：==</h4><ul>
 <li><strong>唯密文攻击</strong>: 攻击者有一个或多个密文，攻击需要统计分析；</li>
 <li><strong>已知明文攻击</strong>: 攻击者有一份密文和对应的明文，进行算法和密钥推导；</li>
 <li><strong>选择明文攻击</strong>: 攻击者有机会使用加密机，因此可以选择任何明文并产生对应的密文，攻击概率更大；</li>
 <li><strong>选择密文攻击</strong>: 攻击者有机会使用解密机，因此可以选择一些密文并产生对应的明文。</li>
 </ul>
-<h3 id="古典密码学-1">==古典密码学==</h3>
-<h4 id="凯撒加密位移加密计算">凯撒加密/位移加密（==计算==）</h4>
-<ul>
-<li>==算法过程==
-<ol type="1">
+<h3 id="古典密码学-1"><a href="#古典密码学-1" class="headerlink" title="==古典密码学=="></a>==古典密码学==</h3><h4 id="凯撒加密-位移加密（-计算-）"><a href="#凯撒加密-位移加密（-计算-）" class="headerlink" title="凯撒加密/位移加密（==计算==）"></a>凯撒加密/位移加密（==计算==）</h4><ul>
+<li>==算法过程==<ol>
 <li>建立英文字母和模26的剩余之间的对应关系</li>
-<li>加密过程：<span class="math inline">\(y=x+k(\bmod 26)\)</span></li>
-<li>解密过程：<span class="math inline">\(x=y-k(\bmod 26)\)</span></li>
-</ol></li>
+<li>加密过程：$y=x+k(\bmod 26)$</li>
+<li>解密过程：$x=y-k(\bmod 26)$</li>
+</ol>
+</li>
 </ul>
-<p>​ 其中，k就是加密密钥。</p>
+<p>​        其中，k就是加密密钥。</p>
 <ul>
-<li><strong>==攻击方法：==</strong>
-<ul>
+<li><strong>==攻击方法：==</strong><ul>
 <li>暴力穷举</li>
-<li>词频统计
-<ul>
+<li>词频统计<ul>
 <li>统计密文中字母出现的频率</li>
 <li>与标准的语言字母出现的频率进行比对</li>
 <li>确定密钥k的最可能值</li>
-</ul></li>
-</ul></li>
 </ul>
-<h4 id="仿射密码">仿射密码</h4>
-<ul>
-<li>算法过程
-<ol type="1">
-<li>确定密钥（α，β）α，β∈<span class="math inline">\(Z_{26}\)</span></li>
-<li>加密：<span class="math inline">\(y=\alpha x+\beta(\bmod 26)\)</span></li>
-<li>解密：<span class="math inline">\(x=\frac{1}{\alpha}(y-\beta)(\bmod 26)\)</span></li>
-</ol></li>
+</li>
 </ul>
-<p>​ <strong>Tips</strong>：计算过程中，应该首先确定α的逆元。</p>
+</li>
+</ul>
+<h4 id="仿射密码"><a href="#仿射密码" class="headerlink" title="仿射密码"></a>仿射密码</h4><ul>
+<li>算法过程<ol>
+<li>确定密钥（α，β）α，β∈$Z_{26}$</li>
+<li>加密：$y=\alpha x+\beta(\bmod 26)$</li>
+<li>解密：$x=\frac{1}{\alpha}(y-\beta)(\bmod 26)$</li>
+</ol>
+</li>
+</ul>
+<p>​    <strong>Tips</strong>：计算过程中，应该首先确定α的逆元。</p>
 <ul>
-<li>仿射加密安全性：
-<ul>
+<li>仿射加密安全性：<ul>
 <li><strong>定理</strong>：对于a，如果相对模数n存在逆元，则需满足<strong>gcd</strong>(a,n)=1。因此，仿射加密种类少。</li>
-</ul></li>
-<li>仿射加密的攻击：
-<ul>
+</ul>
+</li>
+<li>仿射加密的攻击：<ul>
 <li>暴力穷举：312</li>
 <li>词频统计：使用两组来求两个变量</li>
-</ul></li>
 </ul>
-<h4 id="维吉尼亚密码">维吉尼亚密码</h4>
-<ul>
-<li>算法过程：
+</li>
+</ul>
+<h4 id="维吉尼亚密码"><a href="#维吉尼亚密码" class="headerlink" title="维吉尼亚密码"></a>维吉尼亚密码</h4><ul>
+<li><p>算法过程：</p>
 <ul>
 <li>列出明文并按照密钥长度分组</li>
 <li>用密钥对<strong>每个组内</strong>字母进行移位加密</li>
-<li>加密公式：<span class="math inline">\(C=P+K(\bmod 26)\)</span></li>
-</ul></li>
-<li>特点：
+<li>加密公式：$C=P+K(\bmod 26)$</li>
+</ul>
+</li>
+<li><p>特点：</p>
 <ul>
 <li>移位密码的扩展</li>
 <li>消除字母的频率特征</li>
-</ul></li>
+</ul>
+</li>
 <li><p>破解维吉尼亚密码：</p>
-<ol type="1">
-<li>找到密钥长度
+<ol>
+<li><p>找到密钥长度</p>
 <ul>
-<li>Kasiski实验
-<ul>
+<li>Kasiski实验<ul>
 <li>统计相同明文，出现相同密钥的间隔</li>
 <li>密钥长度为间隔数的约数，公约数计算</li>
-</ul></li>
-<li>Friedman测试
-<ul>
-<li>重合指数表示两个随机选出的字母是相同的的概率，即随机选出两个A的概率+随机选出两个B的概率+随机选出两个C的概率+……+随机选出两个Z的概率</li>
-</ul></li>
-<li>频率分析</li>
-</ul></li>
-<li>找出密钥：把密文按照密钥长度L，选出密文中的第1、L+1个...字母进行词频统计，就可以得到第一个密钥字母。依此类推，继续寻找下一个。</li>
-</ol></li>
 </ul>
-<h2 id="对称密码--des">对称密码--DES</h2>
-<h3 id="现代密码学重要思想">现代密码学重要思想</h3>
-<ul>
+</li>
+<li>Friedman测试<ul>
+<li>重合指数表示两个随机选出的字母是相同的的概率，即随机选出两个A的概率+随机选出两个B的概率+随机选出两个C的概率+……+随机选出两个Z的概率</li>
+</ul>
+</li>
+<li>频率分析</li>
+</ul>
+</li>
+<li><p>找出密钥：把密文按照密钥长度L，选出密文中的第1、L+1个…字母进行词频统计，就可以得到第一个密钥字母。依此类推，继续寻找下一个。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="对称密码—DES"><a href="#对称密码—DES" class="headerlink" title="对称密码—DES"></a>对称密码—DES</h2><h3 id="现代密码学重要思想"><a href="#现代密码学重要思想" class="headerlink" title="现代密码学重要思想"></a>现代密码学重要思想</h3><ul>
 <li><p><strong>==流密码与分组密码==</strong></p>
 <ul>
 <li>流密码：每次加密数据流的一位或者一个字节；</li>
 <li>分组密码：将明文分组作为整体加密并且通常得到与明文等长的密文分组</li>
-</ul></li>
+</ul>
+</li>
 <li><p><strong>==混淆和扩散==</strong></p>
 <ul>
 <li>混淆：使密钥和密文之间的关系尽可能模糊的加密操作</li>
 <li>扩散：为了隐藏明文统计属性而将一个明文符号的影响扩散到多个密文符号的加密操作，如位置换。通常修改明文中1位会导致平均一半的输出位发生变化。</li>
-</ul></li>
+</ul>
+</li>
 <li><p><strong>==分组密码算法应满足的要求==</strong>（选择题或者填空题）</p>
 <ul>
 <li><strong>分组长度N要足够大</strong>，防止明文穷举法攻击</li>
@@ -870,14 +819,16 @@ Document
 <li><strong>加密和解密运算简单</strong>，易于软件和硬件高速实现。</li>
 <li><strong>数据扩展</strong>，一般无数据扩展，在采用同态置换和随机化加密技术时可引入数据扩展。</li>
 <li><strong>差错传播尽可能地小</strong>，一个密文分组的错误尽可能少的影响其他密文分组的解密</li>
-</ul></li>
+</ul>
+</li>
 <li><p><strong>==Feistel密码==</strong></p>
 <ul>
 <li><p>Feitel密码的思想</p>
 <ul>
 <li>乘积密码是顺序地执行两个或多个基本密码系统。</li>
 <li>Feistel还提出了实现代换和置换的方法。</li>
-</ul></li>
+</ul>
+</li>
 <li><p>Feistel密码参数</p>
 <ul>
 <li><strong>分组大小</strong>: 分组越大则安全性越高，但加密速度就越慢。</li>
@@ -885,114 +836,94 @@ Document
 <li><strong>轮数</strong>：单轮结构远不足以保证安全性，但多轮结构可提供足够的安全性。典型地，轮数取为16。</li>
 <li><strong>子密钥产生算法</strong>：该算法的复杂性越大，则密码分析的困难性就越大。</li>
 <li><strong>轮函数</strong>：轮函数的复杂性越大，密码分析的困难性也越大。</li>
-</ul></li>
+</ul>
+</li>
 <li><p>设计Feistel的两个要求</p>
 <ul>
 <li><strong>快速的软件实现</strong>：在很多情况中，算法是被镶嵌在应用程序中，因而无法用硬件实现。此时算法的执行速度是考虑的关键。</li>
 <li><strong>算法容易分析</strong>：如果算法能被无疑义地解释清楚，就可容易地分析算法抵抗攻击的能力，有助于设计高强度的算法。</li>
-</ul></li>
+</ul>
+</li>
 <li><p>==Feistel加密结构==</p>
 <ul>
-<li>输入是分组长为 <span class="math inline">\(2 w\)</span> 的明文和一个密钥 <span class="math inline">\(K\)</span> 。将每组明文分成左 右两半 <span class="math inline">\(L_{0}\)</span> 和 <span class="math inline">\(R_{0}\)</span>, 在进行完 <span class="math inline">\(n\)</span> 轮迭代后, 左右两半再合并到一起 以产生密文分组。第 <span class="math inline">\(i\)</span> 轮迭代的输入为前一轮输出的函数:</li>
+<li>输入是分组长为 $2 w$ 的明文和一个密钥 $K$ 。将每组明文分成左 右两半 $L_{0}$ 和 $R_{0}$, 在进行完 $n$ 轮迭代后, 左右两半再合并到一起 以产生密文分组。第 $i$ 轮迭代的输入为前一轮输出的函数:</li>
 </ul>
-<p><span class="math display">\[
+<script type="math/tex; mode=display">
 \begin{aligned}
-L_{i} &amp;=R_{i-1} \\
-R_{i} &amp;=L_{i-1} \oplus F\left(R_{i-1}, K_{i}\right)
-\end{aligned}
-\]</span></p>
-<ul>
-<li><p>其中 <span class="math inline">\(K_{i}\)</span> 是第 <span class="math inline">\(i\)</span> 轮用的子密钥, 由加密密钥 <span class="math inline">\(K\)</span> 得到。一般地, 各 轮子密钥彼此不同而且与 <span class="math inline">\(K\)</span> 也不同。</p></li>
-<li><p>Feistel解密过程本质上和加密过程是一样的, 算法使用密文作为输入</p></li>
-<li><p>但使用子密钥 <span class="math inline">\(K_{i}\)</span> 的次序与加密过程相反, 即第 1 轮使用 <span class="math inline">\(K_{n}\)</span>, 第 2 轮 使用 <span class="math inline">\(K_{n-1}, \ldots \ldots\)</span>, 最后一轮使用 <span class="math inline">\(K_{1}\)</span> 。这一特性保证了解密和加密 可采用同一算法。解密过程： <span class="math display">\[
+L_{i} &=R_{i-1} \\
+R_{i} &=L_{i-1} \oplus F\left(R_{i-1}, K_{i}\right)
+\end{aligned}</script><ul>
+<li><p>其中 $K_{i}$ 是第 $i$ 轮用的子密钥, 由加密密钥 $K$ 得到。一般地, 各 轮子密钥彼此不同而且与 $K$ 也不同。</p>
+</li>
+<li><p>Feistel解密过程本质上和加密过程是一样的, 算法使用密文作为输入</p>
+</li>
+<li><p>但使用子密钥 $K_{i}$ 的次序与加密过程相反, 即第 1 轮使用 $K_{n}$, 第 2 轮 使用 $K_{n-1}, \ldots \ldots$, 最后一轮使用 $K_{1}$ 。这一特性保证了解密和加密 可采用同一算法。解密过程：</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-&amp;R E_{i-1}=L E_{i} \\
-&amp;L E_{i-1}=R E_{i} \oplus F\left(R E_{i-1}, K_{i}\right)=R E_{i} \oplus F\left(L E_{i}, K_{i}\right)
-\end{aligned}
-\]</span></p></li>
-<li><figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154513116.png" alt="image-20211225154513116"><figcaption>image-20211225154513116</figcaption>
-</figure></li>
+&R E_{i-1}=L E_{i} \\
+&L E_{i-1}=R E_{i} \oplus F\left(R E_{i-1}, K_{i}\right)=R E_{i} \oplus F\left(L E_{i}, K_{i}\right)
+\end{aligned}</script></li>
+<li><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154513116.png" alt="image-20211225154513116"></p>
+</li>
 <li><p>算法的准确性：</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154738498.png" alt="image-20211225154738498"><figcaption>image-20211225154738498</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154830107.png" alt="image-20211225154830107"><figcaption>image-20211225154830107</figcaption>
-</figure></li>
-</ul></li>
-</ul></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154738498.png" alt="image-20211225154738498"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225154830107.png" alt="image-20211225154830107"></p>
+</li>
 </ul>
-<h3 id="私钥密码对称密码">私钥密码（对称密码）</h3>
-<p>通信流程：</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211207193418889.png" alt="image-20211207193418889"><figcaption>image-20211207193418889</figcaption>
-</figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="私钥密码（对称密码）"><a href="#私钥密码（对称密码）" class="headerlink" title="私钥密码（对称密码）"></a>私钥密码（对称密码）</h3><p>通信流程：</p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211207193418889.png" alt="image-20211207193418889"></p>
 <p>对称加密安全性保证：</p>
 <ul>
 <li>加密算法具有安全性</li>
 <li>通信双方通过安全信道获得对方的密钥并进行安全存储。该条件要求<strong>密钥具有保密性</strong>（关键）。</li>
 </ul>
-<h4 id="des">==DES==</h4>
-<ul>
+<h4 id="DES"><a href="#DES" class="headerlink" title="==DES=="></a>==DES==</h4><ul>
 <li>==定义==：一种使用56位密钥对64位长分组进行加密的密码，是一种迭代算法。DES是第一个公开的分组加密算法。</li>
 <li>==特点==：DES对明文中每个分组的加密过程都包含16轮，且每轮的操作都完全相同。每轮使用不同的子密钥，但是子密钥是从主密钥中推导而来。</li>
 </ul>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207194125722-164683642745929.png" alt="image-20211207194125722"><figcaption>image-20211207194125722</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211207194125722-164683642745929.png" alt="image-20211207194125722"></p>
 <ul>
-<li><p>==DES算法加密流程==：初始置换IP、16轮迭代的乘积变换、逆初始置换<span class="math inline">\(IP^{-1}\)</span>以及16个子密钥产生器。（不好出计算题，不会出最终的加密的密文，但是需要了解整体的流程，会考虑中间的环节）</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207194346373-164683642745930.png" alt="image-20211207194346373"><figcaption>image-20211207194346373</figcaption>
-</figure></li>
+<li><p>==DES算法加密流程==：初始置换IP、16轮迭代的乘积变换、逆初始置换$IP^{-1}$以及16个子密钥产生器。（不好出计算题，不会出最终的加密的密文，但是需要了解整体的流程，会考虑中间的环节）</p>
+<p><img src="/2022/03/09/Data_Security/image-20211207194346373-164683642745930.png" alt="image-20211207194346373"></p>
+</li>
 <li><p>初始置换IP：得到了一个乱序的比特明文分组</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207194936698-164683642746031.png" alt="image-20211207194936698"><figcaption>image-20211207194936698</figcaption>
-</figure></li>
+<p><img src="/2022/03/09/Data_Security/image-20211207194936698-164683642746031.png" alt="image-20211207194936698"></p>
+</li>
 <li><p>轮内加密：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207200747905-164683642746032.png" alt="image-20211207200747905"><figcaption>image-20211207200747905</figcaption>
-</figure></li>
-<li><p>==DES的核心--F函数==：实现了混淆和扩散的功能</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207203226736-164683642746033.png" alt="image-20211207203226736"><figcaption>image-20211207203226736</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211207200747905-164683642746032.png" alt="image-20211207200747905"></p>
+</li>
+<li><p>==DES的核心—F函数==：实现了混淆和扩散的功能</p>
+<p><img src="/2022/03/09/Data_Security/image-20211207203226736-164683642746033.png" alt="image-20211207203226736"></p>
 <ul>
 <li><p>扩展置换E盒</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207204807351-164683642746034.png" alt="image-20211207204807351"><figcaption>image-20211207204807351</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207204748671-164683642746135.png" alt="image-20211207204748671"><figcaption>image-20211207204748671</figcaption>
-</figure></li>
+<p><img src="/2022/03/09/Data_Security/image-20211207204807351-164683642746034.png" alt="image-20211207204807351"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211207204748671-164683642746135.png" alt="image-20211207204748671"></p>
+</li>
 <li><p>S盒：对于一个六比特的二进制数，使用S盒对其进行缩短。分别以中间的四比特和两边的两个比特作为index查表。</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207205730047-164683642746136.png" alt="image-20211207205730047"><figcaption>image-20211207205730047</figcaption>
-</figure></li>
+<p><img src="/2022/03/09/Data_Security/image-20211207205730047-164683642746136.png" alt="image-20211207205730047"></p>
+</li>
 <li><p>置换P：</p>
 <ul>
 <li>P盒的各输出块得4个比特都来自不同的输入块</li>
 <li>P盒的各输入块的4个比特都分配到不同的输出块之中</li>
 <li>P盒的第t输出块的4个比特都不来自第t输入块</li>
 </ul>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207210545350-164683642746137.png" alt="image-20211207210545350"><figcaption>image-20211207210545350</figcaption>
-</figure></li>
-</ul></li>
-<li><p>==DES密钥生成==</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211207212222011-164683642746138.png" alt="image-20211207212222011"><figcaption>image-20211207212222011</figcaption>
-</figure></li>
-<li><p>Feistel每轮中仅加密（解密）输入位的一半，F函数只加密左半部分，不加密右半部分。DES优势之一就是解密的过程和加密过程完全相同，只是解密过程第i轮需要用到第16-i轮到密钥</p></li>
+<p><img src="/2022/03/09/Data_Security/image-20211207210545350-164683642746137.png" alt="image-20211207210545350"></p>
+</li>
 </ul>
-<h4 id="多重des">==多重DES==</h4>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155316907.png" alt="image-20211225155316907"><figcaption>image-20211225155316907</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155306117.png" alt="image-20211225155306117"><figcaption>image-20211225155306117</figcaption>
-</figure>
+</li>
+<li><p>==DES密钥生成==</p>
+<p><img src="/2022/03/09/Data_Security/image-20211207212222011-164683642746138.png" alt="image-20211207212222011"></p>
+</li>
+<li><p>Feistel每轮中仅加密（解密）输入位的一半，F函数只加密左半部分，不加密右半部分。DES优势之一就是解密的过程和加密过程完全相同，只是解密过程第i轮需要用到第16-i轮到密钥</p>
+</li>
+</ul>
+<h4 id="多重DES"><a href="#多重DES" class="headerlink" title="==多重DES=="></a>==多重DES==</h4><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155316907.png" alt="image-20211225155316907"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155306117.png" alt="image-20211225155306117"></p>
 <p>==优点：==</p>
 <ul>
 <li>密钥长度增加到112位或168位，克服DES面临的穷举攻击</li>
@@ -1010,38 +941,19 @@ R_{i} &amp;=L_{i-1} \oplus F\left(R_{i-1}, K_{i}\right)
 <li>实现效率</li>
 <li>安全性</li>
 </ul>
-<h2 id="数论基础">数论基础</h2>
-<p>欧几里得算法求最大公约数（涉及计算题）</p>
+<h2 id="数论基础"><a href="#数论基础" class="headerlink" title="数论基础"></a>数论基础</h2><p>欧几里得算法求最大公约数（涉及计算题）</p>
 <p>欧几里得求逆元</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211225155614226-164683642749981.png" alt="image-20211225155614226"><figcaption>image-20211225155614226</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211225155614226-164683642749981.png" alt="image-20211225155614226"></p>
 <p>==模运算的性质==</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211225155531275-164683642749983.png" alt="image-20211225155531275"><figcaption>image-20211225155531275</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211225155531275-164683642749983.png" alt="image-20211225155531275"></p>
 <p>欧拉定理和费马小定理</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155654329.png" alt="image-20211225155654329"><figcaption>image-20211225155654329</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211225160005389-164683642746239.png" alt="image-20211225160005389"><figcaption>image-20211225160005389</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160046524.png" alt="image-20211225160046524"><figcaption>image-20211225160046524</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211225160103432-164683642749989.png" alt="image-20211225160103432"><figcaption>image-20211225160103432</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160129532.png" alt="image-20211225160129532"><figcaption>image-20211225160129532</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160141859.png" alt="image-20211225160141859"><figcaption>image-20211225160141859</figcaption>
-</figure>
-<h2 id="对称密码--aes">对称密码--AES</h2>
-<h3 id="aes基础知识介绍">AES基础知识介绍</h3>
-<p>==<strong>高级加密标准</strong>==（Advanced Encryption Standard）：明文分组为128位、支持3种密钥长度（128、192、256）且软硬件实现都很高效。</p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225155654329.png" alt="image-20211225155654329"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211225160005389-164683642746239.png" alt="image-20211225160005389"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160046524.png" alt="image-20211225160046524"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211225160103432-164683642749989.png" alt="image-20211225160103432"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160129532.png" alt="image-20211225160129532"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225160141859.png" alt="image-20211225160141859"></p>
+<h2 id="对称密码—AES"><a href="#对称密码—AES" class="headerlink" title="对称密码—AES"></a>对称密码—AES</h2><h3 id="AES基础知识介绍"><a href="#AES基础知识介绍" class="headerlink" title="AES基础知识介绍"></a>AES基础知识介绍</h3><p>==<strong>高级加密标准</strong>==（Advanced Encryption Standard）：明文分组为128位、支持3种密钥长度（128、192、256）且软硬件实现都很高效。</p>
 <p>==<strong>AES评估标准</strong>==</p>
 <ul>
 <li>一般安全性：密码学界公共安全分析</li>
@@ -1054,123 +966,115 @@ R_{i} &amp;=L_{i-1} \oplus F\left(R_{i-1}, K_{i}\right)
 <li>指令集并行执行潜力</li>
 </ul>
 <p>==AES参数设置==：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220105540997-164683642750094.png" alt="image-20211220105540997"><figcaption>image-20211220105540997</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220105540997-164683642750094.png" alt="image-20211220105540997"></p>
 <p>==<strong>出题方向：对应密钥长度时迭代轮式是多少？</strong>==</p>
 <p>AES结构：</p>
 <ul>
-<li><p>==非Feistel结构==</p></li>
-<li><p>==密钥被扩展==成由44个32位字组成的数组，每轮使用4个。</p></li>
-<li>==一个混淆和三个代换==
+<li><p>==非Feistel结构==</p>
+</li>
+<li><p>==密钥被扩展==成由44个32位字组成的数组，每轮使用4个。</p>
+</li>
+<li><p>==一个混淆和三个代换==</p>
 <ul>
 <li>字节代换：用一个S盒完成分组中的按字节代换</li>
 <li>行移位：一个简单的置换</li>
 <li>列混淆：利用在伽罗瓦域上的算术特性的代换</li>
 <li>轮密钥加：利用当前分组和扩展密钥的一部分进行按位XOR</li>
-</ul></li>
-<li>算法结构简单，仅在轮加密阶段中使用密钥</li>
+</ul>
+</li>
+<li><p>算法结构简单，仅在轮加密阶段中使用密钥</p>
+</li>
 <li>轮密钥加配合其他三个混淆的交替使用提供了安全性</li>
 <li>每个阶段均可逆，解密按逆序方式使用扩展密钥，但是算法不一样</li>
 <li>一旦将四个阶段求逆，可以证明解密函数可以恢复明文</li>
-<li><p>加密和解密过程的最后一轮均只包括三个阶段</p></li>
+<li>加密和解密过程的最后一轮均只包括三个阶段</li>
 </ul>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220110010268.png" alt="image-20211220110010268"><figcaption>image-20211220110010268</figcaption>
-</figure>
-<h3 id="密钥拓展">密钥拓展</h3>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220115803701.png" alt="image-20211220115803701"><figcaption>image-20211220115803701</figcaption>
-</figure>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220110010268.png" alt="image-20211220110010268"></p>
+<h3 id="密钥拓展"><a href="#密钥拓展" class="headerlink" title="密钥拓展"></a>密钥拓展</h3><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220115803701.png" alt="image-20211220115803701"></p>
 <p><strong>具体方法</strong>：其中每一轮拓展的第一个使用Rcon。首先将第一组的第一个进行一个列的移位，然后使用s盒得到一个新列，然后进行异或。最后得到第一列。这一组的另外三列分别与这一组上一列以及上一组的对应列异或得到。</p>
 <p>tips：s盒的使用方法是将前四位作为行，后四位作为列，对应数字对其进行替换。</p>
-<h3 id="aes的四个阶段">AES的四个阶段</h3>
-<h4 id="字节替代substitute-bytes">字节替代（Substitute bytes）</h4>
-<ul>
-<li><p>查表法：使用s盒对其进行替换</p></li>
+<h3 id="AES的四个阶段"><a href="#AES的四个阶段" class="headerlink" title="AES的四个阶段"></a>AES的四个阶段</h3><h4 id="字节替代（Substitute-bytes）"><a href="#字节替代（Substitute-bytes）" class="headerlink" title="字节替代（Substitute bytes）"></a>字节替代（Substitute bytes）</h4><ul>
+<li><p>查表法：使用s盒对其进行替换</p>
+</li>
 <li><p>计算方式：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220120715146-164683642746341.png" alt="image-20211220120715146"><figcaption>image-20211220120715146</figcaption>
-</figure></li>
+<p><img src="/2022/03/09/Data_Security/image-20211220120715146-164683642746341.png" alt="image-20211220120715146"></p>
+</li>
 </ul>
-<h4 id="行移位shiftrows">行移位（ShiftRows）</h4>
-<ul>
+<h4 id="行移位（ShiftRows）"><a href="#行移位（ShiftRows）" class="headerlink" title="行移位（ShiftRows）"></a>行移位（ShiftRows）</h4><ul>
 <li>移动规则：第一行不变、第二行左移一个字节、第三行两个、第四行三个</li>
 </ul>
-<h4 id="列混淆mixcolumns">列混淆（MixColumns）</h4>
-<ul>
+<h4 id="列混淆（MixColumns）"><a href="#列混淆（MixColumns）" class="headerlink" title="列混淆（MixColumns）"></a>列混淆（MixColumns）</h4><ul>
 <li>每一列单独处理</li>
 <li>每列中每个字节被替换成与本列四个字节都相关的结果</li>
 <li>基于伽罗瓦域的运算</li>
 </ul>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220133810712-164683642746342.png" alt="image-20211220133810712"><figcaption>image-20211220133810712</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220133810712-164683642746342.png" alt="image-20211220133810712"></p>
 <p>tips：伽罗瓦域也就是有限域，因此，使用有限域上的运算规则</p>
-<h4 id="轮密钥加addroundkey">轮密钥加（AddRoundKey）</h4>
-<p>将16字节的当前状态矩阵和长度为16字节的子钥进行异或</p>
-<h2 id="公钥密码概念非对称密码">公钥密码概念（非对称密码）</h2>
-<h3 id="对称密钥体制的缺陷">==对称密钥体制的缺陷==</h3>
-<ul>
+<h4 id="轮密钥加（AddRoundKey）"><a href="#轮密钥加（AddRoundKey）" class="headerlink" title="轮密钥加（AddRoundKey）"></a>轮密钥加（AddRoundKey）</h4><p>将16字节的当前状态矩阵和长度为16字节的子钥进行异或</p>
+<h2 id="公钥密码概念（非对称密码）"><a href="#公钥密码概念（非对称密码）" class="headerlink" title="公钥密码概念（非对称密码）"></a>公钥密码概念（非对称密码）</h2><h3 id="对称密钥体制的缺陷"><a href="#对称密钥体制的缺陷" class="headerlink" title="==对称密钥体制的缺陷=="></a>==对称密钥体制的缺陷==</h3><ul>
 <li>对称密码体制(例如DES, AES) 允许两个用户利用提前共享的秘密来建立“安全信道” ，然而<strong>通信双方共享秘密并不容易</strong>。</li>
 <li>考虑一个具有N个用户的团体，如果用户两两之间都需要进行安全通信，采用对称密码体制来保护用户之间的通信: 每个用户需要与其余的N -1个用户共享私钥，<strong>整个系统需要管理N(N -1)/2个密钥</strong>。</li>
 <li>无法保证可追溯性</li>
 <li>不支持开放系统</li>
 </ul>
-<h3 id="公钥密码体制的基本思想">==公钥密码体制的基本思想==</h3>
-<ul>
+<h3 id="公钥密码体制的基本思想"><a href="#公钥密码体制的基本思想" class="headerlink" title="==公钥密码体制的基本思想=="></a>==公钥密码体制的基本思想==</h3><ul>
 <li><p><strong>密钥生成：</strong>通过相对容易的计算过程生成一对公钥PK与私钥SK。</p>
 <ul>
 <li>如果仅获得公钥PK，得到私钥SK的操作在计算上是不可行的。</li>
-</ul></li>
-<li><p><strong>加密</strong>: 给定明文M与公钥PK，很容易计算得到密文<span class="math inline">\(C=E_{PK}(M)\)</span></p></li>
-<li><strong>解密</strong>: 给定密文<span class="math inline">\(C=E_{PK}(M)\)</span> 和私钥SK，很容易计算得到明文M</li>
-<li><p>如果缺少私钥SK，从密文C中是<strong>不可以</strong>计算得到明文M的。</p></li>
-<li><p><strong>不可以：在当前的计算能力条件下，计算时间和密钥长度呈指数增长关系。</strong></p></li>
 </ul>
-<h3 id="公钥密码体制的优势">==公钥密码体制的优势==</h3>
-<ul>
-<li><p><strong>密钥分发：</strong> 公钥能够采用公开（认证的）信道进行传输；</p></li>
-<li><p><strong>密钥管理：</strong> 在N个用户的系统中，每个用户只需安全保管自己的私钥和N-1个其他用户的公钥。整个系统仅仅需要维护N个公钥；</p></li>
-<li><p><strong>开放系统：</strong>即使是没有预先建立关系的用户也能通过对方的公钥建立安全通信。</p></li>
+</li>
+<li><p><strong>加密</strong>: 给定明文M与公钥PK，很容易计算得到密文$C=E_{PK}(M)$</p>
+</li>
+<li><p><strong>解密</strong>: 给定密文$C=E_{PK}(M)$ 和私钥SK，很容易计算得到明文M</p>
+</li>
+<li><p>如果缺少私钥SK，从密文C中是<strong>不可以</strong>计算得到明文M的。</p>
+</li>
+<li><p><strong>不可以：在当前的计算能力条件下，计算时间和密钥长度呈指数增长关系。</strong></p>
+</li>
 </ul>
-<h3 id="公钥密码体制的应用">==公钥密码体制的应用==</h3>
-<ul>
+<h3 id="公钥密码体制的优势"><a href="#公钥密码体制的优势" class="headerlink" title="==公钥密码体制的优势=="></a>==公钥密码体制的优势==</h3><ul>
+<li><p><strong>密钥分发：</strong> 公钥能够采用公开（认证的）信道进行传输；</p>
+</li>
+<li><p><strong>密钥管理：</strong> 在N个用户的系统中，每个用户只需安全保管自己的私钥和N-1个其他用户的公钥。整个系统仅仅需要维护N个公钥；</p>
+</li>
+<li><p><strong>开放系统：</strong>即使是没有预先建立关系的用户也能通过对方的公钥建立安全通信。</p>
+</li>
+</ul>
+<h3 id="公钥密码体制的应用"><a href="#公钥密码体制的应用" class="headerlink" title="==公钥密码体制的应用=="></a>==公钥密码体制的应用==</h3><ul>
 <li>加密/解密：发送方使用接收方的公钥对消息加密</li>
 <li>签名：发送方使用私钥对消息”签名“</li>
 <li>密钥交换：通信双方交换会话密钥</li>
 </ul>
-<h3 id="传统密码与公钥密码">==传统密码与公钥密码==</h3>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220111739332-164683642746343.png" alt="image-20211220111739332"><figcaption>image-20211220111739332</figcaption>
-</figure>
-<h3 id="公钥密码分析">==公钥密码分析==</h3>
-<ul>
-<li><p><strong>穷举攻击：</strong>长密钥、加/解密速度慢，所以用于密钥管理和签名</p></li>
-<li><p><strong>给定公钥计算私钥</strong>：还未证明不可行</p></li>
-<li><p><strong>穷举消息攻击</strong>：假定要发送的消息是56位的DES密钥，那么攻击者可以对所有可能的密钥加密，并于传送的密文匹配，从而可解密任何DES加密的消息。<strong>防御方法</strong>：发送的消息后附加一个随机数，因此，无法匹配。</p></li>
+<h3 id="传统密码与公钥密码"><a href="#传统密码与公钥密码" class="headerlink" title="==传统密码与公钥密码=="></a>==传统密码与公钥密码==</h3><p><img src="/2022/03/09/Data_Security/image-20211220111739332-164683642746343.png" alt="image-20211220111739332"></p>
+<h3 id="公钥密码分析"><a href="#公钥密码分析" class="headerlink" title="==公钥密码分析=="></a>==公钥密码分析==</h3><ul>
+<li><p><strong>穷举攻击：</strong>长密钥、加/解密速度慢，所以用于密钥管理和签名</p>
+</li>
+<li><p><strong>给定公钥计算私钥</strong>：还未证明不可行</p>
+</li>
+<li><p><strong>穷举消息攻击</strong>：假定要发送的消息是56位的DES密钥，那么攻击者可以对所有可能的密钥加密，并于传送的密文匹配，从而可解密任何DES加密的消息。<strong>防御方法</strong>：发送的消息后附加一个随机数，因此，无法匹配。</p>
+</li>
 </ul>
-<h2 id="rsa加密算法">RSA加密算法</h2>
-<h3 id="rsa公钥加密体制原理计算题不考证明">==RSA公钥加密体制原理==（计算题，不考证明）</h3>
-<ul>
+<h2 id="RSA加密算法"><a href="#RSA加密算法" class="headerlink" title="RSA加密算法"></a>RSA加密算法</h2><h3 id="RSA公钥加密体制原理-（计算题，不考证明）"><a href="#RSA公钥加密体制原理-（计算题，不考证明）" class="headerlink" title="==RSA公钥加密体制原理==（计算题，不考证明）"></a>==RSA公钥加密体制原理==（计算题，不考证明）</h3><ul>
 <li><p>密钥生成：</p>
-<ol type="1">
+<ol>
 <li>选择两个大素数p,q(例如：每个数字1024位)</li>
-<li>选择<span class="math inline">\(n=p*q\)</span>，<span class="math inline">\(z =\phi(n) = (p-1)*(q-1)\)</span></li>
+<li>选择$n=p<em>q$，$z =\phi(n) = (p-1)</em>(q-1)$</li>
 <li>随机选取e（其中e&lt;n），e与z没有公约数。（e，z“互为质数”）</li>
 <li>选取 d 使得 ed-1 能够被z完全整除。（即ed mod z = 1）</li>
 <li>公钥是 (n, e) ，私钥是（n, d）。</li>
-</ol></li>
+</ol>
+</li>
 <li><p>加解密算法</p>
 <ul>
-<li><strong>加密</strong>：由<span class="math inline">\(c=m^e mod n\)</span> 将明文m转变为密文c。</li>
-<li><strong>解密</strong>：<span class="math inline">\(m=c^d mod n\)</span>。</li>
-</ul></li>
+<li><strong>加密</strong>：由$c=m^e mod n$ 将明文m转变为密文c。</li>
+<li><strong>解密</strong>：$m=c^d mod n$。</li>
+</ul>
+</li>
 <li><p>核心思想：</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220113131128.png" alt="image-20211220113131128"><figcaption>image-20211220113131128</figcaption>
-</figure></li>
-<li><p>问题本质：素分解问题</p></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220113131128.png" alt="image-20211220113131128"></p>
+</li>
+<li><p>问题本质：素分解问题</p>
+</li>
 </ul>
 <p>==RSA安全性分析==（知道攻击手段即可，不用知道具体的实现过程）</p>
 <ul>
@@ -1180,476 +1084,410 @@ R_{i} &amp;=L_{i-1} \oplus F\left(R_{i-1}, K_{i}\right)
 <li>基于硬件故障的攻击</li>
 <li>选择密文攻击</li>
 </ul>
-<h2 id="d-h密钥交换协议elgamal公钥密码算法椭圆曲线公钥密码算法">D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法</h2>
-<h3 id="有限域上的离散对数问题">==有限域上的离散对数问题==</h3>
-<p>定义：设F是一个有限域，则在F中的元a和b，求解整数x，使得：<span class="math inline">\(a^x = b\)</span>在有限域F中成立的问题，称为有限域F上的离散对数问题。</p>
+<h2 id="D-H密钥交换协议-amp-ElGamal公钥密码算法-amp-椭圆曲线公钥密码算法"><a href="#D-H密钥交换协议-amp-ElGamal公钥密码算法-amp-椭圆曲线公钥密码算法" class="headerlink" title="D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法"></a>D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法</h2><h3 id="有限域上的离散对数问题"><a href="#有限域上的离散对数问题" class="headerlink" title="==有限域上的离散对数问题=="></a>==有限域上的离散对数问题==</h3><p>定义：设F是一个有限域，则在F中的元a和b，求解整数x，使得：$a^x = b$在有限域F中成立的问题，称为有限域F上的离散对数问题。</p>
 <p>最好的算法：数域筛法</p>
-<h3 id="diffie-hellman公钥密码技术计算题">==Diffie-Hellman公钥密码技术==（计算题）</h3>
-<p>目的：实现双方在不安全通信信道下交流得到一个共同密钥。</p>
-<h4 id="本元根">==本元根==</h4>
-<p>设素数p，则Z/(p)构成一个有限域，因而其非零元全体模p乘法构成循环群。本原根的两种定义：</p>
+<h3 id="Diffie-Hellman公钥密码技术-（计算题）"><a href="#Diffie-Hellman公钥密码技术-（计算题）" class="headerlink" title="==Diffie-Hellman公钥密码技术==（计算题）"></a>==Diffie-Hellman公钥密码技术==（计算题）</h3><p>目的：实现双方在不安全通信信道下交流得到一个共同密钥。</p>
+<h4 id="本元根"><a href="#本元根" class="headerlink" title="==本元根=="></a>==本元根==</h4><p>设素数p，则Z/(p)构成一个有限域，因而其非零元全体模p乘法构成循环群。本原根的两种定义：</p>
 <ul>
-<li>设a∈{1，2，…, p-1}，如果<span class="math inline">\(min\{t&gt;0: at = 1\} = p – 1\)</span>，则称a是Z/(p)的本原根</li>
-<li>如果a是Z/(p)的本原根，且其幂可以产生1到p-1之间的所有整数，即$ Z/(p)= {0, a mod p, a^2modp,…, a^{p-1}modp = 1}$。它是整数1到p-1的一个置换。</li>
+<li>设a∈{1，2，…, p-1}，如果$min\{t&gt;0: at = 1\} = p – 1$，则称a是Z/(p)的本原根</li>
+<li>如果a是Z/(p)的本原根，且其幂可以产生1到p-1之间的所有整数，即$ Z/(p)= \{0, a mod p, a^2modp,…, a^{p-1}modp = 1\}$。它是整数1到p-1的一个置换。</li>
 </ul>
-<h4 id="d-h公钥技术">==D-H公钥技术==</h4>
-<ul>
-<li><p>参数选取：选取一个大素数<span class="math inline">\(p\)</span>，在选取<span class="math inline">\(Z/(p)\)</span>的一个本原根<span class="math inline">\(g\)</span>，并将<span class="math inline">\(p\)</span>和<span class="math inline">\(g\)</span>公开。</p></li>
+<h4 id="D-H公钥技术"><a href="#D-H公钥技术" class="headerlink" title="==D-H公钥技术=="></a>==D-H公钥技术==</h4><ul>
+<li><p>参数选取：选取一个大素数$p$，在选取$Z/(p)$的一个本原根$g$，并将$p$和$g$公开。</p>
+</li>
 <li><p>密钥协商：</p>
 <p><img src="/2022/03/09/Data_Security/image-20211220142636968-164683642746344.png" alt="image-20211220142636968" style="zoom:150%;"></p>
-<p>其中，<span class="math inline">\(a,b∈[1,p-2]\)</span>。</p></li>
+<p>其中，$a,b∈[1,p-2]$。</p>
+</li>
 </ul>
-<h4 id="dh协议">==DH协议==</h4>
-<p>优点：</p>
-<ol type="1">
-<li><p>任何两个人都可以协商出会话密钥，不需要事先拥有对方的公开或者秘密的信息。</p></li>
-<li><p>每次密钥交换后不必要在保留秘密信息，减少了保密的负担。</p></li>
+<h4 id="DH协议"><a href="#DH协议" class="headerlink" title="==DH协议=="></a>==DH协议==</h4><p>优点：</p>
+<ol>
+<li><p>任何两个人都可以协商出会话密钥，不需要事先拥有对方的公开或者秘密的信息。</p>
+</li>
+<li><p>每次密钥交换后不必要在保留秘密信息，减少了保密的负担。</p>
+</li>
 </ol>
 <p>缺点：</p>
-<ol type="1">
+<ol>
 <li><p>容易受到中间人攻击</p>
-<p><img src="/2022/03/09/Data_Security/image-20211225161923043-164683642746345.png" alt="image-20211225161923043" style="zoom:150%;"></p></li>
+<p><img src="/2022/03/09/Data_Security/image-20211225161923043-164683642746345.png" alt="image-20211225161923043" style="zoom:150%;"></p>
+</li>
 </ol>
-<h3 id="elgamal公钥密码算法计算">==ElGamal公钥密码算法==（计算）</h3>
-<p>明文空间：<span class="math inline">\(M=GF(q)/\{0\}\)</span></p>
-<p>密文空间：<span class="math inline">\(M×M=\{(x,y):x,y∈M\}\)</span></p>
+<h3 id="ElGamal公钥密码算法-（计算）"><a href="#ElGamal公钥密码算法-（计算）" class="headerlink" title="==ElGamal公钥密码算法==（计算）"></a>==ElGamal公钥密码算法==（计算）</h3><p>明文空间：$M=GF(q)/\{0\}$</p>
+<p>密文空间：$M×M=\{(x,y):x,y∈M\}$</p>
 <ul>
-<li><p>参数选取：选取有限域<span class="math inline">\(GF(q)\)</span>，再选取有限域<span class="math inline">\(GF(q)\)</span>的一个本原根<span class="math inline">\(a\)</span>，并对其公开。随机选取整数<span class="math inline">\(d：1≤d≤q-2\)</span>，并计算出<span class="math inline">\(β = a^d\)</span>。<span class="math inline">\(β\)</span>作为公开的加密密钥，<span class="math inline">\(d\)</span>解密密钥。</p></li>
-<li><p>加密算法：对<span class="math inline">\(M=GF(q)/\{0\}\)</span>，秘密选择一个随机整数<span class="math inline">\(k: 1 ≤ k ≤ q -2\)</span>，则密文<span class="math inline">\(c = (c1, c2) ∈ M × M\)</span>，其中 <span class="math display">\[
-c_{1}=a^{k} \text { 和 } c_{2}=m \beta^{k}
-\]</span></p></li>
-<li><p>解密算法：对任意密文<span class="math inline">\(c = (c1, c2) ∈ M × M\)</span>，计算明文<span class="math inline">\(m = c_2{({c_1}^d)}^{-1}\)</span></p></li>
+<li><p>参数选取：选取有限域$GF(q)$，再选取有限域$GF(q)$的一个本原根$a$，并对其公开。随机选取整数$d：1≤d≤q-2$，并计算出$β = a^d$。$β$作为公开的加密密钥，$d$解密密钥。</p>
+</li>
+<li><p>加密算法：对$M=GF(q)/\{0\}$，秘密选择一个随机整数$k: 1 ≤ k ≤ q -2$，则密文$c = (c1, c2) ∈ M × M$，其中</p>
+<script type="math/tex; mode=display">
+c_{1}=a^{k} \text { 和 } c_{2}=m \beta^{k}</script></li>
+<li><p>解密算法：对任意密文$c = (c1, c2) ∈ M × M$，计算明文$m = c_2{({c_1}^d)}^{-1}$</p>
+</li>
 </ul>
 <p>==tips==:</p>
-<ol type="1">
+<ol>
 <li>本原根a和GF(q)可以全网公用，也可以一人一套；</li>
 <li>本原根a可以用阶是大素数的a代替；</li>
 <li>加密不同的明文分组时必须选用独立的随机数k，但秘密的解密密钥d 需要和其版本号一起长期不变。</li>
 <li>q-1必须有大的素因子</li>
 <li>q的位数应在1024bytes以上</li>
 </ol>
-<h2 id="椭圆曲线公钥密码体制">椭圆曲线公钥密码体制</h2>
-<p>优点：较短的密钥、运算速度快，适合计算资源和存储空间受限的应用环境</p>
-<h3 id="椭圆曲线群">椭圆曲线群</h3>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151209605.png" alt="image-20211220151209605"><figcaption>image-20211220151209605</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151618295.png" alt="image-20211220151618295"><figcaption>image-20211220151618295</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151632480.png" alt="image-20211220151632480"><figcaption>image-20211220151632480</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220151642330-164683642746446.png" alt="image-20211220151642330"><figcaption>image-20211220151642330</figcaption>
-</figure>
+<h2 id="椭圆曲线公钥密码体制"><a href="#椭圆曲线公钥密码体制" class="headerlink" title="椭圆曲线公钥密码体制"></a>椭圆曲线公钥密码体制</h2><p>优点：较短的密钥、运算速度快，适合计算资源和存储空间受限的应用环境</p>
+<h3 id="椭圆曲线群"><a href="#椭圆曲线群" class="headerlink" title="椭圆曲线群"></a>椭圆曲线群</h3><p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151209605.png" alt="image-20211220151209605"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151618295.png" alt="image-20211220151618295"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220151632480.png" alt="image-20211220151632480"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211220151642330-164683642746446.png" alt="image-20211220151642330"></p>
 <p>椭圆曲线上的加法</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220151807488-164683642746547.png" alt="image-20211220151807488"><figcaption>image-20211220151807488</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220151903280-164683642746548.png" alt="image-20211220151903280"><figcaption>image-20211220151903280</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220151936248-164683642746549.png" alt="image-20211220151936248"><figcaption>image-20211220151936248</figcaption>
-</figure>
-<h3 id="椭圆曲线上的离散对数问题">椭圆曲线上的离散对数问题</h3>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220151958465-164683642746550.png" alt="image-20211220151958465"><figcaption>image-20211220151958465</figcaption>
-</figure>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220152011515-164683642746551.png" alt="image-20211220152011515"><figcaption>image-20211220152011515</figcaption>
-</figure>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220152209576.png" alt="image-20211220152209576"><figcaption>image-20211220152209576</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220151807488-164683642746547.png" alt="image-20211220151807488"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211220151903280-164683642746548.png" alt="image-20211220151903280"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211220151936248-164683642746549.png" alt="image-20211220151936248"></p>
+<h3 id="椭圆曲线上的离散对数问题"><a href="#椭圆曲线上的离散对数问题" class="headerlink" title="椭圆曲线上的离散对数问题"></a>椭圆曲线上的离散对数问题</h3><p><img src="/2022/03/09/Data_Security/image-20211220151958465-164683642746550.png" alt="image-20211220151958465"></p>
+<p><img src="/2022/03/09/Data_Security/image-20211220152011515-164683642746551.png" alt="image-20211220152011515"></p>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211220152209576.png" alt="image-20211220152209576"></p>
 <p>参数设置：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220152551895-164683642746552.png" alt="image-20211220152551895"><figcaption>image-20211220152551895</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220152551895-164683642746552.png" alt="image-20211220152551895"></p>
 <p>公私钥对：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220152535190-164683642746553.png" alt="image-20211220152535190"><figcaption>image-20211220152535190</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220152535190-164683642746553.png" alt="image-20211220152535190"></p>
 <p>加密算法：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220152617361-164683642746554.png" alt="image-20211220152617361"><figcaption>image-20211220152617361</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220152617361-164683642746554.png" alt="image-20211220152617361"></p>
 <p>解密算法：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220152630136-164683642746655.png" alt="image-20211220152630136"><figcaption>image-20211220152630136</figcaption>
-</figure>
-<h2 id="数字签名与消息认证">数字签名与消息认证</h2>
-<h3 id="数字签名概述">数字签名概述</h3>
-<p>==数字签名应满足的条件：==</p>
+<p><img src="/2022/03/09/Data_Security/image-20211220152630136-164683642746655.png" alt="image-20211220152630136"></p>
+<h2 id="数字签名与消息认证"><a href="#数字签名与消息认证" class="headerlink" title="数字签名与消息认证"></a>数字签名与消息认证</h2><h3 id="数字签名概述"><a href="#数字签名概述" class="headerlink" title="数字签名概述"></a>数字签名概述</h3><p>==数字签名应满足的条件：==</p>
 <ul>
 <li>签名应与文件是一个不可分割的整体。<strong>实现：对消息进行某种变换完成签名；使签名是待签名的文件的函数。</strong></li>
 <li>签名者时候不能否认自己的签名。<strong>实现：签名是通过发方所独有的秘密信息来完成，并且该秘密信息对应惟一公开的验证信息，使签名者不能抵赖自己的签名。</strong></li>
 <li>接收者能验证签名，而任何其他人都不能伪造签名；<strong>实现：签名必须与特定的公开信息相对应，使收方能够验证；签名应与签名者独有的秘密信息密切相关，使其他人不能伪造。</strong></li>
-<li>当双方关于签名的真伪发生争执时，一个法官或第三方能解决双方之间发生的争执。 <strong>实现：签名对应的验证密钥应由可信的第三方确认并公布。当发生争执时，靠法律解决争端。</strong></li>
+<li>当双方关于签名的真伪发生争执时，一个法官或第三方能解决双方之间发生的争执。  <strong>实现：签名对应的验证密钥应由可信的第三方确认并公布。当发生争执时，靠法律解决争端。</strong></li>
 </ul>
 <p>==数字签名方案的分类==</p>
 <ul>
 <li><p>==利用特殊的公钥加密算法实现==</p>
-<p>条件：满足<span class="math inline">\(D_{k_{u}}\left(E_{k_{\text {a }}}(x)\right)=E_{k_{\text {a }}}\left(D_{k_{\text {d }}}(x)\right)=x\)</span>的公钥密码算法。其中D是脱密算法，E是加密算法。</p>
+<p>条件：满足$D_{k_{u}}\left(E_{k_{\text {a }}}(x)\right)=E_{k_{\text {a }}}\left(D_{k_{\text {d }}}(x)\right)=x$的公钥密码算法。其中D是脱密算法，E是加密算法。</p>
 <p>设计方法：用户将私钥作为签名密钥，公钥作为签名识别密钥</p>
 <p>A用户签名过程：</p>
 <ul>
-<li>利用签名密钥<span class="math inline">\(k_d\)</span>对文件<span class="math inline">\(m\)</span>进行脱密变换<span class="math inline">\(D\)</span>，得到签名<span class="math inline">\(sign(n)=D_{k_d}(m)\)</span>。</li>
-<li>签名者将文件<span class="math inline">\(m\)</span>及其签名<span class="math inline">\(sign(m)\)</span>一起公布</li>
+<li>利用签名密钥$k_d$对文件$m$进行脱密变换$D$，得到签名$sign(n)=D_{k_d}(m)$。</li>
+<li>签名者将文件$m$及其签名$sign(m)$一起公布</li>
 </ul>
 <p>B用户识别过程：</p>
 <ul>
-<li>利用用户A的签名识别密钥<span class="math inline">\(k_e\)</span>对签名<span class="math inline">\(sign(m)\)</span>执行加密变换<span class="math inline">\(E\)</span>。</li>
+<li>利用用户A的签名识别密钥$k_e$对签名$sign(m)$执行加密变换$E$。</li>
 </ul>
-<p>仲裁过程：与识别过程相似</p></li>
-<li><p>利用专门设计的数字签名算法实现</p></li>
+<p>仲裁过程：与识别过程相似</p>
+</li>
+<li><p>利用专门设计的数字签名算法实现</p>
+</li>
 </ul>
 <p>数字签名：数字签名（又称公钥数字签名）是只有信息的发送者才能产生的别人无法伪造的一段数字串，类似于手写签名，可保证每个用户都可验证信息来源，是对信息的发送者身份真实性的一个有效证明。</p>
 <p>流程图：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220162748498-164683642746656.png" alt="image-20211220162748498"><figcaption>image-20211220162748498</figcaption>
-</figure>
-<h3 id="rsa数字签名算法">RSA数字签名算法</h3>
-<h4 id="简单的数字签名算法">简单的数字签名算法</h4>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220162521807-164683642746657.png" alt="image-20211220162521807"><figcaption>image-20211220162521807</figcaption>
-</figure>
-<p>将 <span class="math inline">\(m\)</span> 和 <span class="math inline">\(c\)</span> 一起发送, 作为签名 <span class="math inline">\((m, c)\)</span> 。 由于与 <span class="math inline">\(e_{A}\)</span> 相对应的 <span class="math inline">\(d_{A}\)</span> 是A所独有, 因此 <span class="math inline">\(c\)</span> 一定来自 <span class="math inline">\(A\)</span>, 又因为 <span class="math inline">\(e_{A}\)</span> 是公开的, 则 <span class="math inline">\(m\)</span> 不能保密。</p>
-<h4 id="rsa签名与加密的结合">RSA签名与加密的结合</h4>
-<ul>
-<li><p>当 <span class="math inline">\(\mathrm{N}_{\mathrm{A}}&lt;\mathrm{N}_{\mathrm{B}}\)</span> 时, 先签名, 后加密</p>
-<ol type="1">
-<li><p>用户 <span class="math inline">\(\mathrm{A}\)</span> 先用自己的保密密钥 <span class="math inline">\(d_{A}\)</span> 对消息 <span class="math inline">\(m\)</span> 进行签名, 得到: <span class="math inline">\(y=m^{d_{4}} \bmod N_{A}\)</span></p></li>
-<li><p><span class="math inline">\(\mathrm{A}\)</span> 再用用户 <span class="math inline">\(\mathbf{B}\)</span> 的公开密钥 <span class="math inline">\(e_{B}\)</span> 对签名 <span class="math inline">\(y\)</span> 进行加密,得到: <span class="math inline">\(c=y^{e_{B}} \bmod N_{B}\)</span> 然后将既签名, 又加密了的 <span class="math inline">\(c\)</span> 发送给用户 <span class="math inline">\(\mathbf{B}\)</span>;</p></li>
-<li><p><span class="math inline">\(\mathbf{B}\)</span>收到 <span class="math inline">\(c\)</span> 后, 先进行变换: <span class="math inline">\(y=c^{d_{B}} \bmod N_{B}\)</span></p>
-<p>再用A的公开密钥作变换: <span class="math inline">\(m=y^{e_{A}} \bmod N_{A}\)</span>。</p>
-<p>从而验证签名来自 <span class="math inline">\(\mathrm{A}\)</span>。</p></li>
-</ol></li>
-<li><p>当 <span class="math inline">\(\mathrm{N}_{\mathrm{A}}&gt;\mathrm{N}_{\mathrm{B}}\)</span> 时, 先加密，后签名</p>
-<ol type="1">
-<li><p>用户A先用B的公开密钥 <span class="math inline">\(e_{B}\)</span> 对消息 <span class="math inline">\(m\)</span> 进行加密, 得到: <span class="math inline">\(y=m^{e_{B}} \bmod N_{B}\)</span></p></li>
-<li><p><span class="math inline">\(\mathrm{A}\)</span> 再用自己的保密密钥 <span class="math inline">\(d_{A}\)</span> 对 进行签名, 得到: <span class="math inline">\(c=y^{d_A} \bmod N_{A}\)</span> 然后将既签名, 又加密了的 <span class="math inline">\(c\)</span> 发送给用户 <span class="math inline">\(\mathbf{B}\)</span>;</p></li>
-<li><p><span class="math inline">\(\mathbf{B}\)</span>收到 <span class="math inline">\(c\)</span> 后, 先进行变换: <span class="math inline">\(y=c^{e_{A}} \bmod N_{A}\)</span></p>
-<p>再用自己的保密密钥作变换:<span class="math inline">\(m=y^{d_{s}} \bmod N_{B}\)</span></p>
-<p>从而验证签名来自<span class="math inline">\(\mathrm{A}\)</span>。</p>
-<p><strong>tips</strong>:存在着被中间攻击者使用公钥进行验证然后再使用自己的私钥进行签名的风险。</p></li>
-</ol></li>
-<li><p>解决方案：系统中的每个用户采用两个模数，一个用于加密，一个用于签名。并且保证所有用户的签名模数均小于其他用户的加密模数。</p></li>
+<p><img src="/2022/03/09/Data_Security/image-20211220162748498-164683642746656.png" alt="image-20211220162748498"></p>
+<h3 id="RSA数字签名算法"><a href="#RSA数字签名算法" class="headerlink" title="RSA数字签名算法"></a>RSA数字签名算法</h3><h4 id="简单的数字签名算法"><a href="#简单的数字签名算法" class="headerlink" title="简单的数字签名算法"></a>简单的数字签名算法</h4><p><img src="/2022/03/09/Data_Security/image-20211220162521807-164683642746657.png" alt="image-20211220162521807"></p>
+<p>将 $m$ 和 $c$ 一起发送, 作为签名 $(m, c)$ 。 由于与 $e_{A}$ 相对应的 $d_{A}$ 是A所独有, 因此 $c$ 一定来自<br>$A$, 又因为 $e_{A}$ 是公开的, 则 $m$ 不能保密。</p>
+<h4 id="RSA签名与加密的结合"><a href="#RSA签名与加密的结合" class="headerlink" title="RSA签名与加密的结合"></a>RSA签名与加密的结合</h4><ul>
+<li><p>当 $\mathrm{N}_{\mathrm{A}}&lt;\mathrm{N}_{\mathrm{B}}$ 时, 先签名, 后加密</p>
+<ol>
+<li><p>用户 $\mathrm{A}$ 先用自己的保密密钥 $d_{A}$ 对消息 $m$ 进行签名, 得到: $y=m^{d_{4}} \bmod N_{A}$</p>
+</li>
+<li><p>$\mathrm{A}$ 再用用户 $\mathbf{B}$ 的公开密钥 $e_{B}$ 对签名 $y$ 进行加密,得到: $c=y^{e_{B}} \bmod N_{B}$<br>然后将既签名, 又加密了的 $c$ 发送给用户 $\mathbf{B}$;</p>
+</li>
+<li><p>$\mathbf{B}$收到 $c$ 后, 先进行变换: $y=c^{d_{B}} \bmod N_{B}$</p>
+<p>再用A的公开密钥作变换: $m=y^{e_{A}} \bmod N_{A}$。</p>
+<p>从而验证签名来自 $\mathrm{A}$。</p>
+</li>
+</ol>
+</li>
+<li><p>当 $\mathrm{N}_{\mathrm{A}}&gt;\mathrm{N}_{\mathrm{B}}$ 时, 先加密，后签名</p>
+<ol>
+<li><p>用户A先用B的公开密钥 $e_{B}$ 对消息 $m$ 进行加密,<br>得到: $y=m^{e_{B}} \bmod N_{B}$</p>
+</li>
+<li><p>$\mathrm{A}$ 再用自己的保密密钥 $d_{A}$ 对 进行签名,<br>得到: $c=y^{d_A} \bmod N_{A}$<br>然后将既签名, 又加密了的 $c$ 发送给用户 $\mathbf{B}$;</p>
+</li>
+<li><p>$\mathbf{B}$收到 $c$ 后, 先进行变换: $y=c^{e_{A}} \bmod N_{A}$</p>
+<p>再用自己的保密密钥作变换:$m=y^{d_{s}} \bmod N_{B}$ </p>
+<p>从而验证签名来自$\mathrm{A}$。</p>
+<p><strong>tips</strong>:存在着被中间攻击者使用公钥进行验证然后再使用自己的私钥进行签名的风险。</p>
+</li>
+</ol>
+</li>
+<li><p>解决方案：系统中的每个用户采用两个模数，一个用于加密，一个用于签名。并且保证所有用户的签名模数均小于其他用户的加密模数。</p>
+</li>
 </ul>
-<h4 id="rsa数字签名的缺点">RSA数字签名的缺点：</h4>
-<ul>
-<li><p>利用用户 <span class="math inline">\(\mathbf{A}\)</span> 的签名识别密钥 <span class="math inline">\(k_{e}\)</span>, 任意给定 <span class="math inline">\(y\)</span>, 任 何人都可计算出: <span class="math inline">\(x=y^{k e} \bmod n\)</span>, 因而可以伪造对消息 <span class="math inline">\(x\)</span> 的 签名 <span class="math inline">\(y\)</span> 。 注意: 文件 <span class="math inline">\(x\)</span> 的具体值, 伪造者无法控制。虽然可 伪造（文件一签名）对, 但这里的文件 <span class="math inline">\(x\)</span> 可能是毫无意义的随机数。第三者无法伪造出想要的文件的签名。</p></li>
-<li><p>如果用户 <span class="math inline">\(\mathbf{A}\)</span> 对文件 <span class="math inline">\(x_{1}\)</span> 和文件 <span class="math inline">\(x_{2}\)</span> 的签名分别为 <span class="math inline">\(y_{1}\)</span> 和 <span class="math inline">\(y_{2}\)</span>, 由于 <span class="math inline">\(\left(x_{1} x_{2}\right)^{d} \bmod n=\left[\left(x_{1}{ }^{d} \bmod n\right)\left(x_{2}{ }^{d} \operatorname{modn}\right)\right] \bmod n\)</span> 故任何第三方知道 <span class="math inline">\(x_{1}, x_{2}, y_{1}, y_{2}\)</span>, 都可伪造出用户 <span class="math inline">\(\mathrm{A}\)</span> 对 文件 <span class="math inline">\(x_{1} x_{2} \operatorname{modn}\)</span> 的签名 <span class="math inline">\(y_{1} y_{2} \operatorname{modn}\)</span> 。 注意: 文件 <span class="math inline">\(x_{1} x_{2} \bmod n\)</span> 的具体值伪造者无法控制。</p></li>
+<h4 id="RSA数字签名的缺点："><a href="#RSA数字签名的缺点：" class="headerlink" title="RSA数字签名的缺点："></a>RSA数字签名的缺点：</h4><ul>
+<li><p>利用用户 $\mathbf{A}$ 的签名识别密钥 $k_{e}$, 任意给定 $y$, 任 何人都可计算出: $x=y^{k e} \bmod n$, 因而可以伪造对消息 $x$ 的 签名 $y$ 。<br>注意: 文件 $x$ 的具体值, 伪造者无法控制。虽然可 伪造（文件一签名）对, 但这里的文件 $x$ 可能是毫无意义的随机数。第三者无法伪造出想要的文件的签名。</p>
+</li>
+<li><p>如果用户 $\mathbf{A}$ 对文件 $x_{1}$ 和文件 $x_{2}$ 的签名分别为 $y_{1}$ 和 $y_{2}$, 由于 $\left(x_{1} x_{2}\right)^{d} \bmod n=\left[\left(x_{1}{ }^{d} \bmod n\right)\left(x_{2}{ }^{d} \operatorname{modn}\right)\right] \bmod n$ 故任何第三方知道 $x_{1}, x_{2}, y_{1}, y_{2}$, 都可伪造出用户 $\mathrm{A}$ 对 文件 $x_{1} x_{2} \operatorname{modn}$ 的签名 $y_{1} y_{2} \operatorname{modn}$ 。<br>注意: 文件 $x_{1} x_{2} \bmod n$ 的具体值伪造者无法控制。</p>
+</li>
 <li><p>对长文件的签名，若采取电码本方式逐块签名, 则</p>
 <ul>
 <li>签名变长, 签名速度慢</li>
 <li>会遭遇替换攻击（重新组合和替换文件块）</li>
 </ul>
-<p>解决方案：先将文件压缩成一个摘要, 再对摘要签名。</p></li>
+<p>解决方案：先将文件压缩成一个摘要, 再对摘要签名。</p>
+</li>
 </ul>
-<h3 id="dsa数字签名算法">DSA数字签名算法</h3>
-<p>DSA==安全性==基于有限域上的<strong>离散对数问题</strong></p>
-<h4 id="参数选取">==参数选取：==</h4>
-<p>（1）选取大素数 <span class="math inline">\(p ; 2^{\mathrm{L}-1}&lt;p&lt;2^{\mathrm{L}}, \mathrm{L}\)</span> 至少为 512 比特, 并且是 64 的倍数; DSS推荐L <span class="math inline">\(\leq 512+64 \times 8=1024\)</span> （2）选取素数 <span class="math inline">\(q ;(q\)</span> 是 <span class="math inline">\(p-1\)</span> 的一个 160 比特的素数因子) （3）选取整数 <span class="math inline">\(g=\boldsymbol{h}^{(p-1) / q} \bmod p ;(g&gt;1\)</span>; 其中 <span class="math inline">\(1&lt;h&lt;p-1)\)</span> （4）随机选取整数 <span class="math inline">\(x, \quad(0&lt;x&lt;q)\)</span> （5）计算 <span class="math inline">\(y=g^{x} \bmod p\)</span>; 公开参数: <span class="math inline">\(p, q, g\)</span>; 公开密钥: <span class="math inline">\(y\)</span>; 保密密钥: <span class="math inline">\(x\)</span></p>
-<h4 id="签名过程">==签名过程：==</h4>
-<p>设用户 <span class="math inline">\(\mathrm{A}\)</span> 要对消息 <span class="math inline">\(m\)</span> 进行签名, 则:</p>
-<ol type="1">
-<li><span class="math inline">\(\mathrm{A}\)</span>秘密选取一个小于 <span class="math inline">\(q\)</span> 的随机数 <span class="math inline">\(k\)</span>;</li>
-<li><span class="math inline">\(\mathrm{A}\)</span>计算:</li>
+<h3 id="DSA数字签名算法"><a href="#DSA数字签名算法" class="headerlink" title="DSA数字签名算法"></a>DSA数字签名算法</h3><p>DSA==安全性==基于有限域上的<strong>离散对数问题</strong></p>
+<h4 id="参数选取："><a href="#参数选取：" class="headerlink" title="==参数选取：=="></a>==参数选取：==</h4><p>（1）选取大素数 $p ; 2^{\mathrm{L}-1}<p<2^{\mathrm{L}}, 8="1024$" 64 160 512 \mathrm{l}$ 至少为 比特, 并且是 的倍数; dss推荐l $\leq 512+64 \times （2）选取素数 $q ;(q$ 是 $p-1$ 的一个 比特的素数因子) （3）选取整数 $g="\boldsymbol{h}^{(p-1)" q} \bmod p ;(g>1$; 其中 $1&lt;h&lt;p-1)$<br>（4）随机选取整数 $x, \quad(0&lt;x&lt;q)$<br>（5）计算 $y=g^{x} \bmod p$;<br>公开参数: $p, q, g$; 公开密钥: $y$; 保密密钥: $x$</p<2^{\mathrm{L}},></p>
+<h4 id="签名过程："><a href="#签名过程：" class="headerlink" title="==签名过程：=="></a>==签名过程：==</h4><p>设用户 $\mathrm{A}$ 要对消息 $m$ 进行签名, 则:</p>
+<ol>
+<li>$\mathrm{A}$秘密选取一个小于 $q$ 的随机数 $k$;</li>
+<li>$\mathrm{A}$计算:</li>
 </ol>
-<p><span class="math display">\[
-\left\{\begin{array}{c}r=\left(g^{k} \bmod p\right) \bmod q \\ s=k^{-1}(H(m)+x r) \bmod q\end{array}\right.
-\]</span></p>
-<p>$ 则其签名为 $<span class="math inline">\((\boldsymbol{r}, \boldsymbol{s})\)</span> 注: <span class="math inline">\(\mathrm{H}(m)\)</span> 是算法选定的Hash函数, 可将任意长的输入变换为定长的输出; <span class="math inline">\(k^{-1}\)</span> 是 <span class="math inline">\(k \bmod q\)</span> 的逆元。</p>
-<h4 id="验证过程">==验证过程==</h4>
-<ol type="1">
-<li><p>收方<span class="math inline">\(\mathbf{B}\)</span>计算 <span class="math display">\[
+<script type="math/tex; mode=display">
+\left\{\begin{array}{c}r=\left(g^{k} \bmod p\right) \bmod q \\ s=k^{-1}(H(m)+x r) \bmod q\end{array}\right.</script><p>$ 则其签名为 $$(\boldsymbol{r}, \boldsymbol{s})$<br>注: $\mathrm{H}(m)$ 是算法选定的Hash函数, 可将任意长的输入变换为定长的输出; $k^{-1}$ 是 $k \bmod q$ 的逆元。</p>
+<h4 id="验证过程"><a href="#验证过程" class="headerlink" title="==验证过程=="></a>==验证过程==</h4><ol>
+<li><p>收方$\mathbf{B}$计算</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-&amp;\left\{\begin{array}{c}
+&\left\{\begin{array}{c}
 w=s^{-1} \bmod q \\
 u_{1}=H(m) w \bmod q \\
 u_{2}=r w \bmod q
 \end{array}\right.\\
-v=&amp;\left(\left(g^{u_{1}} \times y^{u_{2}}\right) \bmod p\right) \bmod q
-\end{aligned}
-\]</span></p></li>
-<li><p>比较<span class="math inline">\(v=r\)</span>。</p></li>
+v=&\left(\left(g^{u_{1}} \times y^{u_{2}}\right) \bmod p\right) \bmod q
+\end{aligned}</script></li>
+<li><p>比较$v=r$。</p>
+</li>
 </ol>
-<p>tips:消息<span class="math inline">\(m\)</span>不保密，可以铭传，验证签名时使用。</p>
-<h3 id="ecdsa数字签名算法">==ECDSA数字签名算法==</h3>
-<h4 id="参数选取-1">参数选取</h4>
-<ol type="1">
-<li>构迼有限域 <span class="math inline">\(F\)</span>;</li>
-<li>生成域 <span class="math inline">\(F\)</span> 上的椭圆曲线 <span class="math inline">\(E\)</span>;</li>
-<li>取椭圆曲线中的一个点 <span class="math inline">\(P\)</span>, 要求点 <span class="math inline">\(P\)</span> 要有大 素数的阶 <span class="math inline">\(q\)</span>;</li>
-<li>选取一个整数 <span class="math inline">\(d\)</span>, 计算 <span class="math inline">\(Q=d P\)</span>;</li>
+<p>tips:消息$m$不保密，可以铭传，验证签名时使用。</p>
+<h3 id="ECDSA数字签名算法"><a href="#ECDSA数字签名算法" class="headerlink" title="==ECDSA数字签名算法=="></a>==ECDSA数字签名算法==</h3><h4 id="参数选取"><a href="#参数选取" class="headerlink" title="参数选取"></a>参数选取</h4><ol>
+<li>构迼有限域 $F$;</li>
+<li>生成域 $F$ 上的椭圆曲线 $E$;</li>
+<li>取椭圆曲线中的一个点 $P$, 要求点 $P$ 要有大 素数的阶 $q$;</li>
+<li>选取一个整数 $d$, 计算 $Q=d P$;</li>
 </ol>
-<p>公开参数: <span class="math inline">\(F, E, P ;\)</span> 公开密钥: <span class="math inline">\(Q ;\)</span> 保密密钥: <span class="math inline">\(d\)</span></p>
-<h4 id="签名过程-1">签名过程</h4>
-<p>设用户 A要对消息 <span class="math inline">\(m\)</span> 进行签名, 则：</p>
-<ol type="1">
-<li><p><span class="math inline">\(\mathrm{A}\)</span> 秘密选取一个小于 <span class="math inline">\(q\)</span> 的随机数 <span class="math inline">\(k\)</span>;</p></li>
-<li><p><span class="math inline">\(\mathrm{A}\)</span>计算:</p>
-<p><span class="math inline">\(k P=(u, v)\)</span> <span class="math inline">\(r=u \bmod q\)</span> <span class="math inline">\(s=k^{-1}(H(m)+r d) \bmod q\)</span> 则其签名为 <span class="math inline">\((r, s)\)</span></p></li>
+<p>公开参数: $F, E, P ;$ 公开密钥: $Q ;$ 保密密钥: $d$</p>
+<h4 id="签名过程"><a href="#签名过程" class="headerlink" title="签名过程"></a>签名过程</h4><p>设用户 A要对消息 $m$ 进行签名, 则：</p>
+<ol>
+<li><p>$\mathrm{A}$ 秘密选取一个小于 $q$ 的随机数 $k$;</p>
+</li>
+<li><p>$\mathrm{A}$计算: </p>
+<p>$k P=(u, v)$<br>$r=u \bmod q$<br>$s=k^{-1}(H(m)+r d) \bmod q$<br>则其签名为 $(r, s)$</p>
+</li>
 </ol>
-<h4 id="验证过程-1">验证过程</h4>
-<ol type="1">
-<li><p>收方<span class="math inline">\(\mathbf{B}\)</span>计算 <span class="math display">\[
+<h4 id="验证过程-1"><a href="#验证过程-1" class="headerlink" title="验证过程"></a>验证过程</h4><ol>
+<li><p>收方$\mathbf{B}$计算</p>
+<script type="math/tex; mode=display">
 \left\{\begin{array}{c}
 w=s^{-1} \bmod q \\
 u_{1}=H(m) w \bmod q \\
 u_{2}=r w \bmod q
-\end{array}\right.
-\]</span></p></li>
-<li><p>如果 <span class="math inline">\((u, v)=u_{1} P+u_{2} Q\)</span>。</p></li>
+\end{array}\right.</script></li>
+<li><p>如果 $(u, v)=u_{1} P+u_{2} Q$。</p>
+</li>
 </ol>
 <p><strong>==对于上述的验证算法，RSA、DSA、ECDSA不会去考过程但是会考计算。因此，需要我们自己知道如何进行公式的计算。老师特别强调了以下DSA中g是需要我们自己进行求解的==</strong></p>
-<h2 id="hash函数">Hash函数</h2>
-<h3 id="hash函数的性质与应用">Hash函数的性质与应用</h3>
-<ul>
-<li><p>==Hash函数的定义==：又称散列算法、散列函数，是一种从任何一种数据中创建<strong>小的数字“指纹”</strong>的方法。 散列函数把消息或数据<strong>压缩</strong>成摘要，使得数据量变小，将<strong>数据的格式固定</strong>下来。</p></li>
+<h2 id="Hash函数"><a href="#Hash函数" class="headerlink" title="Hash函数"></a>Hash函数</h2><h3 id="Hash函数的性质与应用"><a href="#Hash函数的性质与应用" class="headerlink" title="Hash函数的性质与应用"></a>Hash函数的性质与应用</h3><ul>
+<li><p>==Hash函数的定义==：又称散列算法、散列函数，是一种从任何一种数据中创建<strong>小的数字“指纹”</strong>的方法。 散列函数把消息或数据<strong>压缩</strong>成摘要，使得数据量变小，将<strong>数据的格式固定</strong>下来。</p>
+</li>
 <li><p>==特性==：</p>
 <ul>
-<li>输入长度可变：对任何长度的输入<span class="math inline">\(x\)</span>都适用</li>
-<li>输出长度固定：对任何长度的输入<span class="math inline">\(x\)</span>，输出<span class="math inline">\(z\)</span>都是固定长度</li>
+<li>输入长度可变：对任何长度的输入$x$都适用</li>
+<li>输出长度固定：对任何长度的输入$x$，输出$z$都是固定长度</li>
 <li>效率：计算复杂度低</li>
-<li>抗原像攻击（单向性）：对于给定输出<span class="math inline">\(y\)</span>，不可能找到对应的输入<span class="math inline">\(x\)</span></li>
-<li>抗第二原像攻击（抗弱碰撞性）：对于给定的<span class="math inline">\(x_1\)</span>，找到满足<span class="math inline">\(h(x_1)=h(x_2)\)</span>的<span class="math inline">\(x_2\)</span>是不可能的</li>
-<li>抗碰撞攻击（抗强碰撞性）：找到满足<span class="math inline">\(h(x_1)=h(x_2 )\)</span>的偶对<span class="math inline">\(x_1=x_2\)</span>。</li>
+<li>抗原像攻击（单向性）：对于给定输出$y$，不可能找到对应的输入$x$</li>
+<li>抗第二原像攻击（抗弱碰撞性）：对于给定的$x_1$，找到满足$h(x_1)=h(x_2)$的$x_2$是不可能的</li>
+<li>抗碰撞攻击（抗强碰撞性）：找到满足$h(x_1)=h(x_2 )$的偶对$x_1=x_2$。</li>
 </ul>
-<p>tips:满足了抗强碰撞性一定满足抗弱碰撞性，但反之不成立。</p></li>
+<p>tips:满足了抗强碰撞性一定满足抗弱碰撞性，但反之不成立。</p>
+</li>
 <li><p>==Hash函数分类==：</p>
 <ul>
 <li>不带密钥的Hash函数</li>
 <li>带密钥的Hash函数</li>
-</ul></li>
+</ul>
+</li>
 <li><p>Hash函数用途：</p>
 <ul>
-<li><p>数据完整性检验</p></li>
-<li><p>用于数字签名</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211219214020289-164683642746658.png" alt="image-20211219214020289"><figcaption>image-20211219214020289</figcaption>
-</figure></li>
-<li><p>密钥推导</p></li>
-<li><p>伪随机数生成</p></li>
-</ul></li>
+<li><p>数据完整性检验 </p>
+</li>
+<li><p>用于数字签名   </p>
+<p><img src="/2022/03/09/Data_Security/image-20211219214020289-164683642746658.png" alt="image-20211219214020289"></p>
+</li>
+<li><p>密钥推导</p>
+</li>
+<li><p>伪随机数生成</p>
+</li>
 </ul>
-<h3 id="对hash函数的碰撞攻击方法">==对Hash函数的碰撞攻击方法==</h3>
-<p>目的: 找到两个不同的报文<span class="math inline">\(m_1\)</span>和<span class="math inline">\(m_2\)</span>使得<span class="math inline">\(H(m_1)=H(m_2)\)</span></p>
-<p><strong>Step1</strong> ：随机选取N个不同的报文<span class="math inline">\(m_1,m_2,..., m_N\)</span>；</p>
-<p><strong>Step2</strong>：计算这N个报文的Hash值,得到集合<span class="math inline">\(S=\{(m_k, H(m_k)): k = 1,2,..., N\}\)</span>；</p>
-<p><strong>Step3</strong>：根据<span class="math inline">\(H(m_k)\)</span>的大小，对集合<span class="math inline">\(S\)</span>利用快速排序算法重新排序。</p>
-<p>在排序过程中，如果找到了使<span class="math inline">\(H(m_k)= H(m_t)\)</span> 的两个不同消息<span class="math inline">\(m_k\)</span>和<span class="math inline">\(m_t\)</span>，就将<span class="math inline">\((m_k,m_t)\)</span>作为结果输出，算法终止；如果找不到，就报告碰撞攻击失败，算法终止。</p>
-<p>算法所需的存储量: 表<span class="math inline">\(S\)</span>的规模<span class="math inline">\(O(N)\)</span></p>
-<p>算法所需的计算量: <span class="math inline">\(N + |N|log_2|N| = O(N)\)</span></p>
+</li>
+</ul>
+<h3 id="对Hash函数的碰撞攻击方法"><a href="#对Hash函数的碰撞攻击方法" class="headerlink" title="==对Hash函数的碰撞攻击方法=="></a>==对Hash函数的碰撞攻击方法==</h3><p>目的: 找到两个不同的报文$m_1$和$m_2$使得$H(m_1)=H(m_2)$</p>
+<p><strong>Step1</strong> ：随机选取N个不同的报文$m_1,m_2,…, m_N$；</p>
+<p><strong>Step2</strong>：计算这N个报文的Hash值,得到集合$S=\{(m_k, H(m_k)): k = 1,2,…, N\}$；</p>
+<p><strong>Step3</strong>：根据$H(m_k)$的大小，对集合$S$利用快速排序算法重新排序。</p>
+<p>在排序过程中，如果找到了使$H(m_k)= H(m_t)$ 的两个不同消息$m_k$和$m_t$，就将$(m_k,m_t)$作为结果输出，算法终止；如果找不到，就报告碰撞攻击失败，算法终止。</p>
+<p>算法所需的存储量: 表$S$的规模$O(N)$</p>
+<p>算法所需的计算量: $N + |N|log_2|N| = O(N)$</p>
 <p>==成功率分析==（考试可能进行涉及）</p>
-<p>设Hash值为<span class="math inline">\(n\)</span>比特且<span class="math inline">\(N\)</span>远小于<span class="math inline">\(2n\)</span>,则碰撞攻击的成功率近似为： <span class="math display">\[
-1-e^{-\frac{N^{2}}{2^{n+1}}}
-\]</span> 方法论：</p>
-<ol type="1">
-<li><p>使用了对立事件进行转化。碰撞成功是至少找出一对报文，它们对应的Hash值是一样的。那么先求出其对立事件，任何一对报文对应的Hash值都是不一样的。</p></li>
-<li><p>使用了条件概率公式对其进行计算。首先是对于两个报文，其对应的Hash值不一样。然后在两个报文不等的前提上计算三个报文对应的Hash值不一样。</p></li>
-<li><p>公式的灵活运用： <span class="math display">\[
-\prod_{i=1}^{N-1}\left(1-\frac{i}{2^{n}}\right) \approx \prod_{i=1}^{N-1} e^{\frac{i}{2^{n}}}=e^{\frac{-N(N-1)}{2^{n+1}}} \approx e^{\frac{-N^{2}}{2^{n+1}}}
-\]</span></p></li>
+<p>设Hash值为$n$比特且$N$远小于$2n$,则碰撞攻击的成功率近似为：</p>
+<script type="math/tex; mode=display">
+1-e^{-\frac{N^{2}}{2^{n+1}}}</script><p>方法论：</p>
+<ol>
+<li><p>使用了对立事件进行转化。碰撞成功是至少找出一对报文，它们对应的Hash值是一样的。那么先求出其对立事件，任何一对报文对应的Hash值都是不一样的。</p>
+</li>
+<li><p>使用了条件概率公式对其进行计算。首先是对于两个报文，其对应的Hash值不一样。然后在两个报文不等的前提上计算三个报文对应的Hash值不一样。</p>
+</li>
+<li><p>公式的灵活运用：</p>
+<script type="math/tex; mode=display">
+\prod_{i=1}^{N-1}\left(1-\frac{i}{2^{n}}\right) \approx \prod_{i=1}^{N-1} e^{\frac{i}{2^{n}}}=e^{\frac{-N(N-1)}{2^{n+1}}} \approx e^{\frac{-N^{2}}{2^{n+1}}}</script></li>
 </ol>
-<p>能够对抗碰撞攻击的Hash函数的==安全界限==：假设能对抗穷举攻击的密钥长度的安全界限为<span class="math inline">\(n\)</span>比特，则对抗碰撞攻击的Hash算法的Hash值的比特数量的安全界限应为<span class="math inline">\(2n\)</span>。</p>
-<h3 id="基于分组密码算法的hash函数">基于分组密码算法的Hash函数</h3>
-<p>MD强化技术：将消息<span class="math inline">\(M = (M_1,M_2,…,M_n)\)</span>的最后一个分组<span class="math inline">\(M_n\)</span>设置为原始消息的长度，这个过程称为MD强化。</p>
-<p>基于分组密码设计Hash函数的一般方法：消息<span class="math inline">\(M = (M_1,M_2,…,M_n)\)</span>，<span class="math inline">\(H_0\)</span>是初始值，<span class="math inline">\(H_i=E(H_{i-1},M_i), i=1,2,…,n\)</span>。最后得到的<span class="math inline">\(H_n\)</span>是消息<span class="math inline">\(M\)</span>的Hash值。</p>
-<p>示例： <span class="math display">\[
+<p>能够对抗碰撞攻击的Hash函数的==安全界限==：假设能对抗穷举攻击的密钥长度的安全界限为$n$比特，则对抗碰撞攻击的Hash算法的Hash值的比特数量的安全界限应为$2n$。</p>
+<h3 id="基于分组密码算法的Hash函数"><a href="#基于分组密码算法的Hash函数" class="headerlink" title="基于分组密码算法的Hash函数"></a>基于分组密码算法的Hash函数</h3><p>MD强化技术：将消息$M = (M_1,M_2,…,M_n)$的最后一个分组$M_n$设置为原始消息的长度，这个过程称为MD强化。</p>
+<p>基于分组密码设计Hash函数的一般方法：消息$M = (M_1,M_2,…,M_n)$，$H_0$是初始值，$H_i=E(H_{i-1},M_i), i=1,2,…,n$。最后得到的$H_n$是消息$M$的Hash值。</p>
+<p>示例：</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
 H_{i}=E_{H_{i-1}}\left(\mathrm{M}_{i}\right) \oplus \mathrm{M}_{i} \\
 H_{i}=E_{H_{i-1}}\left(\mathrm{M}_{i} \oplus H_{i-1}\right) \oplus \mathrm{M}_{i} \oplus H_{i-1} \\
 H_{i}=E_{H_{i-1}}\left(\mathrm{M}_{i}\right) \oplus \mathrm{M}_{i} \oplus H_{i-1} \\
 H_{i}=E_{H_{i-1}}\left(\mathrm{M}_{i} \oplus H_{i-1}\right) \oplus \mathrm{M}_{i}
-\end{gathered}
-\]</span></p>
-<h3 id="md5-hash函数需要进行关注">MD5 Hash函数（需要进行关注）</h3>
-<p>==MD5的特点==：对任意长度的输入，产生128位的输出；且其安全性不依赖于任何假设，适合高速实现。</p>
-<p>==MD5算法==的一个主循环一次可处理512比特数据分组。执行主循环<span class="math inline">\(t\)</span>次最后输出为128比特。（<span class="math inline">\(t\)</span>等于填充后消息长度除以512）</p>
+\end{gathered}</script><h3 id="MD5-Hash函数（需要进行关注）"><a href="#MD5-Hash函数（需要进行关注）" class="headerlink" title="MD5 Hash函数（需要进行关注）"></a>MD5 Hash函数（需要进行关注）</h3><p>==MD5的特点==：对任意长度的输入，产生128位的输出；且其安全性不依赖于任何假设，适合高速实现。</p>
+<p>==MD5算法==的一个主循环一次可处理512比特数据分组。执行主循环$t$次最后输出为128比特。（$t$等于填充后消息长度除以512）</p>
 <ul>
 <li><p>==初始化处理==：经过初始化处理后的消息长度是512的整数倍（==可能会出一个计算题==）</p>
-<p>在原始消息的二进制表示之后<strong>先填入一个1</strong>，在<strong>最低位64比特填入原始消息长度</strong>的二进制表示，<strong>中间全部补0</strong>，使填充后的消息长度恰好是512的整数倍。如果消息长度大于<span class="math inline">\(2^{64}\)</span>，则在最低的64比特位填入消息长度取模<span class="math inline">\(2^{64}\)</span>后的二进制表示。</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211219221553394-164683642746659.png" alt="image-20211219221553394"><figcaption>image-20211219221553394</figcaption>
-</figure>
-<p>经过初始化处理后的消息<span class="math inline">\(x\)</span>被分成<span class="math inline">\(t\)</span>个512比特的消息块<span class="math inline">\(x_0,x_1, …,x_{t-1}\)</span>。将每个消息块<span class="math inline">\(x_i（i=0,1,2,…,t-1）\)</span>划分成16个32比特的子块，记为<span class="math inline">\(x_i=\{M_{[16i]}、M_{[16i+1]}、…、M_{[16i+15]}\}.\)</span></p></li>
-<li><p>使用4个32比特的初始向量，分别为A、B、C、D。又称为链接值</p></li>
+<p>在原始消息的二进制表示之后<strong>先填入一个1</strong>，在<strong>最低位64比特填入原始消息长度</strong>的二进制表示，<strong>中间全部补0</strong>，使填充后的消息长度恰好是512的整数倍。如果消息长度大于$2^{64}$，则在最低的64比特位填入消息长度取模$2^{64}$后的二进制表示。</p>
+<p><img src="/2022/03/09/Data_Security/image-20211219221553394-164683642746659.png" alt="image-20211219221553394"></p>
+<p>经过初始化处理后的消息$x$被分成$t$个512比特的消息块$x_0,x_1, …,x_{t-1}$。将每个消息块$x_i（i=0,1,2,…,t-1）$划分成16个32比特的子块，记为$x_i=\{M_{[16i]}、M_{[16i+1]}、…、M_{[16i+15]}\}.$</p>
+</li>
+<li><p>使用4个32比特的初始向量，分别为A、B、C、D。又称为链接值</p>
+</li>
 <li><p>==基本函数==：（只需要知道存在四个基本函数，不需要知道基本函数的具体）</p>
-<p>算法使用的四个基本函数： <span class="math display">\[
+<p>算法使用的四个基本函数：</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-&amp;F(X, Y, Z)=(X \wedge Y) \vee(\bar{X} \wedge Z) \\
-&amp;G(X, Y, Z)=(X \wedge Z) \vee(Y \wedge \bar{Z}) \\
-&amp;H(X, Y, Z)=X \oplus Y \oplus Z \\
-&amp;I(X, Y, Z)=Y \oplus(X \vee \bar{Z})
-\end{aligned}
-\]</span> <span class="math inline">\(X+Y\)</span>表示模232的加法运算</p></li>
+&F(X, Y, Z)=(X \wedge Y) \vee(\bar{X} \wedge Z) \\
+&G(X, Y, Z)=(X \wedge Z) \vee(Y \wedge \bar{Z}) \\
+&H(X, Y, Z)=X \oplus Y \oplus Z \\
+&I(X, Y, Z)=Y \oplus(X \vee \bar{Z})
+\end{aligned}</script><p>$X+Y$表示模232的加法运算</p>
+</li>
 <li><p>具体过程：（不会进行具体的计算，但是流程应该知道，比如知道迭代多少次）</p>
-<p><strong>Step1</strong> 执行<span class="math inline">\(\mathrm{X}[0] \leftarrow \mathrm{M}[16 \mathrm{i}], \mathrm{X}[1] \leftarrow \mathrm{M}[16 \mathrm{i}+1], \ldots, \mathrm{X}[15] \leftarrow \mathrm{M}[16 \mathrm{i}+15]\)</span></p>
-<p><strong>Step2</strong> 执行: <span class="math inline">\(A A \leftarrow A, B B \leftarrow B, C C \leftarrow C, D D \leftarrow D\)</span></p>
-<p><strong>Step3</strong> 执行: <span class="math inline">\((\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round1}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])\)</span></p>
-<p><strong>Step4</strong> 执行: <span class="math inline">\((\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round2}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])\)</span></p>
-<p><strong>Step5</strong> 执行: <span class="math inline">\((\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round3}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])\)</span></p>
-<p><strong>Step6</strong> 执行:<span class="math inline">\((\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round4}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])\)</span></p>
-<p><strong>Step7</strong> 执行: <span class="math inline">\((\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}) \leftarrow(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D})+(\mathrm{AA}, \mathrm{BB}, \mathrm{CC}, \mathrm{DD})\)</span></p>
-<p>最后是将A、B、C、D进行拼接，形成MD5最后的结果。128=32*4。</p></li>
+<p><strong>Step1</strong> 执行$\mathrm{X}[0] \leftarrow \mathrm{M}[16 \mathrm{i}], \mathrm{X}[1] \leftarrow \mathrm{M}[16 \mathrm{i}+1], \ldots, \mathrm{X}[15] \leftarrow \mathrm{M}[16 \mathrm{i}+15]$</p>
+<p><strong>Step2</strong> 执行: $A A \leftarrow A, B B \leftarrow B, C C \leftarrow C, D D \leftarrow D$</p>
+<p><strong>Step3</strong> 执行: $(\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round1}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])$</p>
+<p><strong>Step4</strong> 执行: $(\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round2}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])$</p>
+<p><strong>Step5</strong> 执行: $(\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round3}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])$</p>
+<p><strong>Step6</strong> 执行:$(\mathrm{A}, \mathrm{B}, \mathrm{C},\mathrm{D}) \leftarrow \operatorname{Round4}(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{X}[0], \ldots, \mathrm{X}[15])$</p>
+<p><strong>Step7</strong> 执行: $(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}) \leftarrow(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D})+(\mathrm{AA}, \mathrm{BB}, \mathrm{CC}, \mathrm{DD})$</p>
+<p>最后是将A、B、C、D进行拼接，形成MD5最后的结果。128=32*4。</p>
+</li>
 <li><p>MD5主循环：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220094004821-164683642746660.png" alt="image-20211220094004821"><figcaption>image-20211220094004821</figcaption>
-</figure></li>
+<p><img src="/2022/03/09/Data_Security/image-20211220094004821-164683642746660.png" alt="image-20211220094004821"></p>
+</li>
 <li><p>round结构：</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220103532831-164683642746761.png" alt="image-20211220103532831"><figcaption>image-20211220103532831</figcaption>
-</figure>
+<p><img src="/2022/03/09/Data_Security/image-20211220103532831-164683642746761.png" alt="image-20211220103532831"></p>
 <p>其他三个分别使用另外三个基本函数。s是</p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220104319171-164683642746762.png" alt="image-20211220104319171"><figcaption>image-20211220104319171</figcaption>
-</figure>
-<p>t的计算方法如下：<span class="math inline">\(2^{32}{*} a b s(\sin (\mathrm{i}))\)</span></p></li>
+<p><img src="/2022/03/09/Data_Security/image-20211220104319171-164683642746762.png" alt="image-20211220104319171"></p>
+<p>t的计算方法如下：$2^{32}{*} a b s(\sin (\mathrm{i}))$</p>
+</li>
 </ul>
-<h3 id="基于hash函数的消息认证码">基于Hash函数的消息认证码</h3>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220104642211-164683642746763.png" alt="image-20211220104642211"><figcaption>image-20211220104642211</figcaption>
-</figure>
+<h3 id="基于Hash函数的消息认证码"><a href="#基于Hash函数的消息认证码" class="headerlink" title="基于Hash函数的消息认证码"></a>基于Hash函数的消息认证码</h3><p><img src="/2022/03/09/Data_Security/image-20211220104642211-164683642746763.png" alt="image-20211220104642211"></p>
 <p>安全要求：</p>
 <ul>
 <li>未知密钥时不能构造消息-认证码的一个匹配对;（单向性）</li>
 <li>未知密钥时不能将一个消息-认证码的匹配对修改为另一个消息-认证码的匹配对。（弱无碰撞性）</li>
 </ul>
 <p>基于Hash函数的的HMAC消息认证码</p>
-<p>对于密钥k和Hash函数Hash，按如下方式计算消息m的消息认证码MAC：<span class="math inline">\(HMAC(m) = Hash_{k_2}(Hash_{k_1}(m))\)</span></p>
-<figure>
-<img src="/2022/03/09/Data_Security/image-20211220105018727-164683642746764.png" alt="image-20211220105018727"><figcaption>image-20211220105018727</figcaption>
-</figure>
-<h2 id="人工智能安全">人工智能安全</h2>
-<ul>
+<p>对于密钥k和Hash函数Hash，按如下方式计算消息m的消息认证码MAC：$HMAC(m) = Hash_{k_2}(Hash_{k_1}(m))$</p>
+<p><img src="/2022/03/09/Data_Security/image-20211220105018727-164683642746764.png" alt="image-20211220105018727"></p>
+<h2 id="人工智能安全"><a href="#人工智能安全" class="headerlink" title="人工智能安全"></a>人工智能安全</h2><ul>
 <li><p>Al应具有的==安全要求==：</p>
 <ul>
 <li><strong>可靠：</strong>无污染的训练和测试过程。</li>
 <li><strong>稳定：</strong>模型应具有足够的鲁棒性以处理有噪声的输入</li>
 <li><strong>隐私：</strong>用户看不到有关该模型的所有信息</li>
-</ul></li>
+</ul>
+</li>
 <li><p>主要攻击==手段分类==：</p>
 <ul>
 <li><p>==数据中毒==</p>
 <ul>
-<li><p>定义：攻击者通过将中毒的样本引入训练/验证/测试集造成的因果攻击</p></li>
-<li><p>原理：错误的或是中毒的样本会使分类器学到错误的特征，从而改变了分类器模型</p></li>
+<li><p>定义：攻击者通过将中毒的样本引入训练/验证/测试集造成的因果攻击</p>
+</li>
+<li><p>原理：错误的或是中毒的样本会使分类器学到错误的特征，从而改变了分类器模型</p>
+</li>
 <li><p>错误特征的不同表现：</p>
 <ul>
 <li><p>传统分类器：如支持向量机，会因为中毒的样本导致分类器分类错误，产生性能下降，因此适合实现可用性攻击</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135258273.png" alt="image-20211225135258273"><figcaption>image-20211225135258273</figcaption>
-</figure></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135258273.png" alt="image-20211225135258273"></p>
+</li>
 <li><p>深度神经网路：其具有较强的复杂性，可以容忍一定的中毒样本，但会对其进行记忆，因此可以完成==后门攻击==。（针对性的攻击）</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135231290.png" alt="image-20211225135231290"><figcaption>image-20211225135231290</figcaption>
-</figure></li>
-</ul></li>
-</ul></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135231290.png" alt="image-20211225135231290"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>对抗样本</p>
 <ul>
 <li>定义：指攻击者通过输入经过<strong>不为人所察觉的</strong>扰动后的样本，使得分类模型决策发生<strong>本不应该发生</strong>的变化。</li>
 <li>原理：在样本上施加一定的扰动，这些扰动是根据目标模型精心设计的。这种攻击属于一种灰盒或白盒攻击。</li>
-</ul></li>
+</ul>
+</li>
 <li><p>逆向工程</p>
 <ul>
-<li><p>定义：通过查询一个分类器，以了解它的决策规则或它的训练集（即对数据隐私的攻击）。</p></li>
+<li><p>定义：通过查询一个分类器，以了解它的决策规则或它的训练集（即对数据隐私的攻击）。</p>
+</li>
 <li><p>不同目标：</p>
 <ul>
 <li><p>模型推断攻击：构建与目标模型决策相似的模仿模型</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225140903864.png" alt="image-20211225140903864"><figcaption>image-20211225140903864</figcaption>
-</figure></li>
-<li><p>模型重构攻击：获取训练集隐私的攻击，重构训练集中的样本</p></li>
-<li><p>数据推测攻击：获取训练集隐私，判断某个样本是否属于训练集</p></li>
-</ul></li>
-</ul></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225140903864.png" alt="image-20211225140903864"></p>
+</li>
+<li><p>模型重构攻击：获取训练集隐私的攻击，重构训练集中的样本</p>
+</li>
+<li><p>数据推测攻击：获取训练集隐私，判断某个样本是否属于训练集</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>对抗样本攻击与后门攻击的异同：</p>
-<figure>
-<img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135918971.png" alt="image-20211225135918971"><figcaption>image-20211225135918971</figcaption>
-</figure></li>
-</ul></li>
+<p><img src="https://raw.githubusercontent.com/lee355/cloudimg/main/img/image-20211225135918971.png" alt="image-20211225135918971"></p>
+</li>
+</ul>
+</li>
 <li><p>主要攻击目标分类（了解即可）</p>
 <ul>
-<li>因果攻击
-<ul>
+<li>因果攻击<ul>
 <li>有针对性的攻击</li>
 <li>无差别攻击</li>
 <li>可用性攻击</li>
-</ul></li>
+</ul>
+</li>
 <li>探索性攻击：不更改学习模型，更改学习模型的参数等信息</li>
-</ul></li>
+</ul>
+</li>
 <li><p>==AI攻击总结==</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;">数据中毒攻击</th>
-<th style="text-align: center;">对抗样本攻击(逃逸攻击)</th>
-<th style="text-align: center;">逆向工程攻击</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">阶段</td>
-<td style="text-align: center;">训练阶段</td>
-<td style="text-align: center;">测试阶段</td>
-<td style="text-align: center;">测试阶段</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">目标</td>
-<td style="text-align: center;">因果攻击</td>
-<td style="text-align: center;">因果攻击（有针对性攻击、无差别攻击为主）</td>
-<td style="text-align: center;">探索性攻击</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">知识</td>
-<td style="text-align: center;">都可以</td>
-<td style="text-align: center;">白盒、灰盒为主</td>
-<td style="text-align: center;">黑盒</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">CIA</td>
-<td style="text-align: center;">破坏完整性、可用性</td>
-<td style="text-align: center;">破坏完整性、可用性</td>
-<td style="text-align: center;">破坏机密性</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">补充</td>
-<td style="text-align: center;">要求攻击者有破坏训练集的能力</td>
-<td style="text-align: center;">黑盒情况下需要探索性攻击作为补充</td>
-<td style="text-align: center;">通常作为对抗样本攻击的第一步</td>
-</tr>
-</tbody>
-</table></li>
+<p>|      |         数据中毒攻击         |          对抗样本攻击(逃逸攻击)          |         逆向工程攻击         |<br>| :—: | :—————————————: | :———————————————————: | :—————————————: |<br>| 阶段 |           训练阶段           |                 测试阶段                 |           测试阶段           |<br>| 目标 |           因果攻击           | 因果攻击（有针对性攻击、无差别攻击为主） |          探索性攻击          |<br>| 知识 |            都可以            |              白盒、灰盒为主              |             黑盒             |<br>| CIA  |      破坏完整性、可用性      |            破坏完整性、可用性            |          破坏机密性          |<br>| 补充 | 要求攻击者有破坏训练集的能力 |     黑盒情况下需要探索性攻击作为补充     | 通常作为对抗样本攻击的第一步 |</p>
+</li>
 <li><p>数据中毒防御</p>
 <ul>
 <li>方法：训练集消毒、如特征选择或降维，去除异常样本</li>
-<li>不足：
-<ul>
+<li>不足：<ul>
 <li>攻击者具有防御知识，可以更好地设计数据中毒攻击，规避防御并降低分类器准确性</li>
 <li>如果没有攻击者，分类准确率会降低</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>对抗样本防御</p>
 <ul>
 <li>在学习期间使用经过修改的训练集，或者在测试期间使用经过修改的输入</li>
 <li>修改网络，如增加网络层数、更改激活功能</li>
 <li>在过难分辨的示例进行分类时，使用外部模型作为补充</li>
-</ul></li>
+</ul>
+</li>
 <li><p>逆向工程防御</p>
 <ul>
 <li>模型提供者减少或者修改输出信息，提高攻击的攻击难度</li>
-</ul></li>
+</ul>
+</li>
 <li><p>AI助力安全（前面时AI面临的安全问题）</p>
 <ul>
 <li>检测恶意软件</li>
 <li>认证</li>
 <li>设计加密算法</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -1787,7 +1625,7 @@ H_{i}=E_{H_{i-1}}\left(\mathrm{M}_{i} \oplus H_{i-1}\right) \oplus \mathrm{M}_{i
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">大数据绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">&#x3D;&#x3D;大数据的基础概念&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%86%85%E6%B6%B5"><span class="nav-number">1.2.</span> <span class="nav-text">&#x3D;&#x3D;大数据安全内涵&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%A8%81%E8%83%81"><span class="nav-number">1.3.</span> <span class="nav-text">&#x3D;&#x3D;大数据安全威胁&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E7%9A%84%E4%B8%8D%E8%B6%B3"><span class="nav-number">1.4.</span> <span class="nav-text">传统数据安全的不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%9D%E9%9A%9C%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8"><span class="nav-number">1.5.</span> <span class="nav-text">&#x3D;&#x3D;保障大数据安全&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%94%A8%E4%BA%8E%E5%AE%89%E5%85%A8"><span class="nav-number">1.6.</span> <span class="nav-text">大数据用于安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E5%8F%8A%E5%85%B6%E4%BF%9D%E6%8A%A4"><span class="nav-number">1.7.</span> <span class="nav-text">&#x3D;&#x3D;隐私及其保护&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.7.1.</span> <span class="nav-text">隐私的基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E7%9A%84%E4%BF%9D%E6%8A%A4"><span class="nav-number">1.7.2.</span> <span class="nav-text">隐私的保护</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.8.</span> <span class="nav-text">大数据与物联网的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E6%A6%82%E8%BF%B0"><span class="nav-number">2.</span> <span class="nav-text">物联网概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">2.1.</span> <span class="nav-text">物联网的发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">2.2.</span> <span class="nav-text">&#x3D;&#x3D;物联网的定义&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9"><span class="nav-number">2.3.</span> <span class="nav-text">&#x3D;&#x3D;物联网的主要特点&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%BC%82%E5%90%8C"><span class="nav-number">2.4.</span> <span class="nav-text">物联网与互联网的异同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.</span> <span class="nav-text">物联网的架构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%E6%A6%82%E8%BF%B0"><span class="nav-number">2.5.1.</span> <span class="nav-text">物联网体系架构概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82-%E7%BD%91%E7%BB%9C%E5%B1%82-%E6%84%9F%E7%9F%A5%E5%B1%82%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.2.</span> <span class="nav-text">&#x3D;&#x3D;应用层-网络层-感知层架构&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%91-%E7%AE%A1-%E8%BE%B9-%E7%AB%AF%E7%9A%84%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.3.</span> <span class="nav-text">&#x3D;&#x3D;“云-管-边-端”的物联网体系架构&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF"><span class="nav-number">2.6.</span> <span class="nav-text">物联网的关键技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%BD%A2%E6%80%81"><span class="nav-number">2.7.</span> <span class="nav-text">物联网的技术形态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%8A%80%E6%9C%AF%E4%B8%8Erfid"><span class="nav-number">2.7.1.</span> <span class="nav-text">自动识别技术与RFID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E7%BA%BF%E5%AE%9A%E4%BD%8D%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.7.2.</span> <span class="nav-text">无线定位系统</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B7%E4%BD%93%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.8.</span> <span class="nav-text">物联网的具体应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%AD%E7%9A%84%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4"><span class="nav-number">2.9.</span> <span class="nav-text">物联网中的信息安全与隐私保护</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.</span> <span class="nav-text">古典密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8F%91%E5%B1%95%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.</span> <span class="nav-text">密码学发展及基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E9%98%B6%E6%AE%B5"><span class="nav-number">3.1.1.</span> <span class="nav-text">&#x3D;&#x3D;古典密码阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E9%98%B6%E6%AE%B5"><span class="nav-number">3.1.2.</span> <span class="nav-text">&#x3D;&#x3D;现代密码Ⅰ阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E9%98%B6%E6%AE%B5-1"><span class="nav-number">3.1.3.</span> <span class="nav-text">&#x3D;&#x3D;现代密码Ⅱ阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%9A%84%E7%9B%AE%E6%A0%87"><span class="nav-number">3.1.4.</span> <span class="nav-text">&#x3D;&#x3D;信息安全的目标：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB"><span class="nav-number">3.1.5.</span> <span class="nav-text">&#x3D;&#x3D;密码学技术分类：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.6.</span> <span class="nav-text">&#x3D;&#x3D;密码学基本概念：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E5%81%87%E8%AE%BE"><span class="nav-number">3.1.7.</span> <span class="nav-text">&#x3D;&#x3D;柯克霍夫假设：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90%E5%AD%A6"><span class="nav-number">3.1.8.</span> <span class="nav-text">&#x3D;&#x3D;密码分析学&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%94%BB%E5%87%BB%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">3.1.9.</span> <span class="nav-text">&#x3D;&#x3D;攻击的分类：&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6-1"><span class="nav-number">3.2.</span> <span class="nav-text">&#x3D;&#x3D;古典密码学&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%AF%E6%92%92%E5%8A%A0%E5%AF%86%E4%BD%8D%E7%A7%BB%E5%8A%A0%E5%AF%86%E8%AE%A1%E7%AE%97"><span class="nav-number">3.2.1.</span> <span class="nav-text">凯撒加密&#x2F;位移加密（&#x3D;&#x3D;计算&#x3D;&#x3D;）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%AF%86%E7%A0%81"><span class="nav-number">3.2.2.</span> <span class="nav-text">仿射密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81"><span class="nav-number">3.2.3.</span> <span class="nav-text">维吉尼亚密码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81--des"><span class="nav-number">4.</span> <span class="nav-text">对称密码--DES</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E9%87%8D%E8%A6%81%E6%80%9D%E6%83%B3"><span class="nav-number">4.1.</span> <span class="nav-text">现代密码学重要思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81"><span class="nav-number">4.2.</span> <span class="nav-text">私钥密码（对称密码）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#des"><span class="nav-number">4.2.1.</span> <span class="nav-text">&#x3D;&#x3D;DES&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E9%87%8Ddes"><span class="nav-number">4.2.2.</span> <span class="nav-text">&#x3D;&#x3D;多重DES&#x3D;&#x3D;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E8%AE%BA%E5%9F%BA%E7%A1%80"><span class="nav-number">5.</span> <span class="nav-text">数论基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81--aes"><span class="nav-number">6.</span> <span class="nav-text">对称密码--AES</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#aes%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BB%8B%E7%BB%8D"><span class="nav-number">6.1.</span> <span class="nav-text">AES基础知识介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E9%92%A5%E6%8B%93%E5%B1%95"><span class="nav-number">6.2.</span> <span class="nav-text">密钥拓展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#aes%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="nav-number">6.3.</span> <span class="nav-text">AES的四个阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E8%8A%82%E6%9B%BF%E4%BB%A3substitute-bytes"><span class="nav-number">6.3.1.</span> <span class="nav-text">字节替代（Substitute bytes）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E7%A7%BB%E4%BD%8Dshiftrows"><span class="nav-number">6.3.2.</span> <span class="nav-text">行移位（ShiftRows）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E6%B7%B7%E6%B7%86mixcolumns"><span class="nav-number">6.3.3.</span> <span class="nav-text">列混淆（MixColumns）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BD%AE%E5%AF%86%E9%92%A5%E5%8A%A0addroundkey"><span class="nav-number">6.3.4.</span> <span class="nav-text">轮密钥加（AddRoundKey）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E6%A6%82%E5%BF%B5%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81"><span class="nav-number">7.</span> <span class="nav-text">公钥密码概念（非对称密码）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E9%92%A5%E4%BD%93%E5%88%B6%E7%9A%84%E7%BC%BA%E9%99%B7"><span class="nav-number">7.1.</span> <span class="nav-text">&#x3D;&#x3D;对称密钥体制的缺陷&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="nav-number">7.2.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的基本思想&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-number">7.3.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的优势&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">7.4.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的应用&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E5%AF%86%E7%A0%81%E4%B8%8E%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81"><span class="nav-number">7.5.</span> <span class="nav-text">&#x3D;&#x3D;传统密码与公钥密码&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90"><span class="nav-number">7.6.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码分析&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rsa%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95"><span class="nav-number">8.</span> <span class="nav-text">RSA加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rsa%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86%E4%BD%93%E5%88%B6%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97%E9%A2%98%E4%B8%8D%E8%80%83%E8%AF%81%E6%98%8E"><span class="nav-number">8.1.</span> <span class="nav-text">&#x3D;&#x3D;RSA公钥加密体制原理&#x3D;&#x3D;（计算题，不考证明）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d-h%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%8D%8F%E8%AE%AEelgamal%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95"><span class="nav-number">9.</span> <span class="nav-text">D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E9%99%90%E5%9F%9F%E4%B8%8A%E7%9A%84%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-number">9.1.</span> <span class="nav-text">&#x3D;&#x3D;有限域上的离散对数问题&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#diffie-hellman%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E6%8A%80%E6%9C%AF%E8%AE%A1%E7%AE%97%E9%A2%98"><span class="nav-number">9.2.</span> <span class="nav-text">&#x3D;&#x3D;Diffie-Hellman公钥密码技术&#x3D;&#x3D;（计算题）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E5%85%83%E6%A0%B9"><span class="nav-number">9.2.1.</span> <span class="nav-text">&#x3D;&#x3D;本元根&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#d-h%E5%85%AC%E9%92%A5%E6%8A%80%E6%9C%AF"><span class="nav-number">9.2.2.</span> <span class="nav-text">&#x3D;&#x3D;D-H公钥技术&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dh%E5%8D%8F%E8%AE%AE"><span class="nav-number">9.2.3.</span> <span class="nav-text">&#x3D;&#x3D;DH协议&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#elgamal%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E8%AE%A1%E7%AE%97"><span class="nav-number">9.3.</span> <span class="nav-text">&#x3D;&#x3D;ElGamal公钥密码算法&#x3D;&#x3D;（计算）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6"><span class="nav-number">10.</span> <span class="nav-text">椭圆曲线公钥密码体制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E7%BE%A4"><span class="nav-number">10.1.</span> <span class="nav-text">椭圆曲线群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E4%B8%8A%E7%9A%84%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-number">10.2.</span> <span class="nav-text">椭圆曲线上的离散对数问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E4%B8%8E%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81"><span class="nav-number">11.</span> <span class="nav-text">数字签名与消息认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E6%A6%82%E8%BF%B0"><span class="nav-number">11.1.</span> <span class="nav-text">数字签名概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rsa%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.2.</span> <span class="nav-text">RSA数字签名算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.2.1.</span> <span class="nav-text">简单的数字签名算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rsa%E7%AD%BE%E5%90%8D%E4%B8%8E%E5%8A%A0%E5%AF%86%E7%9A%84%E7%BB%93%E5%90%88"><span class="nav-number">11.2.2.</span> <span class="nav-text">RSA签名与加密的结合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rsa%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="nav-number">11.2.3.</span> <span class="nav-text">RSA数字签名的缺点：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dsa%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.3.</span> <span class="nav-text">DSA数字签名算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E9%80%89%E5%8F%96"><span class="nav-number">11.3.1.</span> <span class="nav-text">&#x3D;&#x3D;参数选取：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B"><span class="nav-number">11.3.2.</span> <span class="nav-text">&#x3D;&#x3D;签名过程：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%87%E7%A8%8B"><span class="nav-number">11.3.3.</span> <span class="nav-text">&#x3D;&#x3D;验证过程&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ecdsa%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.4.</span> <span class="nav-text">&#x3D;&#x3D;ECDSA数字签名算法&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E9%80%89%E5%8F%96-1"><span class="nav-number">11.4.1.</span> <span class="nav-text">参数选取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B-1"><span class="nav-number">11.4.2.</span> <span class="nav-text">签名过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%87%E7%A8%8B-1"><span class="nav-number">11.4.3.</span> <span class="nav-text">验证过程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hash%E5%87%BD%E6%95%B0"><span class="nav-number">12.</span> <span class="nav-text">Hash函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hash%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%BA%94%E7%94%A8"><span class="nav-number">12.1.</span> <span class="nav-text">Hash函数的性质与应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9hash%E5%87%BD%E6%95%B0%E7%9A%84%E7%A2%B0%E6%92%9E%E6%94%BB%E5%87%BB%E6%96%B9%E6%B3%95"><span class="nav-number">12.2.</span> <span class="nav-text">&#x3D;&#x3D;对Hash函数的碰撞攻击方法&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E7%9A%84hash%E5%87%BD%E6%95%B0"><span class="nav-number">12.3.</span> <span class="nav-text">基于分组密码算法的Hash函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md5-hash%E5%87%BD%E6%95%B0%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%85%B3%E6%B3%A8"><span class="nav-number">12.4.</span> <span class="nav-text">MD5 Hash函数（需要进行关注）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8Ehash%E5%87%BD%E6%95%B0%E7%9A%84%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%E7%A0%81"><span class="nav-number">12.5.</span> <span class="nav-text">基于Hash函数的消息认证码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8"><span class="nav-number">13.</span> <span class="nav-text">人工智能安全</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">大数据绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">&#x3D;&#x3D;大数据的基础概念&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%86%85%E6%B6%B5"><span class="nav-number">1.2.</span> <span class="nav-text">&#x3D;&#x3D;大数据安全内涵&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E5%A8%81%E8%83%81"><span class="nav-number">1.3.</span> <span class="nav-text">&#x3D;&#x3D;大数据安全威胁&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E7%9A%84%E4%B8%8D%E8%B6%B3"><span class="nav-number">1.4.</span> <span class="nav-text">传统数据安全的不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%9D%E9%9A%9C%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8"><span class="nav-number">1.5.</span> <span class="nav-text">&#x3D;&#x3D;保障大数据安全&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%94%A8%E4%BA%8E%E5%AE%89%E5%85%A8"><span class="nav-number">1.6.</span> <span class="nav-text">大数据用于安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E5%8F%8A%E5%85%B6%E4%BF%9D%E6%8A%A4"><span class="nav-number">1.7.</span> <span class="nav-text">&#x3D;&#x3D;隐私及其保护&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.7.1.</span> <span class="nav-text">隐私的基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E7%9A%84%E4%BF%9D%E6%8A%A4"><span class="nav-number">1.7.2.</span> <span class="nav-text">隐私的保护</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.8.</span> <span class="nav-text">大数据与物联网的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E6%A6%82%E8%BF%B0"><span class="nav-number">2.</span> <span class="nav-text">物联网概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">2.1.</span> <span class="nav-text">物联网的发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">2.2.</span> <span class="nav-text">&#x3D;&#x3D;物联网的定义&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9"><span class="nav-number">2.3.</span> <span class="nav-text">&#x3D;&#x3D;物联网的主要特点&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%BC%82%E5%90%8C"><span class="nav-number">2.4.</span> <span class="nav-text">物联网与互联网的异同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.</span> <span class="nav-text">物联网的架构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%E6%A6%82%E8%BF%B0"><span class="nav-number">2.5.1.</span> <span class="nav-text">物联网体系架构概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82-%E7%BD%91%E7%BB%9C%E5%B1%82-%E6%84%9F%E7%9F%A5%E5%B1%82%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.2.</span> <span class="nav-text">&#x3D;&#x3D;应用层-网络层-感知层架构&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E2%80%9C%E4%BA%91-%E7%AE%A1-%E8%BE%B9-%E7%AB%AF%E2%80%9D%E7%9A%84%E7%89%A9%E8%81%94%E7%BD%91%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84"><span class="nav-number">2.5.3.</span> <span class="nav-text">&#x3D;&#x3D;“云-管-边-端”的物联网体系架构&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF"><span class="nav-number">2.6.</span> <span class="nav-text">物联网的关键技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%BD%A2%E6%80%81"><span class="nav-number">2.7.</span> <span class="nav-text">物联网的技术形态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%8A%80%E6%9C%AF%E4%B8%8ERFID"><span class="nav-number">2.7.1.</span> <span class="nav-text">自动识别技术与RFID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E7%BA%BF%E5%AE%9A%E4%BD%8D%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.7.2.</span> <span class="nav-text">无线定位系统</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%85%B7%E4%BD%93%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.8.</span> <span class="nav-text">物联网的具体应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%AD%E7%9A%84%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4"><span class="nav-number">2.9.</span> <span class="nav-text">物联网中的信息安全与隐私保护</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.</span> <span class="nav-text">古典密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8F%91%E5%B1%95%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.</span> <span class="nav-text">密码学发展及基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">3.1.1.</span> <span class="nav-text">&#x3D;&#x3D;古典密码阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E2%85%A0%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">3.1.2.</span> <span class="nav-text">&#x3D;&#x3D;现代密码Ⅰ阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E2%85%A1%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">3.1.3.</span> <span class="nav-text">&#x3D;&#x3D;现代密码Ⅱ阶段：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%9A%84%E7%9B%AE%E6%A0%87%EF%BC%9A"><span class="nav-number">3.1.4.</span> <span class="nav-text">&#x3D;&#x3D;信息安全的目标：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="nav-number">3.1.5.</span> <span class="nav-text">&#x3D;&#x3D;密码学技术分类：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="nav-number">3.1.6.</span> <span class="nav-text">&#x3D;&#x3D;密码学基本概念：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E5%81%87%E8%AE%BE%EF%BC%9A"><span class="nav-number">3.1.7.</span> <span class="nav-text">&#x3D;&#x3D;柯克霍夫假设：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90%E5%AD%A6"><span class="nav-number">3.1.8.</span> <span class="nav-text">&#x3D;&#x3D;密码分析学&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%94%BB%E5%87%BB%E7%9A%84%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="nav-number">3.1.9.</span> <span class="nav-text">&#x3D;&#x3D;攻击的分类：&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6-1"><span class="nav-number">3.2.</span> <span class="nav-text">&#x3D;&#x3D;古典密码学&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%AF%E6%92%92%E5%8A%A0%E5%AF%86-%E4%BD%8D%E7%A7%BB%E5%8A%A0%E5%AF%86%EF%BC%88-%E8%AE%A1%E7%AE%97-%EF%BC%89"><span class="nav-number">3.2.1.</span> <span class="nav-text">凯撒加密&#x2F;位移加密（&#x3D;&#x3D;计算&#x3D;&#x3D;）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%BF%E5%B0%84%E5%AF%86%E7%A0%81"><span class="nav-number">3.2.2.</span> <span class="nav-text">仿射密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81"><span class="nav-number">3.2.3.</span> <span class="nav-text">维吉尼亚密码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81%E2%80%94DES"><span class="nav-number">4.</span> <span class="nav-text">对称密码—DES</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E9%87%8D%E8%A6%81%E6%80%9D%E6%83%B3"><span class="nav-number">4.1.</span> <span class="nav-text">现代密码学重要思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81%EF%BC%88%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81%EF%BC%89"><span class="nav-number">4.2.</span> <span class="nav-text">私钥密码（对称密码）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DES"><span class="nav-number">4.2.1.</span> <span class="nav-text">&#x3D;&#x3D;DES&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E9%87%8DDES"><span class="nav-number">4.2.2.</span> <span class="nav-text">&#x3D;&#x3D;多重DES&#x3D;&#x3D;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E8%AE%BA%E5%9F%BA%E7%A1%80"><span class="nav-number">5.</span> <span class="nav-text">数论基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81%E2%80%94AES"><span class="nav-number">6.</span> <span class="nav-text">对称密码—AES</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AES%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BB%8B%E7%BB%8D"><span class="nav-number">6.1.</span> <span class="nav-text">AES基础知识介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E9%92%A5%E6%8B%93%E5%B1%95"><span class="nav-number">6.2.</span> <span class="nav-text">密钥拓展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AES%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="nav-number">6.3.</span> <span class="nav-text">AES的四个阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E8%8A%82%E6%9B%BF%E4%BB%A3%EF%BC%88Substitute-bytes%EF%BC%89"><span class="nav-number">6.3.1.</span> <span class="nav-text">字节替代（Substitute bytes）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E7%A7%BB%E4%BD%8D%EF%BC%88ShiftRows%EF%BC%89"><span class="nav-number">6.3.2.</span> <span class="nav-text">行移位（ShiftRows）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E6%B7%B7%E6%B7%86%EF%BC%88MixColumns%EF%BC%89"><span class="nav-number">6.3.3.</span> <span class="nav-text">列混淆（MixColumns）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BD%AE%E5%AF%86%E9%92%A5%E5%8A%A0%EF%BC%88AddRoundKey%EF%BC%89"><span class="nav-number">6.3.4.</span> <span class="nav-text">轮密钥加（AddRoundKey）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E6%A6%82%E5%BF%B5%EF%BC%88%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">公钥密码概念（非对称密码）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E9%92%A5%E4%BD%93%E5%88%B6%E7%9A%84%E7%BC%BA%E9%99%B7"><span class="nav-number">7.1.</span> <span class="nav-text">&#x3D;&#x3D;对称密钥体制的缺陷&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="nav-number">7.2.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的基本思想&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-number">7.3.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的优势&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">7.4.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码体制的应用&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E5%AF%86%E7%A0%81%E4%B8%8E%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81"><span class="nav-number">7.5.</span> <span class="nav-text">&#x3D;&#x3D;传统密码与公钥密码&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90"><span class="nav-number">7.6.</span> <span class="nav-text">&#x3D;&#x3D;公钥密码分析&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RSA%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95"><span class="nav-number">8.</span> <span class="nav-text">RSA加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RSA%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86%E4%BD%93%E5%88%B6%E5%8E%9F%E7%90%86-%EF%BC%88%E8%AE%A1%E7%AE%97%E9%A2%98%EF%BC%8C%E4%B8%8D%E8%80%83%E8%AF%81%E6%98%8E%EF%BC%89"><span class="nav-number">8.1.</span> <span class="nav-text">&#x3D;&#x3D;RSA公钥加密体制原理&#x3D;&#x3D;（计算题，不考证明）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D-H%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%8D%8F%E8%AE%AE-amp-ElGamal%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95-amp-%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95"><span class="nav-number">9.</span> <span class="nav-text">D-H密钥交换协议&amp;ElGamal公钥密码算法&amp;椭圆曲线公钥密码算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E9%99%90%E5%9F%9F%E4%B8%8A%E7%9A%84%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-number">9.1.</span> <span class="nav-text">&#x3D;&#x3D;有限域上的离散对数问题&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Diffie-Hellman%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E6%8A%80%E6%9C%AF-%EF%BC%88%E8%AE%A1%E7%AE%97%E9%A2%98%EF%BC%89"><span class="nav-number">9.2.</span> <span class="nav-text">&#x3D;&#x3D;Diffie-Hellman公钥密码技术&#x3D;&#x3D;（计算题）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E5%85%83%E6%A0%B9"><span class="nav-number">9.2.1.</span> <span class="nav-text">&#x3D;&#x3D;本元根&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#D-H%E5%85%AC%E9%92%A5%E6%8A%80%E6%9C%AF"><span class="nav-number">9.2.2.</span> <span class="nav-text">&#x3D;&#x3D;D-H公钥技术&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DH%E5%8D%8F%E8%AE%AE"><span class="nav-number">9.2.3.</span> <span class="nav-text">&#x3D;&#x3D;DH协议&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ElGamal%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95-%EF%BC%88%E8%AE%A1%E7%AE%97%EF%BC%89"><span class="nav-number">9.3.</span> <span class="nav-text">&#x3D;&#x3D;ElGamal公钥密码算法&#x3D;&#x3D;（计算）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6"><span class="nav-number">10.</span> <span class="nav-text">椭圆曲线公钥密码体制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E7%BE%A4"><span class="nav-number">10.1.</span> <span class="nav-text">椭圆曲线群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E4%B8%8A%E7%9A%84%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-number">10.2.</span> <span class="nav-text">椭圆曲线上的离散对数问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E4%B8%8E%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81"><span class="nav-number">11.</span> <span class="nav-text">数字签名与消息认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E6%A6%82%E8%BF%B0"><span class="nav-number">11.1.</span> <span class="nav-text">数字签名概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RSA%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.2.</span> <span class="nav-text">RSA数字签名算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.2.1.</span> <span class="nav-text">简单的数字签名算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RSA%E7%AD%BE%E5%90%8D%E4%B8%8E%E5%8A%A0%E5%AF%86%E7%9A%84%E7%BB%93%E5%90%88"><span class="nav-number">11.2.2.</span> <span class="nav-text">RSA签名与加密的结合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RSA%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%9A%84%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="nav-number">11.2.3.</span> <span class="nav-text">RSA数字签名的缺点：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DSA%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.3.</span> <span class="nav-text">DSA数字签名算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E9%80%89%E5%8F%96%EF%BC%9A"><span class="nav-number">11.3.1.</span> <span class="nav-text">&#x3D;&#x3D;参数选取：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B%EF%BC%9A"><span class="nav-number">11.3.2.</span> <span class="nav-text">&#x3D;&#x3D;签名过程：&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%87%E7%A8%8B"><span class="nav-number">11.3.3.</span> <span class="nav-text">&#x3D;&#x3D;验证过程&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ECDSA%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95"><span class="nav-number">11.4.</span> <span class="nav-text">&#x3D;&#x3D;ECDSA数字签名算法&#x3D;&#x3D;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E9%80%89%E5%8F%96"><span class="nav-number">11.4.1.</span> <span class="nav-text">参数选取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%BE%E5%90%8D%E8%BF%87%E7%A8%8B"><span class="nav-number">11.4.2.</span> <span class="nav-text">签名过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%87%E7%A8%8B-1"><span class="nav-number">11.4.3.</span> <span class="nav-text">验证过程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hash%E5%87%BD%E6%95%B0"><span class="nav-number">12.</span> <span class="nav-text">Hash函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hash%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%BA%94%E7%94%A8"><span class="nav-number">12.1.</span> <span class="nav-text">Hash函数的性质与应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9Hash%E5%87%BD%E6%95%B0%E7%9A%84%E7%A2%B0%E6%92%9E%E6%94%BB%E5%87%BB%E6%96%B9%E6%B3%95"><span class="nav-number">12.2.</span> <span class="nav-text">&#x3D;&#x3D;对Hash函数的碰撞攻击方法&#x3D;&#x3D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95%E7%9A%84Hash%E5%87%BD%E6%95%B0"><span class="nav-number">12.3.</span> <span class="nav-text">基于分组密码算法的Hash函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MD5-Hash%E5%87%BD%E6%95%B0%EF%BC%88%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%85%B3%E6%B3%A8%EF%BC%89"><span class="nav-number">12.4.</span> <span class="nav-text">MD5 Hash函数（需要进行关注）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EHash%E5%87%BD%E6%95%B0%E7%9A%84%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%E7%A0%81"><span class="nav-number">12.5.</span> <span class="nav-text">基于Hash函数的消息认证码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8"><span class="nav-number">13.</span> <span class="nav-text">人工智能安全</span></a></li></ol>
     </div>
 </div>
         </aside>
