@@ -9,7 +9,7 @@
     
     <title>
         
-            Navicat生成指定sql文件版本 |
+            云计算技术作业1 |
         
         Keep blog
     </title>
@@ -178,7 +178,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Navicat生成指定sql文件版本</span>
+            <span class="title-hover-animation">云计算技术作业1</span>
         </div>
 
         
@@ -197,8 +197,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2020-10-16 00:00:00</span>
-        <span class="mobile">2020-10-16 00:00</span>
+        <span class="pc">2020-03-11 00:00:00</span>
+        <span class="mobile">2020-03-11 00:00</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -206,7 +206,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/mysql/">mysql</a>&nbsp;
+                        <a href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%BD%9C%E4%B8%9A/">云计算作业</a>&nbsp;
                     </li>
                 
             </ul>
@@ -218,7 +218,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/mysql/">mysql</a>&nbsp;
+                        <a href="/tags/%E4%BA%91%E6%8A%80%E6%9C%AF%E6%8A%80%E6%9C%AF%E5%92%8C%E5%AE%9E%E8%B7%B5/">云技术技术和实践</a>&nbsp;
                     </li>
                 
             </ul>
@@ -237,22 +237,47 @@
         
 
         <div class="article-content markdown-body">
-            <p><em>mysql在数据备份时因为mysql版本不同，导致于高版本数据库生成的sql文件，放到低版本数据库中不能执行，在Navicat中生成sql文件时是可以指定版本的，那么就可以解决这个问题</em></p>
+            <p><em>本部分是云计算的作业1部分。在本节课中学习了云使能技术。</em>了解了它的主要技术并且这些技术的相关组件以及一些特点。通过对这些的了解并且复习完成了下面的作业。</p>
 <span id="more"></span>
-<h3 id="查看要导入数据的mysql版本号">1.查看要导入数据的mysql版本号</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -V #执行该命令可以在不登录的情况下查看mysql版本，注意V一定要大写</span><br></pre></td></tr></table></figure>
-<h3 id="生成对应版本的sql文件">2.生成对应版本的sql文件</h3>
+<h1 id="作业1">作业1</h1>
+<table>
+<thead>
+<tr class="header">
+<th>班级</th>
+<th>数据科学与大数据技术班</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>学号</td>
+<td>201900130140</td>
+</tr>
+<tr class="even">
+<td>姓名</td>
+<td>李焱</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>云使能技术主要包括哪些技术组件？简要说明其关键特征。</p>
+<p>答：云技术主要包括以下五个组件：</p>
 <ul>
-<li>选择数据库后找到Navicat的数据传输</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210107103536445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom: 33%;"></p>
+<li><code>宽带网络和Internet架构</code>：所有的云必须连接到网络。因此，网络互联是云计算的<strong>固有依赖技术</strong>。互联网或者Internet允许远程供给IT资源，并直接支持无处不在的网络接入。云用户可以通过Internet访问或者通过LAN中私有和专用的网络链接来接入云；</li>
+<li><code>数据中心技术</code>：这是一种特殊的IT基础设施，用于<strong>集中放置IT资源</strong>；数据中心包含了物理和虚拟的IT资源，具有<strong>虚拟化</strong>的特点；数据中心以<strong>标准化</strong>商用软件为基础，用<strong>模块化</strong>架构进行设计；并且具有<strong>自动化、远程操作与管理</strong>、<strong>高可用性</strong>等特点；</li>
+<li><code>虚拟化技术</code>：是将物理IT资源转换为虚拟IT资源的过程，虚拟服务器使用自己的客户操作系统，独立于创建虚拟服务器的操作系统，具有<strong>硬件无关性</strong>；允许不同的虚拟服务器共享同一个物理服务器，具有<strong>服务器整合</strong>的特点；在虚拟服务器上运行的客户操作系统和应用软件，<strong>都不会感知到虚拟化的过程</strong>；虚拟化技术是涵盖整个IT架构的，包括资源、网络、应用和桌面在内的<strong>全系统虚拟化</strong>，实现IT架构的动态化，实现资源集中管理，使应用能够动态地使用虚拟资源和物理资源，提高系统适应需求和环境的能力。</li>
+<li><code>Web技术</code>：WWW是由通过Internet访问的互联IT资源构成的系统，具有<strong>普遍性</strong>、<strong>服务开发的简单易用</strong>以及<strong>Web应用的高可访问性</strong>。其两个基本组件是Web浏览器客户端和Web服务器；</li>
+<li><code>多租户技术</code>：其目的是使得多个用户在逻辑上同时访问同一个应用。具有<strong>应用隔离</strong>、<strong>数据安全</strong>、<strong>可恢复性</strong>、<strong>应用升级</strong>、<strong>可扩展性</strong>、<strong>使用计费</strong>、<strong>数据层隔离</strong>等特点；</li>
+<li><code>服务技术</code>：基于Web的服务(如Web服务和REST服务)依靠<strong>非专有通信和技术接口</strong>定义来建立基于Web技术的标准通信框架，服务代理<strong>提供事件驱动运行时处理</strong>，适用于云中大量的功能。许多代理都<strong>自动部署</strong>在操作系统和基于云的产品中，服务中间件(如ESB和业务流程平台)可以在云上部署。</li>
+</ul></li>
+<li><p>列举至少三种虚拟化软件，并概括其特点。</p>
+<p>答：在这里主要列举三种虚拟化软件：<code>VMware ESXi</code>、<code>KVM</code>、<code>Xenserver</code>、<code>Docker</code>。</p>
 <ul>
-<li>指定相应的sql文件版本</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210107103921191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom:33%;"></p>
-<blockquote>
-<p>完成以上步骤就大工告成了，不过在不同的Navicat版本中会有些不同，我的是12.0的版本</p>
-</blockquote>
+<li><code>VMware ESXi</code>重点于<strong>服务器虚拟化</strong>、<strong>技术较成熟</strong>、<strong>功能多</strong>、<strong>支持虚机系统多</strong>；</li>
+<li><code>KVM</code>是键盘(Keyboard)、显示器(Video)、鼠标(Mouse)的缩写。KVM技术具有<strong>系统和网络的集中管理</strong>、<strong>系统的高可管理性</strong>、<strong>系统管理员的工作效率高</strong>、<strong>机房的面积小</strong>、<strong>网络工程和服务器系统的总体拥有成本低</strong>、<strong>健康环保</strong>以及<strong>多主机切换系统</strong>。</li>
+<li><code>Xenserver</code>重点在于<strong>桌面虚拟化</strong>，<strong>性价比高</strong>，<strong>网络性能好</strong>，<strong>适用于快速与大规模部署</strong>，<strong>支持系统多</strong>，但做桌面能发布出来的只有MS系统；</li>
+<li><code>Docker</code>技术使用Linux 内核和内核功能（例如 <a class="link" target="_blank" rel="noopener" href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/ch01.html">Cgroups<i class="fas fa-external-link-alt"></i></a> 和 <a class="link" target="_blank" rel="noopener" href="https://lwn.net/Articles/528078/">namespaces<i class="fas fa-external-link-alt"></i></a>）来分隔进程，以便<strong>各进程相互独立运行</strong>。这种独立性正是采用容器的目的所在；它可以<strong>独立运行多种进程、多个应用</strong>，更加充分地发挥基础设施的作用，同时保持各个<strong>独立系统的安全性</strong>。具有<strong>模块化</strong>、<strong>层和镜像版本控制</strong>、<strong>回滚</strong>和<strong>快速部署</strong>等特点。</li>
+</ul></li>
+</ol>
 
         </div>
 
@@ -262,7 +287,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/mysql/">#mysql</a>&nbsp;
+                        <a href="/tags/%E4%BA%91%E6%8A%80%E6%9C%AF%E6%8A%80%E6%9C%AF%E5%92%8C%E5%AE%9E%E8%B7%B5/">#云技术技术和实践</a>&nbsp;
                     </li>
                 
             </ul>
@@ -274,33 +299,18 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/03/07/hello-world/"
+                           href="/2020/04/15/mongDB/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">MongDB非关系型数据库</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
                     </div>
                 
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/2020/09/15/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"
-                        >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">vue常用指令</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex-center">
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
                 
             </div>
         
@@ -487,7 +497,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E8%A6%81%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E7%9A%84mysql%E7%89%88%E6%9C%AC%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">1.查看要导入数据的mysql版本号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84sql%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">2.生成对应版本的sql文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A1"><span class="nav-number">1.</span> <span class="nav-text">作业1</span></a></li></ol>
     </div>
 </div>
         </aside>
