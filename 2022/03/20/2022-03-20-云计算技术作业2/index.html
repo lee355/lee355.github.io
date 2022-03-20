@@ -9,7 +9,7 @@
     
     <title>
         
-            Navicat生成指定sql文件版本 |
+            云计算技术作业2 |
         
         Keep blog
     </title>
@@ -182,7 +182,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Navicat生成指定sql文件版本</span>
+            <span class="title-hover-animation">云计算技术作业2</span>
         </div>
 
         
@@ -201,8 +201,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2020-10-16 00:00:00</span>
-        <span class="mobile">2020-10-16 00:00</span>
+        <span class="pc">2022-03-20 00:00:00</span>
+        <span class="mobile">2022-03-20 00:00</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -210,7 +210,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/mysql/">mysql</a>&nbsp;
+                        <a href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%BD%9C%E4%B8%9A/">云计算作业</a>&nbsp;
                     </li>
                 
             </ul>
@@ -222,7 +222,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/mysql/">mysql</a>&nbsp;
+                        <a href="/tags/%E4%BA%91%E6%8A%80%E6%9C%AF%E6%8A%80%E6%9C%AF%E5%92%8C%E5%AE%9E%E8%B7%B5/">云技术技术和实践</a>&nbsp;
                     </li>
                 
             </ul>
@@ -241,22 +241,51 @@
         
 
         <div class="article-content markdown-body">
-            <p><em>mysql在数据备份时因为mysql版本不同，导致于高版本数据库生成的sql文件，放到低版本数据库中不能执行，在Navicat中生成sql文件时是可以指定版本的，那么就可以解决这个问题</em></p>
+            <p><em>本部分是云计算的作业2部分。在本节课中学习了基本云安全。了解了它的主要背景、一些基本属于和概念，它的威胁作用者，以及云安全所面对的威胁和对云安全的其他考量。</em></p>
 <span id="more"></span>
-<h3 id="查看要导入数据的mysql版本号">1.查看要导入数据的mysql版本号</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -V #执行该命令可以在不登录的情况下查看mysql版本，注意V一定要大写</span><br></pre></td></tr></table></figure>
-<h3 id="生成对应版本的sql文件">2.生成对应版本的sql文件</h3>
+<h1 id="作业1">作业1</h1>
+<table>
+<thead>
+<tr class="header">
+<th>班级</th>
+<th>数据科学与大数据技术班</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>学号</td>
+<td>201900130140</td>
+</tr>
+<tr class="even">
+<td>姓名</td>
+<td>李焱</td>
+</tr>
+<tr class="odd">
+<td>日期</td>
+<td>2022-03-20</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>列举威胁作用者有哪些，并简要说明。</p>
+<p>答：<strong>威胁作用者</strong>是引发威胁的实体，因为它能够实施攻击。云安全威胁可能来自内部也可以来自外部，可能来自于人也可能来自于软件程序。云计算中的威胁作用者有下面四个，即<code>匿名攻击者</code>、<code>恶意服务作用者</code>、<code>授信的攻击者</code>、<code>恶意的内部人员</code>：</p>
 <ul>
-<li>选择数据库后找到Navicat的数据传输</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210107103536445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom: 33%;"></p>
+<li><code>匿名攻击者</code>：匿名攻击者是云中没有权限的、不被信任的云服务用户，它通常是一个外部软件程序，通过公网发动网络攻击。当匿名攻击者对安全策略和防护所致有限时，这会抑制它们形成有效攻击的能力。总的来说，匿名攻击者是不被信任的威胁作用者，通常试图从云边界的外部进行攻击。</li>
+<li><code>恶意服务作用者</code>：恶意服务作用者能截取并转发云内的网络流量。它通常是带有被损害的或恶意逻辑的服务代理或伪装成服务代理的程序，也有可能是能够远程截取并破坏消息内容的外部程序。</li>
+<li><code>授信的攻击者</code>：授信的攻击者与同意云环境中的云用户共享IT资源，试图利用合法的证书来把云提供者以及它们共享IT资源的云租户作为攻击目标。不同匿名攻击者（它们是非授权的），授信的攻击者通常滥用合法的证书或通过挪用敏感和保密的信息，在云的信任边界内部发动攻击。</li>
+<li><code>恶意的内部人员</code>：恶意的内部人员是人为的威胁作用者，它们的行为代表云提供者或者与之有关。它们通常是现任或前任雇员，或是能够访问云提供者资源范围的第三方。这种类型的威胁作用者会带来极大的破坏可能性，因为恶意的内部人员可能拥有访问云用户IT资源的管理特权。</li>
+</ul></li>
+<li><p>列举云安全威胁有哪些，并简要说明。</p>
+<p>答：云安全威胁主要有：<code>流量窃听</code>、<code>恶意媒介</code>、<code>拒绝服务</code>、<code>授权不足</code>、<code>虚拟化攻击</code>、<code>信任边界重叠</code>。</p>
 <ul>
-<li>指定相应的sql文件版本</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210107103921191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2h1d2VuNzk4Ng==,size_16,color_FFFFFF,t_70" style="zoom:33%;"></p>
-<blockquote>
-<p>完成以上步骤就大工告成了，不过在不同的Navicat版本中会有些不同，我的是12.0的版本</p>
-</blockquote>
+<li><code>流量窃听</code>：指当数据在传输到云中或在云内部传输时（通常是从云用户到云提供者），被恶意的服务作用者被动地截获，用于非法的信息收集；</li>
+<li><code>恶意媒介</code>：是指消息被恶意服务作用者截获并篡改，因此可能会破坏消息的保密性和完整性；</li>
+<li><code>拒绝服务(DoS)</code>：当目标IT资源由于请求过多而负载过重，这些请求意在使IT资源性能陷入瘫痪或不可用，攻击的目标是使IT资源过载至无法正确运行；</li>
+<li><code>授权不足</code>：指错误的授予了攻击者访问权限，或是授权太宽泛，导致攻击者能够访问本应该受到保护的IT资源；</li>
+<li><code>虚拟化攻击(Virtualization attack)</code>：利用虚拟化平台的漏洞来危害虚拟化平台的保密性、完整性和可用性，获得了对底层物理硬件未被授权的访问；</li>
+<li><code>信任边界重叠</code>：如果云中的物理IT资源是由不同的云服务共享的，那么这些云服务用户的信任边界是重叠的。恶意的云服务用户可以把目标设定为共享的IT资源，意图损害其他共享同样信任边界的云服务用户或IT资源；</li>
+</ul></li>
+</ol>
 
         </div>
 
@@ -266,7 +295,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/mysql/">#mysql</a>&nbsp;
+                        <a href="/tags/%E4%BA%91%E6%8A%80%E6%9C%AF%E6%8A%80%E6%9C%AF%E5%92%8C%E5%AE%9E%E8%B7%B5/">#云技术技术和实践</a>&nbsp;
                     </li>
                 
             </ul>
@@ -275,29 +304,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2022/03/07/hello-world/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2020/09/15/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"
+                           href="/2022/03/11/2022-03-11-%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%BD%9C%E4%B8%9A1/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">vue常用指令</span>
+                                <span class="post-nav-title-item">云计算技术作业1</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -491,7 +505,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E8%A6%81%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E7%9A%84mysql%E7%89%88%E6%9C%AC%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">1.查看要导入数据的mysql版本号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84sql%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">2.生成对应版本的sql文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A1"><span class="nav-number">1.</span> <span class="nav-text">作业1</span></a></li></ol>
     </div>
 </div>
         </aside>
